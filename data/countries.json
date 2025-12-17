@@ -1,0 +1,11 @@
+[
+  {
+    "id": "country_1765952432714",
+    "name": "abc",
+    "ruler": "abc",
+    "alive": true,
+    "cities": [
+      "city01"
+    ]
+  }
+]

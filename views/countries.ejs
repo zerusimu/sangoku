@@ -1,0 +1,36 @@
+<h1>国一覧</h1>
+
+<% countries.forEach(country => { %>
+  <hr>
+  <h2><%= country.name %></h2>
+
+  <p>君主：<%= country.ruler %></p>
+
+  <h3>都市</h3>
+  <ul>
+    <% country.cityList.forEach(city => { %>
+      <li><%= city.name %></li>
+    <% }) %>
+  </ul>
+
+  <h3>所属武将</h3>
+  <table border="1" cellpadding="4">
+    <tr>
+      <th>名前</th>
+      <th>武力</th>
+      <th>知力</th>
+      <th>統率</th>
+      <th>魅力</th>
+    </tr>
+
+    <% country.generals.forEach(g => { %>
+      <tr>
+        <td><%= g.name %></td>
+        <td><%= g.str %></td>
+        <td><%= g.int %></td>
+        <td><%= g.lea %></td>
+        <td><%= g.cha %></td>
+      </tr>
+    <% }) %>
+  </table>
+<% }) %>

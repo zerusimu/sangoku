@@ -1,0 +1,67 @@
+<form action="/register" method="POST">
+
+<h3>ログイン情報</h3>
+ログインID：<br>
+<input type="text" name="loginId" required><br><br>
+
+パスワード：<br>
+<input type="password" name="password" required><br><br>
+
+<h2>武将登録</h2>
+
+  名前：<br>
+  <input type="text" name="name" required><br><br>
+
+  <h3>能力（合計175）</h3>
+  武力: <input type="number" name="str" min="5" max="100" value="5"><br>
+  知力: <input type="number" name="int" min="5" max="100" value="5"><br>
+  統率: <input type="number" name="lea" min="5" max="100" value="5"><br>
+  魅力: <input type="number" name="cha" min="5" max="100" value="5"><br><br>
+
+  <hr>
+
+  <h3>登録方法</h3>
+
+  <label>
+    <input type="radio" name="mode" value="join" checked>
+    士官する
+  </label><br>
+
+士官先の都市：
+<select name="joinCity">
+<% cities.forEach(city => { %>
+  <% if (city.owner) { %>
+    <option value="<%= city.id %>">
+      <%= city.name %>（<%= city.countryName %>）
+    </option>
+  <% } %>
+<% }) %>
+</select>
+
+
+  <br><br>
+
+  <label>
+    <input type="radio" name="mode" value="create">
+    建国する
+  </label><br>
+
+
+国名:
+<input type="text" name="countryName"><br><br>
+
+首都にする都市：
+<select name="city">
+<% cities.forEach(city => { %>
+  <% if (!city.owner) { %>
+    <option value="<%= city.id %>">
+      <%= city.name %>
+    </option>
+  <% } %>
+<% }) %>
+</select>
+  <br><br>
+
+  <button type="submit">登録する</button>
+
+</form>

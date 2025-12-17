@@ -1,0 +1,56 @@
+[
+  {
+    "id": "city01",
+    "name": "洛陽",
+    "owner": "country_1765952432714",
+    "soldiers": 50
+  },
+  {
+    "id": "city02",
+    "name": "長安",
+    "owner": null,
+    "soldiers": 40
+  },
+  {
+    "id": "city03",
+    "name": "許昌",
+    "owner": null,
+    "soldiers": 30
+  },
+  {
+    "id": "city04",
+    "name": "建業",
+    "owner": null,
+    "soldiers": 20
+  },
+  {
+    "id": "city05",
+    "name": "寿春",
+    "owner": null,
+    "soldiers": 15
+  },
+  {
+    "id": "city06",
+    "name": "江陵",
+    "owner": null,
+    "soldiers": 25
+  },
+  {
+    "id": "city07",
+    "name": "成都",
+    "owner": null,
+    "soldiers": 20
+  },
+  {
+    "id": "city08",
+    "name": "漢中",
+    "owner": null,
+    "soldiers": 10
+  },
+  {
+    "id": "city09",
+    "name": "上庸",
+    "owner": null,
+    "soldiers": 10
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "general_1765952432714",
+    "name": "abc",
+    "str": 100,
+    "int": 5,
+    "lea": 65,
+    "cha": 5,
+    "countryId": "country_1765952432714"
+  },
+  {
+    "id": "general_1765952782089",
+    "name": "zzz",
+    "str": 5,
+    "int": 100,
+    "lea": 65,
+    "cha": 5,
+    "countryId": "country_1765952432714"
+  }
+]
