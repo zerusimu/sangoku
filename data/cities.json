@@ -2,7 +2,7 @@
   {
     "id": "city01",
     "name": "洛陽",
-    "owner": "country_1765952432714",
+    "owner": null,
     "soldiers": 50
   },
   {
@@ -38,13 +38,13 @@
   {
     "id": "city07",
     "name": "成都",
-    "owner": null,
+    "owner": "country_1766034901377",
     "soldiers": 20
   },
   {
     "id": "city08",
     "name": "漢中",
-    "owner": null,
+    "owner": "country_1766038287346",
     "soldiers": 10
   },
   {

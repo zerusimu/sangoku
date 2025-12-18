@@ -14,23 +14,28 @@
   </ul>
 
   <h3>所属武将</h3>
-  <table border="1" cellpadding="4">
-    <tr>
-      <th>名前</th>
-      <th>武力</th>
-      <th>知力</th>
-      <th>統率</th>
-      <th>魅力</th>
-    </tr>
 
-    <% country.generals.forEach(g => { %>
+  <% if (country.generals.length === 0) { %>
+    <p>所属武将はいません</p>
+  <% } else { %>
+    <table border="1" cellpadding="4">
       <tr>
-        <td><%= g.name %></td>
-        <td><%= g.str %></td>
-        <td><%= g.int %></td>
-        <td><%= g.lea %></td>
-        <td><%= g.cha %></td>
+        <th>名前</th>
+        <th>武力</th>
+        <th>知力</th>
+        <th>統率</th>
+        <th>魅力</th>
       </tr>
-    <% }) %>
-  </table>
+
+      <% country.generals.forEach(g => { %>
+        <tr>
+          <td><%= g.name %></td>
+          <td><%= g.str %></td>
+          <td><%= g.int %></td>
+          <td><%= g.lea %></td>
+          <td><%= g.cha %></td>
+        </tr>
+      <% }) %>
+    </table>
+  <% } %>
 <% }) %>

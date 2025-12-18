@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title><%= general.name %> の個人画面</title>
+</head>
+<body>
+  <h1>名前：<%= general.name %></h1>
+
+  <p>武力: <%= general.str %></p>
+  <p>知力: <%= general.int %></p>
+  <p>統率: <%= general.lea %></p>
+  <p>魅力: <%= general.cha %></p>
+
+  <% if (country) { %>
+    <h2>所属国</h2>
+    <p>国名: <%= country.name %></p>
+    <p>君主: <%= country.ruler %></p>
+  <% } else { %>
+    <p>無所属</p>
+  <% } %>
+
+  <hr>
+
+  <!-- ===================== -->
+  <!-- コマンド予約 -->
+  <!-- ===================== -->
+  <h2>命令予約</h2>
+
+  <p>
+    残り予約数：
+    <%= general.commandQueue ? general.commandQueue.length : 0 %> / 60
+  </p>
+
+  <% if (!general.commandQueue || general.commandQueue.length < 60) { %>
+    <form action="/command" method="post">
+      <select name="command">
+        <option value="train">訓練（武力+1）</option>
+        <option value="develop">開発</option>
+        <option value="rest">休養</option>
+      </select>
+
+      <button type="submit">キューに追加</button>
+    </form>
+  <% } else { %>
+    <p style="color:red;">コマンドは最大60個までです</p>
+  <% } %>
+
+  <!-- ===================== -->
+  <!-- 予約中コマンド一覧 -->
+  <!-- ===================== -->
+  <h3>予約中の命令</h3>
+
+  <% if (!general.commandQueue || general.commandQueue.length === 0) { %>
+    <p>予約されている命令はありません</p>
+  <% } else { %>
+    <ol>
+      <% general.commandQueue.forEach((c, i) => { %>
+        <li>
+          <% if (c === "train") { %>訓練
+          <% } else if (c === "develop") { %>開発
+          <% } else if (c === "rest") { %>休養
+          <% } %>
+        </li>
+      <% }) %>
+    </ol>
+  <% } %>
+
+  <hr>
+
+  <p><a href="/countries">国一覧へ</a></p>
+</body>
+</html>
