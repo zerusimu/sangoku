@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title><%= general.name %> の個人画面</title>
+
+<style>
+.map {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
+  gap: 4px;
+}
+
+.map-cell {
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.map-cell.mine {
+  background: #4caf50;
+  color: white;
+}
+
+.map-cell.enemy {
+  background: #f44336;
+  color: white;
+}
+
+.map-cell.neutral {
+  background: #ccc;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.right {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 4px;
+  text-align: center;
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+  <div class="container">
+     <div class="left">
+<p><a href="/countries">国一覧へ</a></p>
+ <h1>名前：<%= general.name %></h1>
+
+  <p>武力: <%= general.str %></p>
+  <p>知力: <%= general.int %></p>
+  <p>統率: <%= general.lea %></p>
+  <p>魅力: <%= general.cha %></p>
+
+  <% if (country) { %>
+    <h2>所属国</h2>
+    <p>国名: <%= country.name %></p>
+    <p>君主: <%= country.ruler %></p>
+  <% } else { %>
+    <p>無所属</p>
+  <% } %>
+
+  <hr>
+
+<h3>勢力マップ</h3>
+
+<div class="map">
+  <% cities.forEach(city => { %>
+
+    <% let cls = "neutral"; %>
+
+    <% if (city.owner === general.countryId) { %>
+      <% cls = "mine"; %>
+    <% } else if (city.owner) { %>
+      <% cls = "enemy"; %>
+    <% } %>
+
+    <div class="map-cell <%= cls %>"style=" grid-column: <%= (city.x ?? 1) %>;grid-row: <%= (city.y ?? 1) %>;"title="<%= city.name %>（兵 <%= city.soldiers %>）">
+      <%= city.name %>
+    </div>
+
+  <% }) %>
+</div>
+
+
+
+     </div>
+ 
+<div class="right">
+
+
+<h3>一括設定</h3>
+
+<select id="bulkCommand">
+  <option value="">--一括命令--</option>
+  <option value="train">訓練</option>
+  <option value="develop">開発</option>
+  <option value="rest">休養</option>
+</select>
+
+<button type="button" onclick="applyBulk()">一括反映</button>
+
+
+  <!-- ===================== -->
+  <!-- コマンド予約 -->
+  <!-- ===================== -->
+<form action="/command/update" method="post">
+
+<table border="1">
+  <tr>
+    <th>コマ</th>
+    <th>実行予定</th>
+    <th>命令</th>
+  </tr>
+
+  <% schedule.forEach(s => { %>
+    <tr>
+      <td><%= s.index + 1 %></td>
+      <td>
+        <%= s.time.toLocaleDateString("ja-JP") %>
+        <%= s.time.toLocaleTimeString("ja-JP") %>
+      </td>
+      <td>
+        <select name="commands[]">
+          <option value="">（空）</option>
+          <option value="train" <%= s.command==="train"?"selected":"" %>>訓練</option>
+          <option value="develop" <%= s.command==="develop"?"selected":"" %>>開発</option>
+          <option value="rest" <%= s.command==="rest"?"selected":"" %>>休養</option>
+        </select>
+      </td>
+    </tr>
+  <% }) %>
+</table>
+
+<br>
+<button type="submit">保存</button>
+</form>
+
+
+
+  
+</div>
+</div>
+<script>
+function applyBulk() {
+  const value = document.getElementById("bulkCommand").value;
+  if (!value) return;
+
+  document.querySelectorAll("select[name='commands[]']").forEach(sel => {
+    sel.value = value;
+  });
+}
+</script>
+
+
+
+</body>
+</html>
