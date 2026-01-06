@@ -20,6 +20,7 @@
     "countryId": "country_1766038287346",
     "commandQueue": [],
     "lastExecuted": 1766039030444
+<<<<<<< HEAD
   },
   {
     "id": "general_1767672578136",
@@ -264,5 +265,7 @@
       }
     ],
     "lastExecuted": 1767678391116
+=======
+>>>>>>> 02c220341ac2ac1f6c1f548870a29408b5d9cd69
   }
 ]

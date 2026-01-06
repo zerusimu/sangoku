@@ -10,11 +10,14 @@
     "loginId": "bbb",
     "password": "bbb",
     "generalId": "general_1766038287346"
+<<<<<<< HEAD
   },
   {
     "id": "user_1767672578137",
     "loginId": "xxx",
     "password": "xxx",
     "generalId": "general_1767672578136"
+=======
+>>>>>>> 02c220341ac2ac1f6c1f548870a29408b5d9cd69
   }
 ]
