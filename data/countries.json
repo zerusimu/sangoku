@@ -1,0 +1,29 @@
+[
+  {
+    "id": "country_1766034901377",
+    "name": "huku",
+    "ruler": "zxc",
+    "alive": true,
+    "cities": [
+      "city07"
+    ]
+  },
+  {
+    "id": "country_1766038287346",
+    "name": "bbb",
+    "ruler": "bbb",
+    "alive": true,
+    "cities": [
+      "city08"
+    ]
+  },
+  {
+    "id": "country_1767672578136",
+    "name": "xxx",
+    "ruler": "xxx",
+    "alive": true,
+    "cities": [
+      "city02"
+    ]
+  }
+]
