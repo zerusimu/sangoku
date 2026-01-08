@@ -1,9 +1,48 @@
 [
-  { "id": "noumin", 
-  "name": "農民", 
-  "kaikyuu": 0,
-  "okane": 50
- }
+  {
+    "id": "noumin",
+    "name": "農民",
+    "requiredRank": 0,
+    "costMoney": 50,
+    "costRice": 0,
+    "params": {
+      "atk": 1,
+      "def": 1
+    }
+  },
 
 
+  {
+    "id": "infantry",
+    "name": "歩兵",
+    "requiredRank": 1,
+    "costMoney": 100,
+    "costRice": 50,
+    "params": {
+      "atk": 5,
+      "def": 5
+    }
+  },
+  {
+    "id": "cavalry",
+    "name": "騎兵",
+    "requiredRank": 2,
+    "costMoney": 300,
+    "costRice": 100,
+    "params": {
+      "atk": 10,
+      "def": 3
+    }
+  },
+  {
+    "id": "archer",
+    "name": "弓兵",
+    "requiredRank": 1,
+    "costMoney": 150,
+    "costRice": 80,
+    "params": {
+      "atk": 7,
+      "def": 2
+    }
+  }
 ]

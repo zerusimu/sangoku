@@ -1,0 +1,27 @@
+<h1>徴兵</h1>
+
+<p>所持金: <%= general.money %></p>
+<p>兵糧: <%= general.rice %></p>
+
+<form action="/command/tyouhei" method="post">
+  <label>兵種:</label>
+  <select name="heisyuId">
+    <% heisyu.forEach(h => { %>
+      <option value="<%= h.id %>">
+        <%= h.name %>
+        （金:<%= h.costMoney %> 米:<%= h.costRice %>）
+      </option>
+    <% }) %>
+  </select>
+
+  <br><br>
+
+  <label>人数:</label>
+  <input type="number" name="count" min="1" value="1">
+
+  <br><br>
+
+  <button type="submit">徴兵する</button>
+</form>
+
+<a href="/user/<%= userId %>">戻る</a>

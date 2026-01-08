@@ -124,6 +124,7 @@ th, td {
 <select id="bulkCommand">
   <option value="">--一括命令--</option>
   <option value="kunren">訓練</option>
+    <option value="tyouhei">徴兵</option>
   <option value="develop">開発</option>
   <option value="rest">休養</option>
 </select>
@@ -144,21 +145,34 @@ th, td {
   </tr>
 
   <% schedule.forEach(s => { %>
-    <tr>
-      <td><%= s.index + 1 %></td>
-      <td>
-        <%= s.time.toLocaleDateString("ja-JP") %>
-        <%= s.time.toLocaleTimeString("ja-JP") %>
-      </td>
-      <td>
-        <select name="commands[]">
-          <option value="">（空）</option>
-          <option value="kunren" <%= s.command==="kunren"?"selected":"" %>>訓練</option>
-          <option value="develop" <%= s.command==="develop"?"selected":"" %>>開発</option>
-          <option value="rest" <%= s.command==="rest"?"selected":"" %>>休養</option>
-        </select>
-      </td>
-    </tr>
+<tr>
+  <td><%= s.index + 1 %></td>
+  <td>
+    <%= s.time.toLocaleDateString("ja-JP") %>
+    <%= s.time.toLocaleTimeString("ja-JP") %>
+  </td>
+  <td>
+    <select name="commands[]" class="command-select">
+      <option value="">（空）</option>
+      <option value="kunren" <%= s.command==="kunren"?"selected":"" %>>訓練</option>
+      <option value="tyouhei" <%= s.command==="tyouhei"?"selected":"" %>>徴兵</option>
+      <option value="develop" <%= s.command==="develop"?"selected":"" %>>開発</option>
+      <option value="rest" <%= s.command==="rest"?"selected":"" %>>休養</option>
+    </select>
+
+    <!-- 徴兵用入力欄（最初は非表示） -->
+    <div class="tyouhei-input" style="display:none;">
+      <select name="tyouhei_heisyu[]">
+        <% heisyu.forEach(h => { %>
+          <option value="<%= h.id %>"><%= h.name %></option>
+        <% }) %>
+      </select>
+
+      <input type="number" name="tyouhei_count[]" min="1" value="1">
+    </div>
+  </td>
+</tr>
+
   <% }) %>
 </table>
 
@@ -166,21 +180,39 @@ th, td {
 <button type="submit">保存</button>
 </form>
 
+<div class="tyouhei-input" style="display:none;">
+  <select name="tyouhei_heisyu[]">
+    <% heisyu.forEach(h => { %>
+      <option value="<%= h.id %>"><%= h.name %></option>
+    <% }) %>
+  </select>
 
+  <input type="number" name="tyouhei_count[]" min="1" value="1">
+</div>
 
   
 </div>
 </div>
 <script>
-function applyBulk() {
-  const value = document.getElementById("bulkCommand").value;
-  if (!value) return;
 
-  document.querySelectorAll("select[name='commands[]']").forEach(sel => {
-    sel.value = value;
-  });
-}
+document.querySelectorAll("tr").forEach(row => {
+  const select = row.querySelector(".command-select");
+  const tyouheiBox = row.querySelector(".tyouhei-input");
+
+  if (!select || !tyouheiBox) return;
+
+  const update = () => {
+    tyouheiBox.style.display =
+      select.value === "tyouhei" ? "block" : "none";
+  };
+
+  select.addEventListener("change", update);
+  update(); // 初期状態反映
+});
+
+
 </script>
+
 
 
 

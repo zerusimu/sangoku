@@ -1,6 +1,7 @@
 module.exports = {
-  kunren: {
-    execute: require("./kunren")
-  }
+  
+  kunren: require("./kunren"),
+  tyouhei: require("./tyouhei")
 };
+
 

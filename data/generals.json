@@ -51,8 +51,8 @@
     "lea": 65,
     "cha": 100,
     "rank": 5000,
-    "money": 1000,
-    "rice": 500,
+    "money": 978750,
+    "rice": 990000,
     "kunren": 100,
     "army": {
       "name": "義勇兵",
@@ -64,34 +64,243 @@
     "countryId": "country_1767672578136",
     "commandQueue": [
       {
-        "type": "kunren",
-        "executeAt": 1767766975131
+        "type": "tyouhei",
+        "executeAt": 1767853094777,
+        "slot": 4,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       },
       {
-        "type": "kunren",
-        "executeAt": 1767767035131
+        "type": "tyouhei",
+        "executeAt": 1767853154777,
+        "slot": 5,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       },
       {
-        "type": "kunren",
-        "executeAt": 1767767095131
+        "type": "tyouhei",
+        "executeAt": 1767853214777,
+        "slot": 6,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       },
       {
-        "type": "kunren",
-        "executeAt": 1767767155131
+        "type": "tyouhei",
+        "executeAt": 1767853274777,
+        "slot": 7,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       },
       {
-        "type": "kunren",
-        "executeAt": 1767767215131
+        "type": "tyouhei",
+        "executeAt": 1767853334777,
+        "slot": 8,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       },
       {
-        "type": "kunren",
-        "executeAt": 1767767275131
+        "type": "tyouhei",
+        "executeAt": 1767853394777,
+        "slot": 9,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       },
       {
-        "type": "kunren",
-        "executeAt": 1767767335131
+        "type": "tyouhei",
+        "executeAt": 1767853454777,
+        "slot": 10,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853514777,
+        "slot": 11,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853574777,
+        "slot": 12,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853634777,
+        "slot": 13,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853694777,
+        "slot": 14,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853754777,
+        "slot": 15,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853814777,
+        "slot": 16,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853874777,
+        "slot": 17,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853934777,
+        "slot": 18,
+        "data": {
+          "heisyuId": "infantry",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767853994777,
+        "slot": 19,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854054777,
+        "slot": 20,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854114777,
+        "slot": 21,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854174777,
+        "slot": 22,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854234777,
+        "slot": 23,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854294777,
+        "slot": 24,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854354777,
+        "slot": 25,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854414777,
+        "slot": 26,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854474777,
+        "slot": 27,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1767854534777,
+        "slot": 28,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 1
+        }
       }
     ],
-    "lastExecuted": 1767766915131
+    "lastExecuted": 1767852524751,
+    "soldiers": {
+      "infantry": 210,
+      "noumin": 25
+    },
+    "logs": [
+      "1コマ目：歩兵を100人徴兵",
+      "2コマ目：農民を1人徴兵",
+      "1コマ目：農民を1人徴兵",
+      "2コマ目：農民を1人徴兵",
+      "3コマ目：農民を1人徴兵",
+      "4コマ目：農民を1人徴兵"
+    ]
   }
 ]
