@@ -51,8 +51,8 @@
     "lea": 65,
     "cha": 100,
     "rank": 5000,
-    "money": 978750,
-    "rice": 990000,
+    "money": 962550,
+    "rice": 982500,
     "kunren": 100,
     "army": {
       "name": "義勇兵",
@@ -64,235 +64,310 @@
     "countryId": "country_1767672578136",
     "commandQueue": [
       {
-        "type": "tyouhei",
-        "executeAt": 1767853094777,
-        "slot": 4,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939615047,
+        "slot": 0
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853154777,
-        "slot": 5,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939675047,
+        "slot": 1
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853214777,
-        "slot": 6,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939735047,
+        "slot": 2
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853274777,
-        "slot": 7,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939795047,
+        "slot": 3
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853334777,
-        "slot": 8,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939855047,
+        "slot": 4
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853394777,
-        "slot": 9,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939915047,
+        "slot": 5
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853454777,
-        "slot": 10,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767939975047,
+        "slot": 6
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853514777,
-        "slot": 11,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940035047,
+        "slot": 7
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853574777,
-        "slot": 12,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940095047,
+        "slot": 8
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853634777,
-        "slot": 13,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940155047,
+        "slot": 9
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853694777,
-        "slot": 14,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940215047,
+        "slot": 10
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853754777,
-        "slot": 15,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940275047,
+        "slot": 11
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853814777,
-        "slot": 16,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940335047,
+        "slot": 12
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853874777,
-        "slot": 17,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940395047,
+        "slot": 13
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853934777,
-        "slot": 18,
-        "data": {
-          "heisyuId": "infantry",
-          "count": 100
-        }
+        "type": "kunren",
+        "executeAt": 1767940455047,
+        "slot": 14
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767853994777,
-        "slot": 19,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940515047,
+        "slot": 15
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854054777,
-        "slot": 20,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940575047,
+        "slot": 16
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854114777,
-        "slot": 21,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940635047,
+        "slot": 17
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854174777,
-        "slot": 22,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940695047,
+        "slot": 18
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854234777,
-        "slot": 23,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940755047,
+        "slot": 19
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854294777,
-        "slot": 24,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940815047,
+        "slot": 20
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854354777,
-        "slot": 25,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940875047,
+        "slot": 21
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854414777,
-        "slot": 26,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940935047,
+        "slot": 22
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854474777,
-        "slot": 27,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767940995047,
+        "slot": 23
       },
       {
-        "type": "tyouhei",
-        "executeAt": 1767854534777,
-        "slot": 28,
-        "data": {
-          "heisyuId": "noumin",
-          "count": 1
-        }
+        "type": "kunren",
+        "executeAt": 1767941055047,
+        "slot": 24
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941115047,
+        "slot": 25
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941175047,
+        "slot": 26
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941235047,
+        "slot": 27
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941295047,
+        "slot": 28
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941355047,
+        "slot": 29
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941415047,
+        "slot": 30
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941475047,
+        "slot": 31
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941535047,
+        "slot": 32
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941595047,
+        "slot": 33
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941655047,
+        "slot": 34
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941715047,
+        "slot": 35
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941775047,
+        "slot": 36
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941835047,
+        "slot": 37
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941895047,
+        "slot": 38
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767941955047,
+        "slot": 39
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942015047,
+        "slot": 40
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942075047,
+        "slot": 41
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942135047,
+        "slot": 42
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942195047,
+        "slot": 43
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942255047,
+        "slot": 44
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942315047,
+        "slot": 45
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942375047,
+        "slot": 46
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942435047,
+        "slot": 47
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942495047,
+        "slot": 48
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942555047,
+        "slot": 49
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942615047,
+        "slot": 50
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942675047,
+        "slot": 51
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942735047,
+        "slot": 52
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942795047,
+        "slot": 53
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942855047,
+        "slot": 54
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942915047,
+        "slot": 55
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767942975047,
+        "slot": 56
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767943035047,
+        "slot": 57
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767943095047,
+        "slot": 58
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1767943155047,
+        "slot": 59
       }
     ],
-    "lastExecuted": 1767852524751,
+    "lastExecuted": 1767854534777,
     "soldiers": {
-      "infantry": 210,
-      "noumin": 25
+      "infantry": 360,
+      "noumin": 49
     },
     "logs": [
       "1コマ目：歩兵を100人徴兵",
@@ -300,7 +375,72 @@
       "1コマ目：農民を1人徴兵",
       "2コマ目：農民を1人徴兵",
       "3コマ目：農民を1人徴兵",
-      "4コマ目：農民を1人徴兵"
+      "4コマ目：農民を1人徴兵",
+      "8コマ目：農民を1人徴兵",
+      "9コマ目：農民を1人徴兵",
+      "10コマ目：農民を1人徴兵",
+      "11コマ目：農民を1人徴兵",
+      "12コマ目：農民を1人徴兵",
+      "13コマ目：農民を1人徴兵",
+      "15コマ目：農民を1人徴兵",
+      "16コマ目：農民を1人徴兵",
+      "17コマ目：農民を1人徴兵",
+      "1コマ目：歩兵を50人徴兵",
+      "1コマ目：失敗",
+      "1コマ目：失敗",
+      "3コマ目：失敗"
+    ],
+    "recruitQueue": [
+      {
+        "heisyuId": "cavalry",
+        "count": 100,
+        "finishAt": 1767933834729
+      },
+      {
+        "heisyuId": "noumin",
+        "count": 100,
+        "finishAt": 1767933905959
+      },
+      {
+        "heisyuId": "infantry",
+        "count": 100,
+        "finishAt": 1767934101852
+      },
+      {
+        "heisyuId": "cavalry",
+        "count": 100,
+        "finishAt": 1767934145892
+      },
+      {
+        "heisyuId": "cavalry",
+        "count": 100,
+        "finishAt": 1767934315793
+      },
+      {
+        "heisyuId": "noumin",
+        "count": 100,
+        "finishAt": 1767934334049
+      },
+      {
+        "heisyuId": "infantry",
+        "count": 100,
+        "finishAt": 1767935462735
+      },
+      {
+        "heisyuId": "cavalry",
+        "count": 100,
+        "finishAt": 1767935523206
+      },
+      {
+        "heisyuId": "cavalry",
+        "count": 100,
+        "finishAt": 1767936419517
+      },
+      {
+        "heisyuId": "noumin",
+        "count": 100,
+        "finishAt": 1767939563675
+      }
     ]
   }
 ]

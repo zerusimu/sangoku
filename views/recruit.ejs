@@ -1,0 +1,20 @@
+<h1>徴兵（コマ <%= index + 1 %>）</h1>
+
+<p>武将：<%= general.name %></p>
+
+<form action="/recruit/<%= index %>" method="post">
+  <label>兵種</label>
+  <select name="heisyuId">
+    <% heisyu.forEach(h => { %>
+      <option value="<%= h.id %>"><%= h.name %></option>
+    <% }) %>
+  </select>
+
+  <br><br>
+
+  <label>人数</label>
+  <input type="number" name="count" min="1" value="100">
+
+  <br><br>
+  <button type="submit">徴兵開始</button>
+</form>

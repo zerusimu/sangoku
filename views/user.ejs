@@ -20,36 +20,22 @@
   font-size: 12px;
 }
 
-.map-cell.mine {
-  background: #4caf50;
-  color: white;
-}
-
-.map-cell.enemy {
-  background: #f44336;
-  color: white;
-}
-
-.map-cell.neutral {
-  background: #ccc;
-}
+.map-cell.mine { background: #4caf50; color: white; }
+.map-cell.enemy { background: #f44336; color: white; }
+.map-cell.neutral { background: #ccc; }
 
 .container {
   display: flex;
   gap: 20px;
 }
 
-.left {
-  width: 40%;
+.left, .right {
   padding: 10px;
   border: 1px solid #ccc;
 }
 
-.right {
-  width: 60%;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
+.left { width: 40%; }
+.right { width: 60%; }
 
 table {
   width: 100%;
@@ -61,26 +47,23 @@ th, td {
   padding: 4px;
   text-align: center;
 }
-
-
-
-
 </style>
-
-
-
 </head>
-<body>
-  <div class="container">
-     <div class="left">
-<p><a href="/countries">国一覧へ</a></p>
- <h1>名前：<%= general.name %></h1>
 
+<body>
+<div class="container">
+
+<!-- ================= 左 ================= -->
+<div class="left">
+  <p><a href="/countries">国一覧へ</a></p>
+
+  <h1>名前：<%= general.name %></h1>
   <p>武力: <%= general.str %></p>
   <p>知力: <%= general.int %></p>
   <p>統率: <%= general.lea %></p>
   <p>魅力: <%= general.cha %></p>
   <p>訓練: <%= general.kunren %></p>
+ <p>お金: <%= general.money %></p>
 
   <% if (country) { %>
     <h2>所属国</h2>
@@ -92,129 +75,128 @@ th, td {
 
   <hr>
 
-<h3>勢力マップ</h3>
+  <h3>勢力マップ</h3>
+  <div class="map">
+<% cities.forEach(city => { %>
+  <% 
+    let cls = "neutral";
+    if (city.owner === general.countryId) {
+      cls = "mine";
+    } else if (city.owner) {
+      cls = "enemy";
+    }
+  %>
 
-<div class="map">
-  <% cities.forEach(city => { %>
+  <div class="map-cell <%= cls %>"style="grid-column:<%= city.x ?? 1 %>; grid-row:<%= city.y ?? 1 %>;"title="<%= city.name %>（兵 <%= city.soldiers %>）">
+    <%= city.name %>
+  </div>
+<% }) %>
 
-    <% let cls = "neutral"; %>
-
-    <% if (city.owner === general.countryId) { %>
-      <% cls = "mine"; %>
-    <% } else if (city.owner) { %>
-      <% cls = "enemy"; %>
-    <% } %>
-
-    <div class="map-cell <%= cls %>"style=" grid-column: <%= (city.x ?? 1) %>;grid-row: <%= (city.y ?? 1) %>;"title="<%= city.name %>（兵 <%= city.soldiers %>）">
-      <%= city.name %>
-    </div>
-
-  <% }) %>
+  </div>
 </div>
 
-
-
-     </div>
- 
+<!-- ================= 右 ================= -->
 <div class="right">
 
-
 <h3>一括設定</h3>
-
 <select id="bulkCommand">
   <option value="">--一括命令--</option>
   <option value="kunren">訓練</option>
-    <option value="tyouhei">徴兵</option>
-  <option value="develop">開発</option>
-  <option value="rest">休養</option>
+  <option value="tyouhei">徴兵</option>
 </select>
-
 <button type="button" onclick="applyBulk()">一括反映</button>
 
+<hr>
 
-  <!-- ===================== -->
-  <!-- コマンド予約 -->
-  <!-- ===================== -->
 <form action="/command/update" method="post">
 
-<table border="1">
+<table>
   <tr>
     <th>コマ</th>
     <th>実行予定</th>
     <th>命令</th>
   </tr>
 
-  <% schedule.forEach(s => { %>
+<% schedule.forEach(s => { %>
 <tr>
   <td><%= s.index + 1 %></td>
   <td>
-    <%= s.time.toLocaleDateString("ja-JP") %>
+    <%= s.time.toLocaleDateString("ja-JP") %><br>
     <%= s.time.toLocaleTimeString("ja-JP") %>
   </td>
   <td>
-    <select name="commands[]" class="command-select">
-      <option value="">（空）</option>
-      <option value="kunren" <%= s.command==="kunren"?"selected":"" %>>訓練</option>
-      <option value="tyouhei" <%= s.command==="tyouhei"?"selected":"" %>>徴兵</option>
-      <option value="develop" <%= s.command==="develop"?"selected":"" %>>開発</option>
-      <option value="rest" <%= s.command==="rest"?"selected":"" %>>休養</option>
-    </select>
+    <!-- 命令 -->
+<select
+  class="command-select"name="commands[<%= s.index %>]"onchange="onCommandChange(this, <%= s.index %>)">
 
-    <!-- 徴兵用入力欄（最初は非表示） -->
-    <div class="tyouhei-input" style="display:none;">
-      <select name="tyouhei_heisyu[]">
-        <% heisyu.forEach(h => { %>
-          <option value="<%= h.id %>"><%= h.name %></option>
-        <% }) %>
-      </select>
+  <option value="" <%= s.command === "" ? "selected" : "" %>>（空）</option>
+  <option value="kunren" <%= s.command === "kunren" ? "selected" : "" %>>訓練</option>
+<option value="tyouhei" <%= s.command === "tyouhei" ? "selected" : "" %>>徴兵</option>
+</select>
 
-      <input type="number" name="tyouhei_count[]" min="1" value="1">
-    </div>
+
+    <!-- 徴兵入力 -->
+<div class="tyouhei-input"style="<%= s.command === 'tyouhei' ? '' : 'display:none;' %>">
+
+  <select name="tyouhei_heisyu[<%= s.index %>]">
+    <% heisyu.forEach(h => { %>
+   <option value="<%= h.id %>"
+  <%= s.heisyuId === h.id ? "selected" : "" %>>
+  <%= h.name %>
+</option>
+    <% }) %>
+  </select>
+
+  <input type="number"
+         name="tyouhei_count[<%= s.index %>]"
+         min="1"
+         value="<%= s.count || 1 %>">
+</div>
+
   </td>
 </tr>
+<% }) %>
 
-  <% }) %>
 </table>
 
 <br>
 <button type="submit">保存</button>
 </form>
 
-<div class="tyouhei-input" style="display:none;">
-  <select name="tyouhei_heisyu[]">
-    <% heisyu.forEach(h => { %>
-      <option value="<%= h.id %>"><%= h.name %></option>
-    <% }) %>
-  </select>
-
-  <input type="number" name="tyouhei_count[]" min="1" value="1">
+</div>
 </div>
 
-  
-</div>
-</div>
 <script>
+function onCommandChange(select, index) {
+  if (select.value === "tyouhei") {
+    location.href = `/recruit/${index}`;
+  }
+}
+
+function applyBulk() {
+  const value = document.getElementById("bulkCommand").value;
+  if (!value) return;
+
+  document.querySelectorAll(".command-select").forEach(sel => {
+    sel.value = value;
+    sel.dispatchEvent(new Event("change"));
+  });
+}
 
 document.querySelectorAll("tr").forEach(row => {
   const select = row.querySelector(".command-select");
-  const tyouheiBox = row.querySelector(".tyouhei-input");
-
-  if (!select || !tyouheiBox) return;
+  const box = row.querySelector(".tyouhei-input");
+  if (!select || !box) return;
 
   const update = () => {
-    tyouheiBox.style.display =
-      select.value === "tyouhei" ? "block" : "none";
+    box.style.display = select.value === "tyouhei" ? "block" : "none";
   };
 
   select.addEventListener("change", update);
-  update(); // 初期状態反映
+  update();
 });
 
-
 </script>
-
-
-
 
 </body>
 </html>
