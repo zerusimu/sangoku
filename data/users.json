@@ -16,5 +16,11 @@
     "loginId": "xxx",
     "password": "xxx",
     "generalId": "general_1767672578136"
+  },
+  {
+    "id": "user_1768370935342",
+    "loginId": "asd",
+    "password": "asd",
+    "generalId": "general_1768370935342"
   }
 ]

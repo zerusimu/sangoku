@@ -93,6 +93,39 @@ th, td {
 <% }) %>
 
   </div>
+
+<h2>過去のコマンドログ</h2>
+
+<table border="1">
+  <tr>
+    <th>実行時刻</th>
+    <th>コマンド</th>
+    <th>内容</th>
+  </tr>
+
+  <% if (commandLog.length === 0) { %>
+    <tr>
+      <td colspan="3">まだ実行されたコマンドはありません</td>
+    </tr>
+  <% } %>
+
+  <% commandLog.slice().reverse().forEach(log => { %>
+    <tr>
+      <td><%= new Date(log.executeAt).toLocaleString() %></td>
+      <td><%= log.type %></td>
+      <td>
+        <% if (log.type === "tyouhei") { %>
+          兵種: <%= log.data.heisyuId %>,
+          数: <%= log.data.count %>
+        <% } else { %>
+          -
+        <% } %>
+      </td>
+    </tr>
+  <% }) %>
+</table>
+
+
 </div>
 
 <!-- ================= 右 ================= -->

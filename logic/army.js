@@ -1,7 +1,12 @@
 function recruit(general, heisyuId, count) {
-  general.army = {
-    type: heisyuId,
-    count: (general.army?.count || 0) + count
+  if (!general.soldiers) general.soldiers = {};
+
+  general.soldiers[heisyuId] ||= 0;
+  general.soldiers[heisyuId] += count;
+
+  return {
+    success: true,
+    heisyuName: heisyuId
   };
 }
 
