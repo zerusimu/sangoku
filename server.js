@@ -196,17 +196,20 @@ app.get("/user/:id", (req, res) => {
   const countries = loadJSON("countries.json");
   const cities = loadJSON("cities.json");
   const heisyu = loadJSON("heisyu.json");
+  const INTERVAL = 60 * 1000;
 
   // ✅ ① まず general を取得
   const general = generals.find(g => g.id === req.params.id);
   if (!general) return res.send("武将が存在しません");
 
+  // 👇ここに入れる
+const alignedNow =
+  Math.floor(Date.now() / INTERVAL) * INTERVAL;
 
-  // ✅ ② 取得後に初期化処理
-  if (!general.scheduleBaseTime || isNaN(general.scheduleBaseTime)) {
-    general.scheduleBaseTime = Date.now();
-    saveJSON("generals.json", generals);
-  }
+general.scheduleBaseTime = alignedNow;
+saveJSON("generals.json", generals);
+
+
 
 // ===== 表示前に追いつき処理 =====
 const now = Date.now();
@@ -241,8 +244,6 @@ if (Array.isArray(general.commandQueue)) {
 }
 
   const country = countries.find(c => c.id === general.countryId);
-
-  const INTERVAL = 60 * 1000;
   const baseTime = Number(general.scheduleBaseTime);
 
   const schedule = [];
@@ -255,13 +256,13 @@ if (Array.isArray(general.commandQueue)) {
     const executeAt =
       cmd?.executeAt ?? baseTime + (i + 1) * INTERVAL;
 
-    schedule.push({
-      index: i,
-      time: new Date(executeAt),
-      command: cmd?.type ?? "",
-      heisyuId: cmd?.data?.heisyuId ?? "",
-      count: cmd?.data?.count ?? 0
-    });
+ schedule.push({
+  index: i,
+  command: cmd?.type ?? "",
+  heisyuId: cmd?.data?.heisyuId ?? "",
+  count: cmd?.data?.count ?? 0
+});
+
   }
 
   res.render("user", {
@@ -270,14 +271,10 @@ if (Array.isArray(general.commandQueue)) {
     cities,
     schedule,
     heisyu,
-    commandLog: general.commandLog
+    commandLog: general.commandLog,
+      intervalMinutes: 1 // 1分
   });
 });
-
-
-
-
-
 
 
 
@@ -428,7 +425,10 @@ app.post("/recruit/:index", (req, res) => {
   if (!general) return res.redirect("/login");
 
   const INTERVAL = 60 * 1000;
-  const executeAt = Date.now() + (index + 1) * INTERVAL;
+
+  const baseTime = Number(general.scheduleBaseTime);
+
+const executeAt = baseTime + (index + 1) * INTERVAL;
 
   if (!general.commandQueue) general.commandQueue = [];
 
@@ -477,7 +477,9 @@ app.post("/command/recruit", (req, res) => {
 });
 
 
-
+function getGameNow(general) {
+  return Date.now();
+}
 
 
 

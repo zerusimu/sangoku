@@ -131,6 +131,12 @@ th, td {
 <!-- ================= 右 ================= -->
 <div class="right">
 
+<p style="color:red">
+  DEBUG baseTime:
+  <%= new Date(general.scheduleBaseTime).toLocaleString() %>
+</p>
+
+
 <h3>一括設定</h3>
 <select id="bulkCommand">
   <option value="">--一括命令--</option>
@@ -154,8 +160,9 @@ th, td {
 <tr>
   <td><%= s.index + 1 %></td>
   <td>
-    <%= s.time.toLocaleDateString("ja-JP") %><br>
-    <%= s.time.toLocaleTimeString("ja-JP") %>
+   <span class="schedule-time"
+        data-index="<%= s.index %>"></span>
+
   </td>
   <td>
     <!-- 命令 -->
@@ -229,6 +236,22 @@ document.querySelectorAll("tr").forEach(row => {
   update();
 });
 
+const BASE_TIME = <%= general.scheduleBaseTime %>;
+const INTERVAL = <%= intervalMinutes %> * 60 * 1000;
+
+function updateScheduleTime() {
+  document.querySelectorAll(".schedule-time").forEach(el => {
+    const index = Number(el.dataset.index);
+    const time = new Date(BASE_TIME + index * INTERVAL);
+
+    el.innerHTML =
+      time.toLocaleDateString("ja-JP") + "<br>" +
+      time.toLocaleTimeString("ja-JP");
+  });
+}
+
+updateScheduleTime();
+setInterval(updateScheduleTime, 1000);
 </script>
 
 </body>

@@ -62,11 +62,86 @@
       ]
     },
     "countryId": "country_1767672578136",
-    "commandQueue": [],
-    "lastExecuted": 1768368830208,
+    "commandQueue": [
+      null,
+      {
+        "type": "tyouhei",
+        "slot": 2,
+        "executeAt": 1768458420000,
+        "data": {
+          "heisyuId": "infantry",
+          "count": 100
+        }
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        "type": "tyouhei",
+        "slot": 59,
+        "executeAt": 1768461780000,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      }
+    ],
+    "lastExecuted": 1768456800883,
     "soldiers": {
-      "infantry": 560,
-      "noumin": 749,
+      "infantry": 660,
+      "noumin": 1149,
       "archer": 200,
       "cavalry": 100
     },
@@ -228,7 +303,7 @@
         "finishAt": 1768363291473
       }
     ],
-    "scheduleBaseTime": 1768365590208,
+    "scheduleBaseTime": 1768458300000,
     "commandLog": [
       {
         "type": "kunren",
@@ -673,6 +748,1316 @@
         "slot": 59,
         "executeAt": 1768369190208,
         "executedAt": 1768370852421
+      },
+      {
+        "type": "tyouhei",
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        },
+        "slot": 0,
+        "executeAt": 1768452067037,
+        "executedAt": 1768452260416
+      },
+      {
+        "type": "tyouhei",
+        "data": {
+          "heisyuId": "infantry",
+          "count": 100
+        },
+        "slot": 0,
+        "executeAt": 1768454745011,
+        "executedAt": 1768454859043
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 0,
+        "executeAt": 1768365650208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 1,
+        "executeAt": 1768365710208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 2,
+        "executeAt": 1768365770208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 3,
+        "executeAt": 1768365830208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 4,
+        "executeAt": 1768365890208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 5,
+        "executeAt": 1768365950208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 6,
+        "executeAt": 1768366010208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 7,
+        "executeAt": 1768366070208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 8,
+        "executeAt": 1768366130208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 9,
+        "executeAt": 1768366190208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 10,
+        "executeAt": 1768366250208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 11,
+        "executeAt": 1768366310208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 12,
+        "executeAt": 1768366370208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 13,
+        "executeAt": 1768366430208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 14,
+        "executeAt": 1768366490208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 15,
+        "executeAt": 1768366550208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 16,
+        "executeAt": 1768366610208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 17,
+        "executeAt": 1768366670208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 18,
+        "executeAt": 1768366730208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 19,
+        "executeAt": 1768366790208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 20,
+        "executeAt": 1768366850208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 21,
+        "executeAt": 1768366910208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 22,
+        "executeAt": 1768366970208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 23,
+        "executeAt": 1768367030208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 24,
+        "executeAt": 1768367090208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 25,
+        "executeAt": 1768367150208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 26,
+        "executeAt": 1768367210208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 27,
+        "executeAt": 1768367270208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 28,
+        "executeAt": 1768367330208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 29,
+        "executeAt": 1768367390208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 30,
+        "executeAt": 1768367450208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 31,
+        "executeAt": 1768367510208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 32,
+        "executeAt": 1768367570208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 33,
+        "executeAt": 1768367630208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 34,
+        "executeAt": 1768367690208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 35,
+        "executeAt": 1768367750208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 36,
+        "executeAt": 1768367810208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 37,
+        "executeAt": 1768367870208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 38,
+        "executeAt": 1768367930208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 39,
+        "executeAt": 1768367990208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 40,
+        "executeAt": 1768368050208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 41,
+        "executeAt": 1768368110208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 42,
+        "executeAt": 1768368170208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 43,
+        "executeAt": 1768368230208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 44,
+        "executeAt": 1768368290208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 45,
+        "executeAt": 1768368350208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 46,
+        "executeAt": 1768368410208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 47,
+        "executeAt": 1768368470208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 48,
+        "executeAt": 1768368530208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 49,
+        "executeAt": 1768368590208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 50,
+        "executeAt": 1768368650208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 51,
+        "executeAt": 1768368710208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 52,
+        "executeAt": 1768368770208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 53,
+        "executeAt": 1768368830208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 54,
+        "executeAt": 1768368890208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 55,
+        "executeAt": 1768368950208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 56,
+        "executeAt": 1768369010208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 57,
+        "executeAt": 1768369070208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 58,
+        "executeAt": 1768369130208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 59,
+        "executeAt": 1768369190208,
+        "executedAt": 1768455231508
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 0,
+        "executeAt": 1768365650208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 1,
+        "executeAt": 1768365710208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 2,
+        "executeAt": 1768365770208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 3,
+        "executeAt": 1768365830208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 4,
+        "executeAt": 1768365890208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 5,
+        "executeAt": 1768365950208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 6,
+        "executeAt": 1768366010208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 7,
+        "executeAt": 1768366070208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 8,
+        "executeAt": 1768366130208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 9,
+        "executeAt": 1768366190208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 10,
+        "executeAt": 1768366250208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 11,
+        "executeAt": 1768366310208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 12,
+        "executeAt": 1768366370208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 13,
+        "executeAt": 1768366430208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 14,
+        "executeAt": 1768366490208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 15,
+        "executeAt": 1768366550208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 16,
+        "executeAt": 1768366610208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 17,
+        "executeAt": 1768366670208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 18,
+        "executeAt": 1768366730208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 19,
+        "executeAt": 1768366790208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 20,
+        "executeAt": 1768366850208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 21,
+        "executeAt": 1768366910208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 22,
+        "executeAt": 1768366970208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 23,
+        "executeAt": 1768367030208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 24,
+        "executeAt": 1768367090208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 25,
+        "executeAt": 1768367150208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 26,
+        "executeAt": 1768367210208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 27,
+        "executeAt": 1768367270208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 28,
+        "executeAt": 1768367330208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 29,
+        "executeAt": 1768367390208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 30,
+        "executeAt": 1768367450208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 31,
+        "executeAt": 1768367510208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 32,
+        "executeAt": 1768367570208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 33,
+        "executeAt": 1768367630208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 34,
+        "executeAt": 1768367690208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 35,
+        "executeAt": 1768367750208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 36,
+        "executeAt": 1768367810208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 37,
+        "executeAt": 1768367870208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 38,
+        "executeAt": 1768367930208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 39,
+        "executeAt": 1768367990208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 40,
+        "executeAt": 1768368050208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 41,
+        "executeAt": 1768368110208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 42,
+        "executeAt": 1768368170208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 43,
+        "executeAt": 1768368230208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 44,
+        "executeAt": 1768368290208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 45,
+        "executeAt": 1768368350208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 46,
+        "executeAt": 1768368410208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 47,
+        "executeAt": 1768368470208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 48,
+        "executeAt": 1768368530208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 49,
+        "executeAt": 1768368590208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 50,
+        "executeAt": 1768368650208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 51,
+        "executeAt": 1768368710208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 52,
+        "executeAt": 1768368770208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 53,
+        "executeAt": 1768368830208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 54,
+        "executeAt": 1768368890208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 55,
+        "executeAt": 1768368950208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 56,
+        "executeAt": 1768369010208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 57,
+        "executeAt": 1768369070208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 58,
+        "executeAt": 1768369130208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 59,
+        "executeAt": 1768369190208,
+        "executedAt": 1768455334797
+      },
+      {
+        "type": "tyouhei",
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        },
+        "slot": 0,
+        "executeAt": 1768456800883,
+        "executedAt": 1768456982268
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 0,
+        "executeAt": 1768365650208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 1,
+        "executeAt": 1768365710208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 2,
+        "executeAt": 1768365770208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 3,
+        "executeAt": 1768365830208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 4,
+        "executeAt": 1768365890208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 5,
+        "executeAt": 1768365950208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 6,
+        "executeAt": 1768366010208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 7,
+        "executeAt": 1768366070208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 8,
+        "executeAt": 1768366130208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 9,
+        "executeAt": 1768366190208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 10,
+        "executeAt": 1768366250208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 11,
+        "executeAt": 1768366310208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 12,
+        "executeAt": 1768366370208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 13,
+        "executeAt": 1768366430208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 14,
+        "executeAt": 1768366490208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 15,
+        "executeAt": 1768366550208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 16,
+        "executeAt": 1768366610208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 17,
+        "executeAt": 1768366670208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 18,
+        "executeAt": 1768366730208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 19,
+        "executeAt": 1768366790208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 20,
+        "executeAt": 1768366850208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 21,
+        "executeAt": 1768366910208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 22,
+        "executeAt": 1768366970208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 23,
+        "executeAt": 1768367030208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 24,
+        "executeAt": 1768367090208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 25,
+        "executeAt": 1768367150208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 26,
+        "executeAt": 1768367210208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 27,
+        "executeAt": 1768367270208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 28,
+        "executeAt": 1768367330208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 29,
+        "executeAt": 1768367390208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 30,
+        "executeAt": 1768367450208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 31,
+        "executeAt": 1768367510208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 32,
+        "executeAt": 1768367570208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 33,
+        "executeAt": 1768367630208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 34,
+        "executeAt": 1768367690208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 35,
+        "executeAt": 1768367750208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 36,
+        "executeAt": 1768367810208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 37,
+        "executeAt": 1768367870208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 38,
+        "executeAt": 1768367930208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 39,
+        "executeAt": 1768367990208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 40,
+        "executeAt": 1768368050208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 41,
+        "executeAt": 1768368110208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 42,
+        "executeAt": 1768368170208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 43,
+        "executeAt": 1768368230208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 44,
+        "executeAt": 1768368290208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 45,
+        "executeAt": 1768368350208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 46,
+        "executeAt": 1768368410208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 47,
+        "executeAt": 1768368470208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 48,
+        "executeAt": 1768368530208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 49,
+        "executeAt": 1768368590208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 50,
+        "executeAt": 1768368650208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 51,
+        "executeAt": 1768368710208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 52,
+        "executeAt": 1768368770208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 53,
+        "executeAt": 1768368830208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 54,
+        "executeAt": 1768368890208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 55,
+        "executeAt": 1768368950208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 56,
+        "executeAt": 1768369010208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 57,
+        "executeAt": 1768369070208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 58,
+        "executeAt": 1768369130208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "kunren",
+        "data": {},
+        "slot": 59,
+        "executeAt": 1768369190208,
+        "executedAt": 1768457159732
+      },
+      {
+        "type": "tyouhei",
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        },
+        "slot": 0,
+        "executeAt": 1768458240000,
+        "executedAt": 1768458247095
+      },
+      {
+        "type": "tyouhei",
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        },
+        "slot": 0,
+        "executeAt": 1768458300000,
+        "executedAt": 1768458303890
       }
     ]
   },
@@ -755,261 +2140,360 @@
         "slot": 9,
         "executeAt": 1768371543171,
         "executedAt": 1768371583511
-      }
-    ],
-    "commandQueue": [
+      },
       {
         "type": "kunren",
+        "data": {},
         "slot": 10,
-        "executeAt": 1768371603171
+        "executeAt": 1768371603171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 11,
-        "executeAt": 1768371663171
+        "executeAt": 1768371663171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 12,
-        "executeAt": 1768371723171
+        "executeAt": 1768371723171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 13,
-        "executeAt": 1768371783171
+        "executeAt": 1768371783171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 14,
-        "executeAt": 1768371843171
+        "executeAt": 1768371843171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 15,
-        "executeAt": 1768371903171
+        "executeAt": 1768371903171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 16,
-        "executeAt": 1768371963171
+        "executeAt": 1768371963171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 17,
-        "executeAt": 1768372023171
+        "executeAt": 1768372023171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 18,
-        "executeAt": 1768372083171
+        "executeAt": 1768372083171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 19,
-        "executeAt": 1768372143171
+        "executeAt": 1768372143171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 20,
-        "executeAt": 1768372203171
+        "executeAt": 1768372203171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 21,
-        "executeAt": 1768372263171
+        "executeAt": 1768372263171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 22,
-        "executeAt": 1768372323171
+        "executeAt": 1768372323171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 23,
-        "executeAt": 1768372383171
+        "executeAt": 1768372383171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 24,
-        "executeAt": 1768372443171
+        "executeAt": 1768372443171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 25,
-        "executeAt": 1768372503171
+        "executeAt": 1768372503171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 26,
-        "executeAt": 1768372563171
+        "executeAt": 1768372563171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 27,
-        "executeAt": 1768372623171
+        "executeAt": 1768372623171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 28,
-        "executeAt": 1768372683171
+        "executeAt": 1768372683171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 29,
-        "executeAt": 1768372743171
+        "executeAt": 1768372743171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 30,
-        "executeAt": 1768372803171
+        "executeAt": 1768372803171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 31,
-        "executeAt": 1768372863171
+        "executeAt": 1768372863171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 32,
-        "executeAt": 1768372923171
+        "executeAt": 1768372923171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 33,
-        "executeAt": 1768372983171
+        "executeAt": 1768372983171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 34,
-        "executeAt": 1768373043171
+        "executeAt": 1768373043171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 35,
-        "executeAt": 1768373103171
+        "executeAt": 1768373103171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 36,
-        "executeAt": 1768373163171
+        "executeAt": 1768373163171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 37,
-        "executeAt": 1768373223171
+        "executeAt": 1768373223171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 38,
-        "executeAt": 1768373283171
+        "executeAt": 1768373283171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 39,
-        "executeAt": 1768373343171
+        "executeAt": 1768373343171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 40,
-        "executeAt": 1768373403171
+        "executeAt": 1768373403171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 41,
-        "executeAt": 1768373463171
+        "executeAt": 1768373463171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 42,
-        "executeAt": 1768373523171
+        "executeAt": 1768373523171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 43,
-        "executeAt": 1768373583171
+        "executeAt": 1768373583171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 44,
-        "executeAt": 1768373643171
+        "executeAt": 1768373643171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 45,
-        "executeAt": 1768373703171
+        "executeAt": 1768373703171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 46,
-        "executeAt": 1768373763171
+        "executeAt": 1768373763171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 47,
-        "executeAt": 1768373823171
+        "executeAt": 1768373823171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 48,
-        "executeAt": 1768373883171
+        "executeAt": 1768373883171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 49,
-        "executeAt": 1768373943171
+        "executeAt": 1768373943171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 50,
-        "executeAt": 1768374003171
+        "executeAt": 1768374003171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 51,
-        "executeAt": 1768374063171
+        "executeAt": 1768374063171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 52,
-        "executeAt": 1768374123171
+        "executeAt": 1768374123171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 53,
-        "executeAt": 1768374183171
+        "executeAt": 1768374183171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 54,
-        "executeAt": 1768374243171
+        "executeAt": 1768374243171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 55,
-        "executeAt": 1768374303171
+        "executeAt": 1768374303171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 56,
-        "executeAt": 1768374363171
+        "executeAt": 1768374363171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 57,
-        "executeAt": 1768374423171
+        "executeAt": 1768374423171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 58,
-        "executeAt": 1768374483171
+        "executeAt": 1768374483171,
+        "executedAt": 1768451965408
       },
       {
         "type": "kunren",
+        "data": {},
         "slot": 59,
-        "executeAt": 1768374543171
+        "executeAt": 1768374543171,
+        "executedAt": 1768451965408
       }
     ],
+    "commandQueue": [],
     "kunren": 100,
-    "lastExecuted": 1768371543171
+    "lastExecuted": 1768374543171
   }
 ]
