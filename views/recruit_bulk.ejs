@@ -1,0 +1,19 @@
+<h1>一括徴兵</h1>
+
+<form action="/recruit/bulk" method="post">
+  <label>兵種</label>
+  <select name="heisyuId">
+    <% heisyu.forEach(h => { %>
+      <option value="<%= h.id %>"><%= h.name %></option>
+    <% }) %>
+  </select>
+
+  <br><br>
+
+  <label>人数</label>
+  <input type="number" name="count" min="1" required>
+
+  <br><br>
+
+  <button type="submit">1〜60コマすべて徴兵</button>
+</form>

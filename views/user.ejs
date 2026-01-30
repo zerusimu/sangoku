@@ -136,15 +136,14 @@ th, td {
   <%= new Date(general.scheduleBaseTime).toLocaleString() %>
 </p>
 
-
 <h3>一括設定</h3>
 <select id="bulkCommand">
   <option value="">--一括命令--</option>
   <option value="kunren">訓練</option>
+  
   <option value="tyouhei">徴兵</option>
 </select>
 <button type="button" onclick="applyBulk()">一括反映</button>
-
 <hr>
 
 <form action="/command/update" method="post">
@@ -207,7 +206,12 @@ th, td {
 </div>
 
 <script>
+
+let isBulkApplying = false;
+
 function onCommandChange(select, index) {
+  if (isBulkApplying) return; // ★ 一括時は遷移しない
+
   if (select.value === "tyouhei") {
     location.href = `/recruit/${index}`;
   }
@@ -217,11 +221,18 @@ function applyBulk() {
   const value = document.getElementById("bulkCommand").value;
   if (!value) return;
 
-  document.querySelectorAll(".command-select").forEach(sel => {
+  document.querySelectorAll(".command-select").forEach((sel, index) => {
     sel.value = value;
-    sel.dispatchEvent(new Event("change"));
+
+    // ✅ 訓練はその場で反映
+    if (value === "kunren") {
+      sel.dispatchEvent(new Event("change"));
+    }
+
+    // ❌ 徴兵は画面遷移させない（bulk 専用ページを使う）
   });
 }
+
 
 document.querySelectorAll("tr").forEach(row => {
   const select = row.querySelector(".command-select");
@@ -242,7 +253,7 @@ const INTERVAL = <%= intervalMinutes %> * 60 * 1000;
 function updateScheduleTime() {
   document.querySelectorAll(".schedule-time").forEach(el => {
     const index = Number(el.dataset.index);
-    const time = new Date(BASE_TIME + index * INTERVAL);
+    const time = new Date(BASE_TIME + index    * INTERVAL);
 
     el.innerHTML =
       time.toLocaleDateString("ja-JP") + "<br>" +
