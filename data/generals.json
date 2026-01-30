@@ -62,293 +62,7 @@
       ]
     },
     "countryId": "country_1767672578136",
-    "commandQueue": [
-      {
-        "type": "kunren",
-        "slot": 1,
-        "executeAt": 1769495400000
-      },
-      {
-        "type": "kunren",
-        "slot": 2,
-        "executeAt": 1769495460000
-      },
-      {
-        "type": "kunren",
-        "slot": 3,
-        "executeAt": 1769495520000
-      },
-      {
-        "type": "kunren",
-        "slot": 4,
-        "executeAt": 1769495580000
-      },
-      {
-        "type": "kunren",
-        "slot": 5,
-        "executeAt": 1769495640000
-      },
-      {
-        "type": "kunren",
-        "slot": 7,
-        "executeAt": 1769495400000
-      },
-      {
-        "type": "kunren",
-        "slot": 8,
-        "executeAt": 1769495460000
-      },
-      {
-        "type": "kunren",
-        "slot": 9,
-        "executeAt": 1769495520000
-      },
-      {
-        "type": "kunren",
-        "slot": 10,
-        "executeAt": 1769495580000
-      },
-      {
-        "type": "kunren",
-        "slot": 11,
-        "executeAt": 1769495640000
-      },
-      {
-        "type": "kunren",
-        "slot": 12,
-        "executeAt": 1769495700000
-      },
-      {
-        "type": "kunren",
-        "slot": 13,
-        "executeAt": 1769495760000
-      },
-      {
-        "type": "kunren",
-        "slot": 14,
-        "executeAt": 1769495820000
-      },
-      {
-        "type": "kunren",
-        "slot": 15,
-        "executeAt": 1769495880000
-      },
-      {
-        "type": "kunren",
-        "slot": 16,
-        "executeAt": 1769495940000
-      },
-      {
-        "type": "kunren",
-        "slot": 17,
-        "executeAt": 1769496000000
-      },
-      {
-        "type": "kunren",
-        "slot": 18,
-        "executeAt": 1769496060000
-      },
-      {
-        "type": "kunren",
-        "slot": 19,
-        "executeAt": 1769496120000
-      },
-      {
-        "type": "kunren",
-        "slot": 20,
-        "executeAt": 1769496180000
-      },
-      {
-        "type": "kunren",
-        "slot": 21,
-        "executeAt": 1769496240000
-      },
-      {
-        "type": "kunren",
-        "slot": 22,
-        "executeAt": 1769496300000
-      },
-      {
-        "type": "kunren",
-        "slot": 23,
-        "executeAt": 1769496360000
-      },
-      {
-        "type": "kunren",
-        "slot": 24,
-        "executeAt": 1769496420000
-      },
-      {
-        "type": "kunren",
-        "slot": 25,
-        "executeAt": 1769496480000
-      },
-      {
-        "type": "kunren",
-        "slot": 26,
-        "executeAt": 1769496540000
-      },
-      {
-        "type": "kunren",
-        "slot": 27,
-        "executeAt": 1769496600000
-      },
-      {
-        "type": "kunren",
-        "slot": 28,
-        "executeAt": 1769496660000
-      },
-      {
-        "type": "kunren",
-        "slot": 29,
-        "executeAt": 1769496720000
-      },
-      {
-        "type": "kunren",
-        "slot": 30,
-        "executeAt": 1769496780000
-      },
-      {
-        "type": "kunren",
-        "slot": 31,
-        "executeAt": 1769496840000
-      },
-      {
-        "type": "kunren",
-        "slot": 32,
-        "executeAt": 1769496900000
-      },
-      {
-        "type": "kunren",
-        "slot": 33,
-        "executeAt": 1769496960000
-      },
-      {
-        "type": "kunren",
-        "slot": 34,
-        "executeAt": 1769497020000
-      },
-      {
-        "type": "kunren",
-        "slot": 35,
-        "executeAt": 1769497080000
-      },
-      {
-        "type": "kunren",
-        "slot": 36,
-        "executeAt": 1769497140000
-      },
-      {
-        "type": "kunren",
-        "slot": 37,
-        "executeAt": 1769497200000
-      },
-      {
-        "type": "kunren",
-        "slot": 38,
-        "executeAt": 1769497260000
-      },
-      {
-        "type": "kunren",
-        "slot": 39,
-        "executeAt": 1769497320000
-      },
-      {
-        "type": "kunren",
-        "slot": 40,
-        "executeAt": 1769497380000
-      },
-      {
-        "type": "kunren",
-        "slot": 41,
-        "executeAt": 1769497440000
-      },
-      {
-        "type": "kunren",
-        "slot": 42,
-        "executeAt": 1769497500000
-      },
-      {
-        "type": "kunren",
-        "slot": 43,
-        "executeAt": 1769497560000
-      },
-      {
-        "type": "kunren",
-        "slot": 44,
-        "executeAt": 1769497620000
-      },
-      {
-        "type": "kunren",
-        "slot": 45,
-        "executeAt": 1769497680000
-      },
-      {
-        "type": "kunren",
-        "slot": 46,
-        "executeAt": 1769497740000
-      },
-      {
-        "type": "kunren",
-        "slot": 47,
-        "executeAt": 1769497800000
-      },
-      {
-        "type": "kunren",
-        "slot": 48,
-        "executeAt": 1769497860000
-      },
-      {
-        "type": "kunren",
-        "slot": 49,
-        "executeAt": 1769497920000
-      },
-      {
-        "type": "kunren",
-        "slot": 50,
-        "executeAt": 1769498340000
-      },
-      {
-        "type": "kunren",
-        "slot": 51,
-        "executeAt": 1769498400000
-      },
-      {
-        "type": "kunren",
-        "slot": 52,
-        "executeAt": 1769498460000
-      },
-      {
-        "type": "kunren",
-        "slot": 53,
-        "executeAt": 1769498520000
-      },
-      {
-        "type": "kunren",
-        "slot": 54,
-        "executeAt": 1769498580000
-      },
-      {
-        "type": "kunren",
-        "slot": 55,
-        "executeAt": 1769498640000
-      },
-      {
-        "type": "kunren",
-        "slot": 57,
-        "executeAt": 1769495400000
-      },
-      {
-        "type": "kunren",
-        "slot": 58,
-        "executeAt": 1769495460000
-      },
-      {
-        "type": "kunren",
-        "slot": 59,
-        "executeAt": 1769495520000
-      }
-    ],
+    "commandQueue": [],
     "lastExecuted": 1769491860000,
     "soldiers": {
       "infantry": 825,
@@ -514,7 +228,7 @@
         "finishAt": 1768363291473
       }
     ],
-    "scheduleBaseTime": 1769495340000,
+    "scheduleBaseTime": 1769754060000,
     "commandLog": [
       {
         "type": "kunren",
@@ -3766,8 +3480,1082 @@
         "slot": 56,
         "executeAt": 1769495340000,
         "executedAt": 1769495344176
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495400000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495460000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495520000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495580000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495640000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495400000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495460000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495520000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495580000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495640000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495700000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495760000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495820000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495880000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495940000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496000000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496060000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496120000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496180000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496240000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496300000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496360000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496420000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496480000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496540000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496600000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496660000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496720000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496780000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496840000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496900000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769496960000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497020000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497080000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497140000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497200000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497260000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497320000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497380000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497440000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497500000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497560000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497620000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497680000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497740000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497800000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497860000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769497920000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769498340000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769498400000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769498460000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769498520000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769498580000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769498640000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495400000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495460000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769495520000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747160000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747220000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747280000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747340000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747400000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747460000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747520000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747580000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747640000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747700000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747460000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747520000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747580000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747640000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747700000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747760000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747760000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747820000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747880000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747940000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748000000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747820000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747880000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769747940000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748000000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748060000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748120000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748180000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748240000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748300000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748360000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748420000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748420000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748480000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748540000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748600000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748480000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748540000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748600000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748660000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748720000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748780000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748840000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748900000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748960000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749020000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749080000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748660000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748720000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748780000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748840000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748900000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769748960000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749020000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749080000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749140000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749200000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749260000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749320000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749380000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749440000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749140000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749200000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749260000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749320000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749380000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749440000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749500000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749560000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749620000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749500000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749560000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749620000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749680000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749740000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749800000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749860000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749920000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769749980000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750040000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750100000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750040000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750100000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750160000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750220000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750280000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750160000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750220000,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750280000,
+        "data": null
+      },
+      {
+        "executeAt": 1769750340000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750340000,
+        "data": null
+      },
+      {
+        "executeAt": 1769750340000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750340000,
+        "data": null
+      },
+      {
+        "executeAt": 1769750400000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750400000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750460000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750460000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750520000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750520000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750580000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750580000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750640000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750640000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750700000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750700000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750760000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750760000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750400000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750400000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750460000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750460000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750520000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750520000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750580000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750580000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750640000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750640000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750700000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750700000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769750820000,
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750820000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750880000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769750940000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769751000000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769751060000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769751120000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769751180000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769751240000,
+        "result": false,
+        "data": null
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1769751300000,
+        "result": false,
+        "data": null
+      },
+      {
+        "executeAt": 1769751720000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769751780000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769751840000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769751900000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769751960000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752020000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752080000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752140000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752200000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752260000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752320000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752380000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752440000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752500000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752560000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752620000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752680000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752740000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752800000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
+      },
+      {
+        "executeAt": 1769752860000,
+        "type": "kunren",
+        "data": {},
+        "message": "訓練値が上限のため、これ以上訓練できない"
       }
-    ]
+    ],
+    "isExecuting": false,
+    "lastProcessedTime": 1769754118145
   },
   {
     "id": "general_1768370935342",

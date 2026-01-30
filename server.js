@@ -1,5 +1,5 @@
 const express = require("express");
-const COMMANDS = require("./commands");
+const commandHandlers = require("./commands");
 const fs = require("fs");
 const bodyParser = require("body-parser");
 const { setDefense } = require("./logic/defense");
@@ -146,23 +146,37 @@ app.post("/register", (req, res) => {
 
 function processCommands(general, generals) {
   if (general.isExecuting) return;
+  if (!Array.isArray(general.commandQueue)) return;
 
   general.isExecuting = true;
-
   const now = Date.now();
 
-  for (const cmd of general.commandQueue) {
-    if (cmd.executed) continue;
+  const newQueue = [];
 
-    if (cmd.executeAt <= now) {
-   executeCommand(cmd);
-      cmd.executed = true; // ← 即フラグ
+  for (const cmd of general.commandQueue) {
+    // ★ executeAt を過ぎたものだけ
+    if (cmd.executeAt <= now && !cmd.executed) {
+
+      executeCommand(cmd, general);
+
+      // ★ 二度と実行されない印をつける
+      cmd.executed = true;
+    }
+
+    // ★ 実行済みはキューから消す
+    if (!cmd.executed) {
+      newQueue.push(cmd);
     }
   }
 
+  general.commandQueue = newQueue;
   general.lastProcessedTime = now;
   general.isExecuting = false;
+
   saveJSON("generals.json", generals);
+}
+
+
 
 
 
@@ -212,50 +226,47 @@ app.post("/login", (req, res) => {
 
 
 app.get("/user/:id", (req, res) => {
-
-
   const generals = loadJSON("generals.json");
   const countries = loadJSON("countries.json");
   const cities = loadJSON("cities.json");
   const heisyu = loadJSON("heisyu.json");
+
   const INTERVAL = 60 * 1000;
 
-  // ✅ ① まず general を取得
+  // ① general を取得
   const general = generals.find(g => g.id === req.params.id);
   if (!general) return res.send("武将が存在しません");
 
-processCommands(general);
-saveJSON("generals.json", generals);
+  // ❌ 表示処理ではコマンドを実行しない！
+   processCommands(general, generals);
 
+  // ② 基準時刻を分単位に揃える（※表示用のみ）
+  const alignedNow =
+    Math.floor(Date.now() / INTERVAL) * INTERVAL;
 
-  // 👇ここに入れる
-const alignedNow =
-  Math.floor(Date.now() / INTERVAL) * INTERVAL;
-
-general.scheduleBaseTime = alignedNow;
-saveJSON("generals.json", generals);
-
+  general.scheduleBaseTime = alignedNow;
+  saveJSON("generals.json", generals);
 
   const country = countries.find(c => c.id === general.countryId);
-  const baseTime = Number(general.scheduleBaseTime);
+
+  // ============================
+  // 予約コマンドを「時間順」に並べる
+  // ============================
+  const queue = (general.commandQueue || [])
+    .filter(c => c && typeof c.executeAt === "number")
+    .sort((a, b) => a.executeAt - b.executeAt);
 
   const schedule = [];
 
   for (let i = 0; i < 60; i++) {
-    const cmd = (general.commandQueue || []).find(
-      c => c && typeof c.slot === "number" && c.slot === i
-    );
+    const cmd = queue[i]; // ← slot は見ない（上から詰める）
 
-    const executeAt =
-      cmd?.executeAt ?? baseTime + (i + 1) * INTERVAL;
-
- schedule.push({
-  index: i,
-  command: cmd?.type ?? "",
-  heisyuId: cmd?.data?.heisyuId ?? "",
-  count: cmd?.data?.count ?? 0
-});
-
+    schedule.push({
+      index: i,
+      command: cmd?.type ?? "",
+      heisyuId: cmd?.data?.heisyuId ?? "",
+      count: cmd?.data?.count ?? 0
+    });
   }
 
   res.render("user", {
@@ -264,8 +275,8 @@ saveJSON("generals.json", generals);
     cities,
     schedule,
     heisyu,
-    commandLog: general.commandLog,
-      intervalMinutes: 1 // 1分
+    commandLog: general.commandLog || [],
+    intervalMinutes: 1
   });
 });
 
@@ -305,7 +316,18 @@ const SLOT_COUNT = 60;
 
 // ===== 一括入力対応（完全版）=====
 if (req.body.bulkCommand === "tyouhei") {
+
+  // 既に使われている slot を調べる
+  const usedSlots = new Set(
+    (general.commandQueue || [])
+      .filter(c => c && typeof c.slot === "number")
+      .map(c => c.slot)
+  );
+
   for (let i = 0; i < SLOT_COUNT; i++) {
+    // すでに埋まっている slot はスキップ
+    if (usedSlots.has(i)) continue;
+
     commands[i] = "tyouhei";
     heisyuIds[i] = req.body.bulk_heisyuId;
     counts[i] = Number(req.body.bulk_count) || 0;
@@ -355,8 +377,6 @@ if (req.body.bulkCommand === "tyouhei") {
 });
 
 
-
-
 app.get("/recruit/bulk", (req, res) => {
   const generals = loadJSON("generals.json");
   const heisyu = loadJSON("heisyu.json");
@@ -394,7 +414,7 @@ app.post("/recruit/bulk", (req, res) => {
     general.commandQueue.push({
       type: "tyouhei",
       slot: i,
-      executeAt: baseTime + i  * INTERVAL,
+      executeAt: baseTime + (i + 1)  * INTERVAL,
       data: {
         heisyuId,
         count: Number(count)
@@ -405,10 +425,6 @@ app.post("/recruit/bulk", (req, res) => {
   saveJSON("generals.json", generals);
   res.redirect(`/user/${general.id}`);
 });
-
-
-
-
 
 
 app.get("/recruit/:index", (req, res) => {
@@ -427,8 +443,6 @@ app.get("/recruit/:index", (req, res) => {
     heisyu
   });
 });
-
-
 
 
 app.post("/recruit/:index", (req, res) => {
@@ -497,17 +511,26 @@ function getGameNow(general) {
 }
 
 
-function executeCommand(cmd) {
-  const handler = commandHandlers[cmd.command];
+function executeCommand(cmd, general) {
+  if (cmd._logged) return; // ★ 二重ログ防止
 
-  if (!handler) {
-    console.log("不明なコマンド:", cmd.command);
-    return;
-  }
+  const handler = commandHandlers[cmd.type];
+  if (!handler || typeof handler.execute !== "function") return;
 
-  handler(cmd);
+  const result = handler.execute(general, cmd);
+  if (!result || typeof result.message !== "string") return;
+
+  if (!general.commandLog) general.commandLog = [];
+
+  general.commandLog.push({
+    executeAt: cmd.executeAt,
+    type: cmd.type,
+    data: cmd.data || {},
+    message: result.message
+  });
+
+  cmd._logged = true; // ★ ログ済みフラグ
 }
-
 
 
 

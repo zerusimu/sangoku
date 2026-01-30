@@ -113,14 +113,16 @@ th, td {
     <tr>
       <td><%= new Date(log.executeAt).toLocaleString() %></td>
       <td><%= log.type %></td>
-      <td>
-        <% if (log.type === "tyouhei") { %>
-          兵種: <%= log.data.heisyuId %>,
-          数: <%= log.data.count %>
-        <% } else { %>
-          -
-        <% } %>
-      </td>
+<td>
+  <% if (log.type === "tyouhei") { %>
+    兵種: <%= log.data.heisyuId %>,
+    数: <%= log.data.count %>
+  <% } else if (log.type === "kunren") { %>
+    <%= log.message %>
+  <% } else { %>
+    -
+  <% } %>
+</td>
     </tr>
   <% }) %>
 </table>
