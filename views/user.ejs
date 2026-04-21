@@ -47,13 +47,72 @@ th, td {
   padding: 4px;
   text-align: center;
 }
+
+option[data-reserve="true"] {
+  color: orange !important;
+  font-weight: bold;
+}
+
+.map-cell.current {
+  border: 3px solid yellow;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+
+
 </style>
 </head>
 
 <body>
+
+<%
+function getRankLetter(point) {
+  if (point >= 20000) return "S";
+  if (point >= 15000) return "A";
+  if (point >= 10000) return "B";
+  if (point >= 5000) return "C";
+  return "D";
+}
+
+
+// ★↓↓ここから追加↓↓
+const commandNames = {
+  kunren: "訓練",
+  tyouhei: "徴兵",
+  defend: "守備",
+  move: "出兵",
+  move_safe: "移動"
+};
+
+function getCommandName(type) {
+  return commandNames[type] || type;
+}
+// ★↑↑ここまで追加↑↑
+
+
+
+
+
+
+
+
+
+%>
+
+
+
+
+
+
+
+
 <div class="container">
 
 <!-- ================= 左 ================= -->
+
+
+
 <div class="left">
   <p><a href="/countries">国一覧へ</a></p>
 
@@ -64,6 +123,14 @@ th, td {
   <p>魅力: <%= general.cha %></p>
   <p>訓練: <%= general.kunren %></p>
  <p>お金: <%= general.money %></p>
+ <p>ランク: <%= general.rank %> </p>
+ <p>ランクポイント:  <%= general.rankPoint %></p>
+<p><a href="/skills">スキル一覧・習得</a></p>
+ <%
+  const h = heisyu.find(h => h.id === general.army.type);
+%>
+<p>兵種: <%= h ? h.name : general.army.type %></p>
+<p>兵数: <%= general.army.count %> / <%= general.lea %></p>
 
   <% if (country) { %>
     <h2>所属国</h2>
@@ -73,7 +140,70 @@ th, td {
     <p>無所属</p>
   <% } %>
 
+<%
+const city = cities.find(c => c.id === general.cityId);
+%>
+
+<h3>守備武将</h3>
+
+<% if(city && city.defenders && city.defenders.length){ %>
+
+<ol>
+<% city.defenders.forEach(id => { 
+   const g = generals.find(x => x.id === id);
+%>
+
+<li><%= g ? g.name : id %></li>
+
+<% }) %>
+</ol>
+
+<% } else { %>
+
+守備なし
+
+<% } %>
+
+<% if (general.name === country.ruler) { %>
+  <form action="/declare-war" method="POST">
+    <select name="targetCountryId">
+      <% countries.forEach(c => { %>
+        <% if (c.id !== country.id) { %>
+          <option value="<%= c.id %>"><%= c.name %></option>
+        <% } %>
+      <% }) %>
+    </select>
+
+    <button type="submit">宣戦布告</button>
+  </form>
+<% } %>
+
+
+<%
+  let cls = "neutral";
+
+  if (city.owner === general.countryId) {
+    cls = "mine";
+  } else if (city.owner) {
+    cls = "enemy";
+  }
+
+  if (city.id === general.cityId) {
+    cls += " current"; // ★追加
+  }
+%>
+
+<div class="map-cell <%= cls %>">
+ 現在の都市： <%= city.name %>
+</div>
+
+
+
+
+
   <hr>
+
+
 
   <h3>勢力マップ</h3>
   <div class="map">
@@ -109,46 +239,142 @@ th, td {
     </tr>
   <% } %>
 
-  <% commandLog.slice().reverse().forEach(log => { %>
+<% commandLog.forEach(log => { %>
     <tr>
       <td><%= new Date(log.executeAt).toLocaleString() %></td>
-      <td><%= log.type %></td>
-<td>
-  <% if (log.type === "tyouhei") { %>
-    兵種: <%= log.data.heisyuId %>,
-    数: <%= log.data.count %>
-  <% } else if (log.type === "kunren") { %>
-    <%= log.message %>
-  <% } else { %>
-    -
-  <% } %>
+     <td><%= getCommandName(log.type) %></td>
+<td style="white-space: pre-line;">
+  <%= log.message %>
 </td>
     </tr>
   <% }) %>
 </table>
 
+<h2>戦闘ログ</h2>
+
+<table border="1">
+  <tr>
+    <th>時刻</th>
+    <th>内容</th>
+  </tr>
+
+  <% if (!general.battleLog || general.battleLog.length === 0) { %>
+    <tr>
+      <td colspan="2">戦闘ログはありません</td>
+    </tr>
+  <% } %>
+
+  <% general.battleLog.forEach(log => { %>
+    <tr>
+      <td><%= new Date(log.time).toLocaleString() %></td>
+      <td style="white-space: pre-line;"><%= log.message %></td>
+    </tr>
+  <% }) %>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
-
 <!-- ================= 右 ================= -->
-<div class="right">
-
-<p style="color:red">
-  DEBUG baseTime:
-  <%= new Date(general.scheduleBaseTime).toLocaleString() %>
-</p>
-
+<div class="right">  
 <h3>一括設定</h3>
 <select id="bulkCommand">
   <option value="">--一括命令--</option>
   <option value="kunren">訓練</option>
-  
   <option value="tyouhei">徴兵</option>
+  <option value="defend">守備</option>
+  <option value="move">出兵</option>
+    <option value="move_safe">移動</option>
 </select>
+
+<!-- ★追加：一括 移動・出兵用 -->
+<div id="bulkMoveBox" style="display:none; margin-top:10px;">
+  <select id="bulkTargetCity">
+
+    <%
+      const currentCity = cities.find(c => c.id === general.cityId);
+    %>
+
+    <% if (currentCity) { %>
+      <% cities.forEach(city => { %>
+
+        <%
+          const dx = Math.abs(currentCity.x - city.x);
+          const dy = Math.abs(currentCity.y - city.y);
+          const isNeighbor = (dx <= 1 && dy <= 1 && (dx + dy !== 0));
+        %>
+
+        <% if (isNeighbor) { %>
+          <option value="<%= city.id %>">
+            <%= city.name %>
+          </option>
+        <% } %>
+
+      <% }) %>
+    <% } %>
+
+  </select>
+</div>
+
+
+
+
+
+
+
+<div id="bulkTyouheiBox" style="display:none; margin-top:10px;">
+<select id="bulkHeisyu">
+  <%
+
+    
+  const playerRankIndex = Math.floor(general.rankPoint / 5000) + 1; 
+  %>
+
+  <% heisyu.forEach(h => { %>
+
+    <%
+      const rankIndex = h.requiredRank;
+      const req = h.requirements || {};
+
+      const ok =
+        rankIndex <= playerRankIndex + 1 && // 予約OK
+        (!req.str || general.str >= req.str) &&
+        (!req.int || general.int >= req.int) &&
+        (!req.lea || general.lea >= req.lea) &&
+        (!req.cha || general.cha >= req.cha);
+    %>
+
+    <% if (ok) { %>
+<option value="<%= h.id %>"
+>
+  <%= h.name %>
+</option>
+    <% } %>
+
+  <% }) %>
+</select>
+
+  <input type="number" id="bulkCount" min="1" value="65">
+</div>
+
+
+
 <button type="button" onclick="applyBulk()">一括反映</button>
 <hr>
 
 <form action="/command/update" method="post">
+
 
 <table>
   <tr>
@@ -160,33 +386,96 @@ th, td {
 <% schedule.forEach(s => { %>
 <tr>
   <td><%= s.index + 1 %></td>
-  <td>
-   <span class="schedule-time"
-        data-index="<%= s.index %>"></span>
+ <td>
+  <% if (s.executeAt) { %>
+    <%= new Date(s.executeAt).toLocaleString() %>
+  <% } else { %>
+    -
+  <% } %>
+</td>
+<td>
+  <!-- 命令 -->
+  <select class="command-select"
+          name="commands[<%= s.index %>]"
+          onchange="onCommandChange(this, <%= s.index %>)">
 
-  </td>
-  <td>
-    <!-- 命令 -->
-<select
-  class="command-select"name="commands[<%= s.index %>]"onchange="onCommandChange(this, <%= s.index %>)">
+    <option value="" <%= s.command === "" ? "selected" : "" %>>（空）</option>
+    <option value="kunren" <%= s.command === "kunren" ? "selected" : "" %>>訓練</option>
+    <option value="tyouhei" <%= s.command === "tyouhei" ? "selected" : "" %>>徴兵</option>
+    <option value="defend" <%= s.command === "defend" ? "selected" : "" %>>守備</option>
+    <option value="move" <%= s.command === "move" ? "selected" : "" %>>出兵</option>
+<option value="move_safe"<%= s.command === "move_safe" ? "selected" : "" %>>移動</option>
+  </select>
 
-  <option value="" <%= s.command === "" ? "selected" : "" %>>（空）</option>
-  <option value="kunren" <%= s.command === "kunren" ? "selected" : "" %>>訓練</option>
-<option value="tyouhei" <%= s.command === "tyouhei" ? "selected" : "" %>>徴兵</option>
-</select>
+  <!-- ✅ 出兵入力（selectの外に出す） -->
+ <div class="move-input" style = "<%= (s.command === 'move' || s.command === 'move_safe') ? '' : 'display:none;' %>">
 
+    <select name="move_targetCity[<%= s.index %>]">
+      <%
+        const currentCity = cities.find(c => c.id === general.cityId);
+      %>
 
+      <% if (currentCity) { %>
+        <% cities.forEach(city => { %>
+
+          <%
+            const dx = Math.abs(currentCity.x - city.x);
+            const dy = Math.abs(currentCity.y - city.y);
+            const isNeighbor = (dx <= 1 && dy <= 1 && (dx + dy !== 0));
+          %>
+
+          <% if (isNeighbor) { %>
+   <option value="<%= city.id %>"
+  <%= (s.targetCity === city.id) ? "selected" : "" %>>
+  <%= city.name %>
+</option>
+          <% } %>
+
+        <% }) %>
+      <% } %>
+    </select>
+
+  </div>
+   <!-- デバッグ　ここから　　
+<p>現在地ID: <%= general.cityId %></p>
+<p>現在地: <%= currentCity ? currentCity.name : "なし" %></p>
+　ここまで　-->
     <!-- 徴兵入力 -->
 <div class="tyouhei-input"style="<%= s.command === 'tyouhei' ? '' : 'display:none;' %>">
 
-  <select name="tyouhei_heisyu[<%= s.index %>]">
-    <% heisyu.forEach(h => { %>
-   <option value="<%= h.id %>"
-  <%= s.heisyuId === h.id ? "selected" : "" %>>
-  <%= h.name %>
-</option>
-    <% }) %>
-  </select>
+<select name="tyouhei_heisyu[<%= s.index %>]">
+
+<%
+  const playerRankIndex = Math.floor(general.rankPoint / 5000) + 1;
+%>
+
+<% heisyu.forEach(h => { %>
+
+  <%
+    const rankIndex = h.requiredRank;
+
+    const canUse = rankIndex <= playerRankIndex;
+    const canReserve = rankIndex === playerRankIndex + 1;
+
+    let label = h.name;
+
+    if (canReserve) {
+      label = "🔶 " + h.name + "（予約）";
+    } else if (!canUse) {
+      label = "🚫 " + h.name + "（不可）";
+    }
+  %>
+
+  <option value="<%= h.id %>"
+    <%= s.heisyuId === h.id ? "selected" : "" %>
+    <%= !canUse && !canReserve ? "disabled" : "" %>
+  >
+    <%= label %>
+  </option>
+
+<% }) %>
+
+</select>
 
   <input type="number"
          name="tyouhei_count[<%= s.index %>]"
@@ -205,67 +494,114 @@ th, td {
 </form>
 
 </div>
+
+
+
+
+<div style="position:absolute; top:10px; right:20px;">
+  <a href="/logout">ログアウト</a>
+</div>
+
+<% schedule.forEach(s => { %>
+  <% console.log("スケジュール:", s.index, s.command, s.heisyuId, s.isReserve); %>
+<% }) %>
+
+<% heisyu.forEach(h => { %>
+  <% 
+    const rankIndex = h.requiredRank;
+    console.log("兵種:", h.name, "必要ランク:", h.requiredRank, "index:", rankIndex);
+  %>
+<% }) %>
+
+
 </div>
 
 <script>
 
 let isBulkApplying = false;
 
+
 function onCommandChange(select, index) {
   if (isBulkApplying) return; // ★ 一括時は遷移しない
-
-  if (select.value === "tyouhei") {
-    location.href = `/recruit/${index}`;
-  }
 }
 
 function applyBulk() {
   const value = document.getElementById("bulkCommand").value;
   if (!value) return;
 
+  isBulkApplying = true;
+
+  const bulkHeisyu = document.getElementById("bulkHeisyu")?.value;
+  const bulkCount = document.getElementById("bulkCount")?.value;
+  const bulkCity = document.getElementById("bulkTargetCity")?.value; // ★追加
+
   document.querySelectorAll(".command-select").forEach((sel, index) => {
     sel.value = value;
 
-    // ✅ 訓練はその場で反映
-    if (value === "kunren") {
-      sel.dispatchEvent(new Event("change"));
+    const row = sel.closest("tr");
+
+    const heisyuSelect = row.querySelector("select[name^='tyouhei_heisyu']");
+    const countInput = row.querySelector("input[name^='tyouhei_count']");
+    const moveSelect = row.querySelector("select[name^='move_targetCity']"); // ★追加
+
+    // 徴兵
+    if (value === "tyouhei") {
+      if (heisyuSelect) heisyuSelect.value = bulkHeisyu;
+      if (countInput) countInput.value = bulkCount;
     }
 
-    // ❌ 徴兵は画面遷移させない（bulk 専用ページを使う）
+    // ★移動・出兵
+    if (value === "move" || value === "move_safe") {
+      if (moveSelect && bulkCity) {
+        moveSelect.value = bulkCity;
+      }
+    }
+
+    sel.dispatchEvent(new Event("change"));
   });
+
+  isBulkApplying = false;
 }
+
+document.getElementById("bulkCommand").addEventListener("change", function () {
+  const tyouheiBox = document.getElementById("bulkTyouheiBox");
+  const moveBox = document.getElementById("bulkMoveBox");
+
+  tyouheiBox.style.display = this.value === "tyouhei" ? "block" : "none";
+
+  moveBox.style.display =
+    (this.value === "move" || this.value === "move_safe")
+      ? "block"
+      : "none";
+});
 
 
 document.querySelectorAll("tr").forEach(row => {
   const select = row.querySelector(".command-select");
-  const box = row.querySelector(".tyouhei-input");
-  if (!select || !box) return;
+  const tyouheiBox = row.querySelector(".tyouhei-input");
+  const moveBox = row.querySelector(".move-input");
+
+  if (!select) return;
 
   const update = () => {
-    box.style.display = select.value === "tyouhei" ? "block" : "none";
+    if (tyouheiBox) {
+      tyouheiBox.style.display = select.value === "tyouhei" ? "block" : "none";
+    }
+if (moveBox) {
+  moveBox.style.display =
+    (select.value === "move" || select.value === "move_safe")
+      ? "block"
+      : "none";
+}
   };
 
   select.addEventListener("change", update);
   update();
 });
 
-const BASE_TIME = <%= general.scheduleBaseTime %>;
-const INTERVAL = <%= intervalMinutes %> * 60 * 1000;
-
-function updateScheduleTime() {
-  document.querySelectorAll(".schedule-time").forEach(el => {
-    const index = Number(el.dataset.index);
-    const time = new Date(BASE_TIME + index    * INTERVAL);
-
-    el.innerHTML =
-      time.toLocaleDateString("ja-JP") + "<br>" +
-      time.toLocaleTimeString("ja-JP");
-  });
-}
-
-updateScheduleTime();
-setInterval(updateScheduleTime, 1000);
+setInterval(() => {
+  location.reload();
+}, 1000 * 60 );
 </script>
-
 </body>
 </html>

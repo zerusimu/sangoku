@@ -2,26 +2,31 @@
   {
     "id": "city01",
     "name": "洛陽",
-    "owner": null,
+    "owner": "country_1775102772550",
     "soldiers": 50,
     "x": 2,
-    "y": 1
+    "y": 1,
+    "defenders": [
+      "general_1775102772551"
+    ]
   },
   {
     "id": "city02",
     "name": "長安",
-    "owner": "country_1767672578136",
+    "owner": null,
     "soldiers": 40,
     "x": 1,
-    "y": 2
+    "y": 2,
+    "defenders": []
   },
   {
     "id": "city03",
     "name": "許昌",
-    "owner": null,
+    "owner": "country_1773901810996",
     "soldiers": 30,
     "x": 3,
-    "y": 2
+    "y": 2,
+    "defenders": []
   },
   {
     "id": "city04",
@@ -29,15 +34,17 @@
     "owner": null,
     "soldiers": 20,
     "x": 5,
-    "y": 4
+    "y": 4,
+    "defenders": []
   },
   {
     "id": "city05",
     "name": "寿春",
-    "owner": null,
+    "owner": "country_1775116143121",
     "soldiers": 15,
     "x": 4,
-    "y": 3
+    "y": 3,
+    "defenders": []
   },
   {
     "id": "city06",
@@ -45,23 +52,26 @@
     "owner": null,
     "soldiers": 25,
     "x": 3,
-    "y": 4
+    "y": 4,
+    "defenders": []
   },
   {
     "id": "city07",
     "name": "成都",
-    "owner": "country_1766034901377",
+    "owner": null,
     "soldiers": 20,
     "x": 1,
-    "y": 5
+    "y": 5,
+    "defenders": []
   },
   {
     "id": "city08",
     "name": "漢中",
-    "owner": "country_1766038287346",
+    "owner": null,
     "soldiers": 10,
     "x": 2,
-    "y": 4
+    "y": 4,
+    "defenders": []
   },
   {
     "id": "city09",
@@ -69,6 +79,7 @@
     "owner": null,
     "soldiers": 10,
     "x": 2,
-    "y": 3
+    "y": 3,
+    "defenders": []
   }
 ]

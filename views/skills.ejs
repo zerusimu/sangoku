@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>スキル</title>
+</head>
+<body>
+
+<h1>スキル一覧</h1>
+
+<p>所持ポイント: <%= general.skillPoints %></p>
+<form action="/buy-skill-point" method="POST">
+  <button type="submit">スキルポイント購入（デバッグ）</button>
+</form>
+<table border="1">
+<tr>
+  <th>名前</th>
+  <th>レベル</th>
+  <th>必要ポイント</th>
+  <th>状態</th>
+  <th>操作</th>
+</tr>
+
+<% Object.keys(skills).forEach(id => { 
+  const s = skills[id];
+
+  const learned = general.skills.includes(id);
+  const canLearn =
+    !learned &&
+    (!s.prev || general.skills.includes(s.prev)) &&
+    general.skillPoints >= s.cost;
+%>
+
+<tr>
+  <td><%= s.name %></td>
+  <td><%= s.level %></td>
+  <td><%= s.cost %></td>
+
+  <td>
+    <% if (learned) { %>
+      習得済み
+    <% } else if (s.prev && !general.skills.includes(s.prev)) { %>
+      前提未達
+    <% } else if (general.skillPoints < s.cost) { %>
+      ポイント不足
+    <% } else { %>
+      習得可能
+    <% } %>
+  </td>
+
+  <td>
+    <% if (canLearn) { %>
+      <form action="/learn-skill" method="POST">
+        <input type="hidden" name="skillId" value="<%= id %>">
+        <button type="submit">習得</button>
+      </form>
+    <% } %>
+  </td>
+
+</tr>
+
+<% }) %>
+</table>
+
+<p><a href="/user/<%= general.id %>">戻る</a></p>
+
+</body>
+</html>

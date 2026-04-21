@@ -6,7 +6,7 @@ const { setDefense } = require("./logic/defense");
 const { battle } = require("./logic/battle");
 const { recruit } = require("./logic/army");
 const { getRecruitTimeByIndex } = require("./logic/recruit");
-
+const { loadJSON, saveJSON } = require("./utils/json");
 
 const app = express();
 app.use(express.static("public"));
@@ -21,20 +21,21 @@ app.use(session({
   saveUninitialized: false
 }));
 
-
-
+function getRankByPoint(point) {
+  if (point >= 20000) return "S";
+  if (point >= 15000) return "A";
+  if (point >= 10000) return "B";
+  if (point >= 5000) return "C";
+  return "D";
+}
 
 
 // =========================
 // JSON 読み書き共通関数
 // =========================
-const loadJSON = (file) => {
-  return JSON.parse(fs.readFileSync(`data/${file}`, "utf8"));
-};
 
-const saveJSON = (file, data) => {
-  fs.writeFileSync(`data/${file}`, JSON.stringify(data, null, 2));
-};
+
+
 
 // =========================
 // 武将登録画面
@@ -73,7 +74,8 @@ app.post("/register", (req, res) => {
     mode,
     joinCity,
     countryName,
-    city
+    city,
+  
   } = req.body;
 
   // ===== ログインID重複 =====
@@ -115,18 +117,48 @@ app.post("/register", (req, res) => {
     countryId = targetCity.owner;
   }
 
-  // ===== 武将作成 =====
-  const generalId = "general_" + Date.now();
+// ===== 武将作成 =====
+const generalId = "general_" + Date.now();
 
-  generals.push({
-    id: generalId,
-    name,
-    str: +str,
-    int: +int,
-    lea: +lea,
-    cha: +cha,
-    countryId
-  });
+// 都市ID決定
+let cityId = null;
+
+if (mode === "create") {
+  cityId = city;
+  console.log(cityId);
+}
+
+if (mode === "join") {
+  cityId = joinCity;
+  console.log(cityId);
+}
+
+generals.push({
+  id: generalId,
+  name,
+  str: +str,
+  int: +int,
+  lea: +lea,
+  cha: +cha,
+
+  countryId,
+  cityId,            // ★都市ID
+   kunren:0,         // 訓練値      
+  money: 1000,       // ★初期資金
+  rice: 500,         // ★兵糧
+  rankPoint: 0,    // ランクポイントの初期値
+   rank: "D", // 初期ランク
+skills: [],
+skillPoints: 0,
+
+
+  commandQueue: [],
+
+  army: {
+    name: "農民",
+    count: 0
+  }
+});
 
   // ===== ユーザー作成 =====
   users.push({
@@ -142,38 +174,20 @@ app.post("/register", (req, res) => {
   saveJSON("cities.json", cities);
 
   res.send("登録完了！<a href='/login'>ログインへ</a>");
+
+console.log("新規武将作成:", {
+  id: generalId,
+  name,
+  countryId,
+  cityId
+});
+console.log("現在の武将数:", generals.length);
+
 });
 
-function processCommands(general, generals) {
-  if (general.isExecuting) return;
-  if (!Array.isArray(general.commandQueue)) return;
-
-  general.isExecuting = true;
-  const now = Date.now();
-
-  const newQueue = [];
-
-  for (const cmd of general.commandQueue) {
-    // ★ executeAt を過ぎたものだけ
-    if (cmd.executeAt <= now && !cmd.executed) {
-
-      executeCommand(cmd, general);
-
-      // ★ 二度と実行されない印をつける
-      cmd.executed = true;
-    }
-
-    // ★ 実行済みはキューから消す
-    if (!cmd.executed) {
-      newQueue.push(cmd);
-    }
-  }
-
-  general.commandQueue = newQueue;
-  general.lastProcessedTime = now;
-  general.isExecuting = false;
-
-  saveJSON("generals.json", generals);
+function getRankIndex(rank) {
+  const order = ["D", "C", "B", "A", "S"];
+  return order.indexOf(rank);
 }
 
 
@@ -181,6 +195,87 @@ function processCommands(general, generals) {
 
 
 
+function processCommands(general) {
+
+  if (!general.cityId) {
+    console.log("⚠ cityId消えてる:", general);
+  }
+
+  if (!general) return;
+
+  // 🔥 初期化（安全対策）
+  if (!Array.isArray(general.commandQueue)) {
+    general.commandQueue = new Array(60).fill(null);
+  }
+
+  const now = Date.now();
+
+  for (let i = 0; i < general.commandQueue.length; i++) {
+    const cmd = general.commandQueue[i];
+
+    if (!cmd) continue;
+    if (cmd.executed) continue;
+    if (!cmd.executeAt) continue;
+
+    if (now >= Number(cmd.executeAt)) {
+
+      const handler = commandHandlers[cmd.type];
+
+      if (handler && typeof handler.execute === "function") {
+
+        const result = handler.execute(general, cmd);
+
+        // ✅ ログ
+        if (result && result.message && !cmd.logged) {
+          if (!general.commandLog) general.commandLog = [];
+
+          general.commandLog.unshift({
+            type: cmd.type,
+            message: result.message,
+            executeAt: Date.now()
+          });
+
+          cmd.logged = true;
+
+          if (general.commandLog.length > 50) {
+            general.commandLog.pop();
+          }
+        }
+
+        // 🔥 予約処理
+        if (result && result.isReserve && !cmd.isReserve) {
+          cmd.isReserve = true;
+          cmd.executed = false;
+          continue;
+        }
+
+        if (cmd.isReserve) {
+          if (!result.isReserve && result.success) {
+            cmd.isReserve = false;
+            cmd.executed = true;
+          } else {
+            cmd.executed = true;
+          }
+        }
+      }
+
+      cmd.executed = true;
+    }
+  }
+
+  // 🔥🔥🔥 ここが超重要（詰める処理）
+
+  const active = general.commandQueue
+    .filter(cmd => cmd && !cmd.executed) // ← 未実行だけ残す
+    .sort((a, b) => a.executeAt - b.executeAt); // ← 時間順
+
+  // 空で埋める
+  while (active.length < 60) {
+    active.push(null);
+  }
+
+  general.commandQueue = active;
+}
 
 app.get("/countries", (req, res) => {
   const countries = loadJSON("countries.json");
@@ -231,199 +326,65 @@ app.get("/user/:id", (req, res) => {
   const cities = loadJSON("cities.json");
   const heisyu = loadJSON("heisyu.json");
 
-  const INTERVAL = 60 * 1000;
 
-  // ① general を取得
-  const general = generals.find(g => g.id === req.params.id);
+
+  // 武将取得
+  const general = generals.find(
+    g => String(g.id) === String(req.params.id)
+  );
+
   if (!general) return res.send("武将が存在しません");
 
-  // ❌ 表示処理ではコマンドを実行しない！
-   processCommands(general, generals);
-
-  // ② 基準時刻を分単位に揃える（※表示用のみ）
-  const alignedNow =
-    Math.floor(Date.now() / INTERVAL) * INTERVAL;
-
-  general.scheduleBaseTime = alignedNow;
-  saveJSON("generals.json", generals);
-
   const country = countries.find(c => c.id === general.countryId);
+  processCommands(general);
+
+saveJSON("generals.json", generals);
 
   // ============================
-  // 予約コマンドを「時間順」に並べる
+  // RTS：executeAt完全同期表示
   // ============================
-  const queue = (general.commandQueue || [])
-    .filter(c => c && typeof c.executeAt === "number")
-    .sort((a, b) => a.executeAt - b.executeAt);
 
+  const queue = general.commandQueue || [];
   const schedule = [];
 
   for (let i = 0; i < 60; i++) {
-    const cmd = queue[i]; // ← slot は見ない（上から詰める）
+    const cmd = queue[i];
 
-    schedule.push({
-      index: i,
-      command: cmd?.type ?? "",
-      heisyuId: cmd?.data?.heisyuId ?? "",
-      count: cmd?.data?.count ?? 0
-    });
+    if (cmd) {
+      schedule.push({
+        index: i,
+        command: cmd.type || "",
+        heisyuId: cmd?.data?.heisyuId ?? "",
+        count: cmd?.data?.count ?? 0,
+         targetCity: cmd?.data?.targetCity ?? "", // ★追加
+        executeAt: cmd.executeAt || null
+      });
+    } else {
+      schedule.push({
+        index: i,
+        command: "",
+        heisyuId: "",
+        count: 0,
+         targetCity:  "", // ★追加
+        executeAt: null
+      });
+    }
   }
+ if (!general.battleLog) general.battleLog = [];
 
   res.render("user", {
     general,
+    generals,
+    countries,
     country,
     cities,
     schedule,
     heisyu,
-    commandLog: general.commandLog || [],
-    intervalMinutes: 1
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-app.post("/command/update", (req, res) => {
-  const generals = loadJSON("generals.json");
-  const general = generals.find(g => g.id === req.session.generalId);
-  if (!general) return res.redirect("/login");
-
-  const INTERVAL = 60 * 1000;
-
-  // ===== 基準時刻（最初の1回だけ・秒を揃える）=====
-  if (!general.scheduleBaseTime || isNaN(general.scheduleBaseTime)) {
-    // 例：12:34:56 → 12:34:00 に揃う
-    const alignedBaseTime =
-      Math.floor(Date.now() / INTERVAL) * INTERVAL;
-
-    general.scheduleBaseTime = alignedBaseTime;
-  }
-
-  const baseTime = Number(general.scheduleBaseTime);
-
-  const commands = req.body.commands || [];
-  const heisyuIds = req.body.tyouhei_heisyu || [];
-  const counts = req.body.tyouhei_count || [];
-
-const SLOT_COUNT = 60;
-
-// ===== 一括入力対応（完全版）=====
-if (req.body.bulkCommand === "tyouhei") {
-
-  // 既に使われている slot を調べる
-  const usedSlots = new Set(
-    (general.commandQueue || [])
-      .filter(c => c && typeof c.slot === "number")
-      .map(c => c.slot)
-  );
-
-  for (let i = 0; i < SLOT_COUNT; i++) {
-    // すでに埋まっている slot はスキップ
-    if (usedSlots.has(i)) continue;
-
-    commands[i] = "tyouhei";
-    heisyuIds[i] = req.body.bulk_heisyuId;
-    counts[i] = Number(req.body.bulk_count) || 0;
-  }
-}
-
-
-
-
-
-
-  // ✅ null・壊れたデータ完全排除
-  const oldQueue = (general.commandQueue || []).filter(
-    c =>
-      c &&
-      typeof c.slot === "number" &&
-      typeof c.executeAt === "number"
-  );
-
-  general.commandQueue = [];
-
-  commands.forEach((cmd, i) => {
-    if (!cmd) return;
-
-    const old = oldQueue.find(c => c.slot === i);
-
-    const entry = {
-      type: cmd,
-      slot: i,
-      executeAt: old
-        ? old.executeAt // 既存は絶対に維持
-        : baseTime + (i + 1) * INTERVAL // 秒が必ず揃う
-    };
-
-    if (cmd === "tyouhei") {
-      entry.data = {
-        heisyuId: heisyuIds[i],
-        count: Number(counts[i]) || 0
-      };
-    }
-
-    general.commandQueue.push(entry);
+    commandLog: general.commandLog || []
   });
 
-  saveJSON("generals.json", generals);
-  res.redirect(`/user/${general.id}`);
-});
-
-
-app.get("/recruit/bulk", (req, res) => {
-  const generals = loadJSON("generals.json");
-  const heisyu = loadJSON("heisyu.json");
-
-  const general = generals.find(g => g.id === req.session.generalId);
-  if (!general) return res.redirect("/login");
-
-  res.render("recruit_bulk", {
-    general,
-    heisyu
-  });
-});
-
-app.post("/recruit/bulk", (req, res) => {
-  const { heisyuId, count } = req.body;
-
-  const generals = loadJSON("generals.json");
-  const general = generals.find(g => g.id === req.session.generalId);
-  if (!general) return res.redirect("/login");
-
-  const INTERVAL = 60 * 1000;
-  const SLOT_COUNT = 60;
-
-  // 基準時刻を揃える
-  if (!general.scheduleBaseTime || isNaN(general.scheduleBaseTime)) {
-    general.scheduleBaseTime =
-      Math.floor(Date.now() / INTERVAL) * INTERVAL;
-  }
-
-  const baseTime = general.scheduleBaseTime;
-
-  general.commandQueue = [];
-
-  for (let i = 0; i < SLOT_COUNT; i++) {
-    general.commandQueue.push({
-      type: "tyouhei",
-      slot: i,
-      executeAt: baseTime + (i + 1)  * INTERVAL,
-      data: {
-        heisyuId,
-        count: Number(count)
-      }
-    });
-  }
-
-  saveJSON("generals.json", generals);
-  res.redirect(`/user/${general.id}`);
+  console.log("表示中の武将ID:", general.id);
+  console.log("ログ件数:", general.commandLog?.length);
 });
 
 
@@ -444,66 +405,129 @@ app.get("/recruit/:index", (req, res) => {
   });
 });
 
+function normalizeQueue(queue) {
+  const result = queue.map(cmd => {
+    if (!cmd) return null;
 
-app.post("/recruit/:index", (req, res) => {
-  const index = Number(req.params.index);
-  const { heisyuId, count } = req.body;
+    return {
+      type: cmd.type,
+      executeAt: cmd.executeAt,
+      executed: cmd.executed,
+      data: cmd.data // ←🔥 これ追加
+    };
+  });
+
+  while (result.length < 60) {
+    result.push(null);
+  }
+
+  return result;
+}
+
+
+
+
+app.post("/command/update", (req, res) => {
+console.log("moveTargets:", req.body.move_targetCity);
+console.log("moveTargets:", req.body.move_targetCity); // ←ここ追加
+
 
   const generals = loadJSON("generals.json");
   const general = generals.find(g => g.id === req.session.generalId);
   if (!general) return res.redirect("/login");
 
+  const commands = req.body.commands || {};
+  const heisyuIds = req.body.tyouhei_heisyu || {};
+  const counts = req.body.tyouhei_count || {};
+const moveTargets = req.body.move_targetCity || {};
   const INTERVAL = 60 * 1000;
 
-  const baseTime = Number(general.scheduleBaseTime);
+  // 秒固定
+  if (general.fixedSecond === undefined) {
+    general.fixedSecond = Math.floor(Math.random() * 60);
+  }
 
-const executeAt = baseTime + (index + 1) * INTERVAL;
+  function getBaseTimeWithFixedSecond(fixedSecond) {
+    const now = new Date();
+    now.setSeconds(fixedSecond);
+    now.setMilliseconds(0);
 
-  if (!general.commandQueue) general.commandQueue = [];
-
-  // ★ ここが最重要
-  general.commandQueue[index] = {
-    type: "tyouhei",
-    slot: index,
-    executeAt,
-    data: {
-      heisyuId,
-      count: Number(count)
+    if (now.getTime() <= Date.now()) {
+      now.setMinutes(now.getMinutes() + 1);
     }
+
+    return now.getTime();
+  }
+
+  // 🔥 完全に新しく作り直す
+  let queue = [];
+
+  let baseTime = getBaseTimeWithFixedSecond(general.fixedSecond);
+
+  for (let i = 0; i < 60; i++) {
+    const cmd = commands[i];
+    if (!cmd) continue;
+
+    baseTime += INTERVAL;
+
+    let entry = {
+      type: cmd,
+      executed: false,
+      executeAt: baseTime
+    };
+
+
+if (cmd === "move" || cmd === "move_safe") {
+  entry.data = {
+    targetCity: moveTargets[i] || null
   };
 
-  saveJSON("generals.json", generals);
+  console.log("セットされた都市:", i, entry.data.targetCity); // ★追加
+}
 
+
+    if (cmd === "tyouhei") {
+      entry.data = {
+        heisyuId: heisyuIds[i],
+        count: Number(counts[i]) || 0
+      };
+    }
+
+    queue.push(entry);
+  }
+
+  // 整形
+  general.commandQueue = normalizeQueue(queue);
+
+  saveJSON("generals.json", generals);
   res.redirect(`/user/${general.id}`);
 });
 
 
-app.post("/command/recruit", (req, res) => {
-  const generals = loadJSON("generals.json");
-  const general = generals.find(g => g.id === req.session.generalId);
 
-  if (!general) return res.send("武将が存在しません");
 
-  const index = Number(req.body.index);   // コマ番号
-  const heisyuId = req.body.heisyuId;
-  const count = Number(req.body.count);
 
-  const INTERVAL = 60 * 1000;
-  const executeAt = Date.now() + (index + 1) * INTERVAL;
 
-  if (!general.commandQueue) general.commandQueue = [];
+function getRandomSecond() {
+  return Math.floor(Math.random() * 60); // 0〜59
+}
 
-  general.commandQueue[index] = {
-    type: "徴兵",
-    detail: heisyuId,
-    count,
-    executeAt
-  };
+function getBaseTimeWithFixedSecond(fixedSecond) {
+  const now = new Date();
 
-  saveJSON("generals.json", generals);
+  now.setSeconds(fixedSecond);
+  now.setMilliseconds(0);
 
-  res.redirect(`/user/${general.id}`);
-});
+  // 過去なら次の分へ
+  if (now.getTime() <= Date.now()) {
+    now.setMinutes(now.getMinutes() + 1);
+  }
+
+  return now.getTime();
+}
+
+
+
 
 
 function getGameNow(general) {
@@ -511,26 +535,294 @@ function getGameNow(general) {
 }
 
 
-function executeCommand(cmd, general) {
-  if (cmd._logged) return; // ★ 二重ログ防止
+function executeCommand(cmd, general, generals, cities) {
+  if (!cmd || !cmd.type) return;
 
   const handler = commandHandlers[cmd.type];
-  if (!handler || typeof handler.execute !== "function") return;
 
-  const result = handler.execute(general, cmd);
-  if (!result || typeof result.message !== "string") return;
+  if (!handler) {
+    console.log("未実装コマンド:", cmd.type);
+    return;
+  }
 
-  if (!general.commandLog) general.commandLog = [];
+  try {
+   handler.execute(general, cmd);
+  } catch (err) {
+    console.error("コマンド実行エラー:", err);
+  }
+}
 
-  general.commandLog.push({
-    executeAt: cmd.executeAt,
-    type: cmd.type,
-    data: cmd.data || {},
-    message: result.message
+function handleMoveAndBattle(attacker, city, log) {
+  const defenders = generals.filter(g => g.defendingCity === city.id);
+
+  if (defenders.length > 0) {
+    const defender = defenders[0];
+
+    log.push(`⚔️ ${attacker.name} が ${city.name} に出撃！`);
+    log.push(`守備：${defender.name} と戦闘発生！`);
+
+    const result = simulateBattle(attacker, defender);
+
+    // ★修正①
+    addBattleLog(attacker, result.log);
+    addBattleLog(defender, result.log);
+
+    // ★修正②
+    if (result.winner === "attacker") {
+      log.push(`🏆 ${attacker.name} の勝利！`);
+    } else {
+      log.push(`💀 ${attacker.name} の敗北…`);
+    }
+
+  } else {
+    log.push(`${city.name} に到着（守備なし）`);
+  }
+}
+
+function addBattleLog(general, logText) {
+  if (!general.battleLog) general.battleLog = [];
+
+  general.battleLog.unshift({
+    message: logText,
+    time: Date.now()
   });
 
-  cmd._logged = true; // ★ ログ済みフラグ
+  if (general.battleLog.length > 50) {
+    general.battleLog.pop();
+  }
 }
+
+
+
+
+
+
+
+
+// =========================
+// ログアウト
+// =========================
+app.get("/logout", (req, res) => {
+
+  req.session.destroy(err => {
+    if (err) {
+      console.log("ログアウトエラー:", err);
+      return res.send("ログアウト失敗");
+    }
+
+    res.redirect("/login");
+  });
+});
+const INTERVAL = 60 * 1000;
+
+setInterval(() => {
+  const generals = loadJSON("generals.json");
+
+  generals.forEach(g => {
+    processCommands(g);
+  });
+
+  saveJSON("generals.json", generals); // ← これ追加
+}, 1000); // デバッグ中は1秒がおすすめ
+
+
+commandHandlers.declareWar = {
+  execute: (general, cmd) => {
+    const countries = loadJSON("countries.json");
+
+    const myCountry = countries.find(c => c.id === general.countryId);
+    const target = countries.find(c => c.id === cmd.targetCountryId);
+
+    if (!myCountry || !target) {
+      return { success: false, message: "対象国が存在しない" };
+    }
+
+    if (!myCountry.wars) myCountry.wars = [];
+    if (!target.wars) target.wars = [];
+
+    // すでに戦争中なら何もしない
+    if (myCountry.wars.includes(target.id)) {
+      return { success: false, message: "すでに戦争中" };
+    }
+
+    myCountry.wars.push(target.id);
+    target.wars.push(myCountry.id);
+
+    saveJSON("countries.json", countries);
+
+    // 🔥 全体ログ用
+    return {
+      success: true,
+      message: `⚔️ ${myCountry.name} が ${target.name} に宣戦布告！`,
+      global: true // ← これ重要
+    };
+  }
+};
+
+commandHandlers.move = require("./commands/move");
+
+
+const skills = require('./data/skills.json');
+
+app.get("/skills", (req, res) => {
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(g => g.id === req.session.generalId);
+
+  if (!general) return res.redirect("/login");
+
+  if (!general.skills) general.skills = [];
+  if (!general.skillPoints) general.skillPoints = 0;
+
+  res.render("skills", {
+    general,
+    skills
+  });
+});
+
+app.post("/learn-skill", (req, res) => {
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(g => g.id === req.session.generalId);
+
+  if (!general) return res.redirect("/login");
+
+  if (!general.skills) general.skills = [];
+  if (!general.skillPoints) general.skillPoints = 0;
+
+  const skillId = req.body.skillId;
+  const skill = skills[skillId];
+
+  let message = "";
+
+  if (!skill) {
+    message = "スキルが存在しません";
+  } else if (general.skills.includes(skillId)) {
+    message = "習得済みです";
+  } else if (skill.prev && !general.skills.includes(skill.prev)) {
+    message = "前提スキルが必要です";
+  } else if (general.skillPoints < skill.cost) {
+    message = "ポイント不足";
+  } else {
+    general.skillPoints -= skill.cost;
+    general.skills.push(skillId);
+    message = `${skill.name}を習得しました`;
+  }
+
+
+
+  saveJSON("generals.json", generals);
+
+  res.redirect("/skills");
+});
+
+app.post("/buy-skill-point", (req, res) => {
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(g => g.id === req.session.generalId);
+  if (!general) return res.redirect("/login");
+
+  // 初期化
+  if (!general.skillPoints) general.skillPoints = 0;
+
+  // デバッグ用：0円で+1
+  general.skillPoints += 1;
+
+
+
+  saveJSON("generals.json", generals);
+
+  res.redirect("/skills");
+});
+
+
+
+
+function addGlobalLog(message) {
+  const generals = loadJSON("generals.json");
+
+  generals.forEach(g => {
+    if (!g.commandLog) g.commandLog = [];
+
+    g.commandLog.unshift({
+      message,
+      time: Date.now()
+    });
+
+    if (g.commandLog.length > 50) {
+      g.commandLog.pop();
+    }
+  });
+
+  saveJSON("generals.json", generals);
+}
+
+function addBattleLog(general, logArray) {
+  if (!general.battleLog) general.battleLog = [];
+
+  logArray.forEach(text => {
+    general.battleLog.unshift({
+      message: text,
+      time: Date.now()
+    });
+  });
+
+  // 最大件数制限
+  while (general.battleLog.length > 50) {
+    general.battleLog.pop();
+  }
+}
+
+
+
+
+
+
+
+
+
+app.post("/declare-war", (req, res) => {
+  const generals = loadJSON("generals.json");
+  const countries = loadJSON("countries.json");
+
+  const general = generals.find(g => g.id === req.session.generalId);
+  if (!general) return res.redirect("/login");
+
+  const myCountry = countries.find(c => c.id === general.countryId);
+  const target = countries.find(c => c.id === req.body.targetCountryId);
+
+  if (!myCountry || !target) {
+    return res.send("国が見つかりません");
+  }
+
+  // 🔥 君主チェック
+  if (myCountry.ruler !== general.name) {
+    return res.send("君主のみ実行できます");
+  }
+
+  if (!myCountry.wars) myCountry.wars = [];
+  if (!target.wars) target.wars = [];
+
+  // すでに戦争中
+  if (myCountry.wars.includes(target.id)) {
+    return res.send("すでに戦争中です");
+  }
+
+  // 🔥 戦争開始
+  myCountry.wars.push(target.id);
+  target.wars.push(myCountry.id);
+
+  saveJSON("countries.json", countries);
+
+  // 🔥 全体ログ
+  addGlobalLog(`⚔️ ${myCountry.name} が ${target.name} に宣戦布告しました！`);
+
+  res.redirect(`/user/${general.id}`);
+});
+
+
+
+
 
 
 

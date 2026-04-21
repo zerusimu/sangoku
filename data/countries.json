@@ -1,29 +1,56 @@
 [
   {
-    "id": "country_1766034901377",
-    "name": "huku",
-    "ruler": "zxc",
+    "id": "country_1773901789153",
+    "name": "",
+    "ruler": "xxx",
     "alive": true,
+    "wars": [
+      "country_1775102772550",
+      "country_1775116143121"
+    ],
     "cities": [
-      "city07"
+      "city06"
     ]
   },
   {
-    "id": "country_1766038287346",
-    "name": "bbb",
-    "ruler": "bbb",
+    "id": "country_1773901810996",
+    "name": "",
+    "ruler": "iii",
     "alive": true,
+    "wars": [
+      "country_1775102772550",
+      "country_1775116143121"
+    ],
     "cities": [
-      "city08"
+      "city03"
     ]
   },
   {
-    "id": "country_1767672578136",
+    "id": "country_1775102772550",
     "name": "xxx",
     "ruler": "xxx",
     "alive": true,
     "cities": [
-      "city02"
+      "city01"
+    ],
+    "wars": [
+      "country_1773901789153",
+      "country_1773901810996",
+      "country_1775116143121"
+    ]
+  },
+  {
+    "id": "country_1775116143121",
+    "name": "ccc",
+    "ruler": "ccc",
+    "alive": true,
+    "cities": [
+      "city05"
+    ],
+    "wars": [
+      "country_1775102772550",
+      "country_1773901789153",
+      "country_1773901810996"
     ]
   }
 ]

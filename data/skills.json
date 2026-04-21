@@ -1,3 +1,21 @@
-[
-  { "id": "leadership", "name": "統率", "bonus": { "lea": 5 } }
-]
+
+{
+  "ninzyutu1": {
+    "name": "忍術１",
+    "level": 1,
+    "cost": 5
+  },
+  "ninzyutu2": {
+    "name": "忍術２",
+    "level": 2,
+    "cost": 10,
+    "prev": "ninzyutu1"
+  },
+  "ninzyutu3": {
+    "name": "忍術３",
+    "level": 3,
+    "cost": 15,
+    "prev": "ninzyutu2"
+  }
+}
+

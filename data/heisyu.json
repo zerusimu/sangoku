@@ -2,7 +2,7 @@
   {
     "id": "noumin",
     "name": "農民",
-    "requiredRank": 0,
+    "requiredRank": 1,
     "costMoney": 50,
     "costRice": 0,
     "params": {
@@ -11,38 +11,614 @@
     }
   },
 
+{
+  "id": "warrior",
+  "name": "無ラン武特",
+      "requiredRank": 1,
+    "costMoney": 70,
+    "costRice": 0,
+  "params":
+   { "atk": 8,
+    "def": 3 },
+  "require": {
+     "str": 80 
+    }
+},
+
+{
+  "id": "tactician",
+  "name": "無ラン知特",
+      "requiredRank": 1,
+    "costMoney": 60,
+    "costRice": 0,
+  "params": { "atk": 4, "def": 4 },
+  "require": { "int": 80 }
+},
+
+{
+  "id": "support",
+  "name": "無ラン魅力",
+      "requiredRank": 1,
+     "costMoney": 60,
+    "costRice": 0,
+  "params": { "atk": 3, "def": 6 },
+  "require": { "cha": 80 }
+},
+
+
+
+
 
   {
-    "id": "infantry",
-    "name": "歩兵",
-    "requiredRank": 1,
-    "costMoney": 100,
-    "costRice": 50,
+    "id": "infantryCbu",
+    "name": "武特C級歩兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
     "params": {
       "atk": 5,
-      "def": 5
-    }
+      "def": 10
+    },
+  "requirements": {
+    "str": 100
+  }
   },
+
   {
-    "id": "cavalry",
-    "name": "騎兵",
+    "id": "infantryBbu",
+    "name": "武特B級歩兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 20,
+      "def": 40
+    },
+      "requirements": {
+    "str": 150
+  }
+  },
+
+  {
+    "id": "infantryAbu",
+    "name": "武特A級歩兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 70,
+      "def": 100
+    },
+      "requirements": {
+    "str": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "cavalryCbu",
+    "name": "武特C級騎兵",
     "requiredRank": 2,
-    "costMoney": 300,
-    "costRice": 100,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 8,
+      "def": 8
+    },
+     "requirements": {
+    "str": 120
+  }
+  },
+
+  {
+    "id": "cavalryBbu",
+    "name": "武特B級騎兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 30,
+      "def": 30
+    },
+     "requirements": {
+    "str": 150
+  }
+  },
+
+  {
+    "id": "cavalryAbu",
+    "name": "武特A級騎兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 80,
+      "def": 80
+    },
+     "requirements": {
+    "str": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "archerCbu",
+    "name": "武特C級弓兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
     "params": {
       "atk": 10,
-      "def": 3
-    }
-  },
-  {
-    "id": "archer",
-    "name": "弓兵",
-    "requiredRank": 1,
-    "costMoney": 150,
-    "costRice": 80,
-    "params": {
-      "atk": 7,
-      "def": 2
-    }
+      "def": 5
+    },
+     "requirements": {
+    "str": 120
   }
+  },
+
+    {
+    "id": "archerBbu",
+    "name": "武特B級弓兵",
+    "requiredRank": 3,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 40,
+      "def": 20
+    },
+     "requirements": {
+    "str": 150
+  }
+
+  },
+
+    {
+    "id": "archerAbu",
+    "name": "武特A級弓兵",
+    "requiredRank": 4,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 100,
+      "def": 60
+    },
+     "requirements": {
+    "str": 180
+  }
+  },
+
+  
+  {
+    "id": "infantryCti",
+    "name": "知特C級歩兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 5,
+      "def": 10
+    },
+  "requirements": {
+    "int": 100
+  }
+  },
+
+  {
+    "id": "infantryBti",
+    "name": "知特B級歩兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 20,
+      "def": 40
+    },
+      "requirements": {
+    "int": 150
+  }
+  },
+
+  {
+    "id": "infantryAti",
+    "name": "知特A級歩兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 70,
+      "def": 100
+    },
+      "requirements": {
+    "int": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "cavalryCti",
+    "name": "知特C級騎兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 8,
+      "def": 8
+    },
+     "requirements": {
+    "int": 120
+  }
+  },
+
+  {
+    "id": "cavalryBti",
+    "name": "知特B級騎兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 30,
+      "def": 30
+    },
+     "requirements": {
+    "int": 150
+  }
+  },
+
+  {
+    "id": "cavalryAti",
+    "name": "知特A級騎兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 80,
+      "def": 80
+    },
+     "requirements": {
+    "int": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "archerCti",
+    "name": "知特C級弓兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 10,
+      "def": 5
+    },
+     "requirements": {
+    "int": 120
+  }
+  },
+
+    {
+    "id": "archerBti",
+    "name": "知特B級弓兵",
+    "requiredRank": 3,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 40,
+      "def": 20
+    },
+     "requirements": {
+    "int": 150
+  }
+
+  },
+
+    {
+    "id": "archerAti",
+    "name": "知特A級弓兵",
+    "requiredRank": 4,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 100,
+      "def": 60
+    },
+     "requirements": {
+    "int": 180
+  }
+  },
+
+  
+  {
+    "id": "infantryClea",
+    "name": "統特C級歩兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 5,
+      "def": 10
+    },
+  "requirements": {
+    "lea": 100
+  }
+  },
+
+  {
+    "id": "infantryBlea",
+    "name": "統特B級歩兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 20,
+      "def": 40
+    },
+      "requirements": {
+    "lea": 150
+  }
+  },
+
+  {
+    "id": "infantryAlea",
+    "name": "統特A級歩兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 70,
+      "def": 100
+    },
+      "requirements": {
+    "lea": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "cavalryClea",
+    "name": "統特C級騎兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 8,
+      "def": 8
+    },
+     "requirements": {
+    "lea": 120
+  }
+  },
+
+  {
+    "id": "cavalryBlea",
+    "name": "統特B級騎兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 30,
+      "def": 30
+    },
+     "requirements": {
+    "lea": 150
+  }
+  },
+
+  {
+    "id": "cavalryAlea",
+    "name": "統特A級騎兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 80,
+      "def": 80
+    },
+     "requirements": {
+    "lea": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "archerClea",
+    "name": "統特C級弓兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 10,
+      "def": 5
+    },
+     "requirements": {
+    "lea": 120
+  }
+  },
+
+    {
+    "id": "archerBlea",
+    "name": "統特B級弓兵",
+    "requiredRank": 3,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 40,
+      "def": 20
+    },
+     "requirements": {
+    "lea": 150
+  }
+
+  },
+
+    {
+    "id": "archerAlea",
+    "name": "統特A級弓兵",
+    "requiredRank": 4,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 100,
+      "def": 60
+    },
+     "requirements": {
+    "lea": 180
+  }
+  },
+
+  
+  {
+    "id": "infantryCcha",
+    "name": "魅力C級歩兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 5,
+      "def": 10
+    },
+  "requirements": {
+    "cha": 100
+  }
+  },
+
+  {
+    "id": "infantryBcha",
+    "name": "魅力B級歩兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 20,
+      "def": 40
+    },
+      "requirements": {
+    "cha": 150
+  }
+  },
+
+  {
+    "id": "infantryAcha",
+    "name": "魅力A級歩兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 70,
+      "def": 100
+    },
+      "requirements": {
+    "cha": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "cavalryCcha",
+    "name": "魅力C級騎兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 8,
+      "def": 8
+    },
+     "requirements": {
+    "cha": 120
+  }
+  },
+
+  {
+    "id": "cavalryBcha",
+    "name": "魅力B級騎兵",
+    "requiredRank": 3,
+    "costMoney": 150,
+    "costRice": 0,
+    "params": {
+      "atk": 30,
+      "def": 30
+    },
+     "requirements": {
+    "cha": 150
+  }
+  },
+
+  {
+    "id": "cavalryAcha",
+    "name": "魅力A級騎兵",
+    "requiredRank": 4,
+    "costMoney": 200,
+    "costRice": 0,
+    "params": {
+      "atk": 80,
+      "def": 80
+    },
+     "requirements": {
+    "cha": 180
+  }
+  },
+
+
+
+
+  {
+    "id": "archerCcha",
+    "name": "魅力C級弓兵",
+    "requiredRank": 2,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 10,
+      "def": 5
+    },
+     "requirements": {
+    "cha": 120
+  }
+  },
+
+    {
+    "id": "archerBcha",
+    "name": "魅力B級弓兵",
+    "requiredRank": 3,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 40,
+      "def": 20
+    },
+     "requirements": {
+    "cha": 150
+  }
+
+  },
+
+    {
+    "id": "archerAcha",
+    "name": "魅力A級弓兵",
+    "requiredRank": 4,
+    "costMoney": 80,
+    "costRice": 0,
+    "params": {
+      "atk": 100,
+      "def": 60
+    },
+     "requirements": {
+    "cha": 180
+  }
+  }
+
+
 ]
