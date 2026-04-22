@@ -1,6 +1,6 @@
 const { recruit } = require("../logic/army");
 const heisyuList = require("../data/heisyu.json");
-
+const { getRankExp, applyRankExp } = require("../utils/rankSystem");
 
 
 function getRankIndex(rank) {
@@ -20,6 +20,11 @@ function getRankByPoint(point) {
 module.exports = {
   execute(general, cmd) {
 
+// ★ 最初に経験値
+const exp = getRankExp("tyouhei");
+applyRankExp(general, exp);
+
+
     console.log("cmd:", cmd);
 
     const data = cmd.data || {
@@ -27,6 +32,9 @@ module.exports = {
       count: cmd.count
     };
 
+
+
+    
     if (!data || !data.heisyuId || Number(data.count) <= 0) {
       return {
         success: false,
@@ -129,7 +137,7 @@ if (heisyuRankIndex > playerRankIndex) {
     if (canAdd <= 0) {
       return {
         success: false,
-        message: `これ以上徴兵できない（最大 ${max}）`
+        message: `これ以上徴兵できない（最大 ${max}）階級ポイント＋${exp}`
       };
     }
 
@@ -152,10 +160,11 @@ if (heisyuRankIndex > playerRankIndex) {
     // 🔥 最終的な兵数更新
     general.army.type = data.heisyuId;
     general.army.count += canAdd;
-
+    const loss =  Math.max(0, general.kunren - canAdd );
+general.kunren = loss;
     return {
       success: true,
-      message: `${heisyuName} を ${canAdd} 人徴兵（${general.army.count}/${max}）`
+      message: `${heisyuName} を ${canAdd} 人徴兵（${general.army.count}/${max}） 訓練値-${loss} 階級ポイント＋${exp}`
     };
   }
 };

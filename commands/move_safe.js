@@ -1,7 +1,7 @@
 const { loadJSON } = require("../utils/json"); // ←必ず一番上
 
 module.exports = {
-  execute: (general, cmd) => {
+ execute: (general, cmd, generals) => {
 
     const cities = loadJSON("cities.json");
 

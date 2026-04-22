@@ -41,13 +41,45 @@ function simulateBattle(attacker, defender) {
   // =====================
   // 基本ステータス
   // =====================
-  let atkPower = atkUnit.params.atk + Math.floor(attacker.str / 10);
+  let atkPower = atkUnit.params.atk + Math.floor(attacker.str * attacker.str / 10)
+    + Math.floor(attacker.int / 10) 
+    +  Math.floor(attacker.cha / 10);  
+
   let atkDef = atkUnit.params.def + Math.floor(attacker.lea / 10)
    + Math.floor(attacker.kunren / 10)  ;
 
-  let defPower = defUnit.params.atk + Math.floor(defender.str / 10);
+  let defPower = defUnit.params.atk + Math.floor(defender.str / 10)
+   + Math.floor(defender.int / 10)
+   +  Math.floor(defender.cha / 10)  ;
   let defDef = defUnit.params.def + Math.floor(defender.lea / 10)
     + Math.floor(defender.kunren / 10) ;
+
+// =====================
+// 強襲（攻撃側のみ）
+// =====================
+let assaultRate = 0;
+
+if (attacker.skills?.includes("kyoushuu3")) {
+  assaultRate = 0.15;
+} else if (attacker.skills?.includes("kyoushuu2")) {
+  assaultRate = 0.10;
+} else if (attacker.skills?.includes("kyoushuu1")) {
+  assaultRate = 0.05;
+}
+
+if (assaultRate > 0) {
+  defPower = Math.floor(defPower * (1 - assaultRate));
+  defDef = Math.floor(defDef * (1 - assaultRate));
+
+  log.push(`💥 強襲発動！相手能力-${Math.floor(assaultRate * 100)}%`);
+}
+
+
+
+
+
+
+
 
   // 攻撃力差補正
   atkPower += Math.floor((attacker.str - defender.str) / 10);
@@ -69,8 +101,8 @@ function simulateBattle(attacker, defender) {
   // =====================
   // 最大ダメージ
   // =====================
-  const atkMax = Math.max(1, atkPower - defDef + atkBonus);
-  const defMax = Math.max(1, defPower - atkDef + defBonus);
+ const atkMax = Math.max(3, Math.floor(atkPower * 1.2 - defDef * 0.7 + atkBonus));
+const defMax = Math.max(3, Math.floor(defPower * 1.2 - atkDef * 0.7 + defBonus));
 
   // =====================
   // 初期ログ
@@ -92,6 +124,58 @@ while (atkCount > 0 && defCount > 0) {
 
   let atkDamage = Math.floor(Math.random() * atkMax) + 1;
   let defDamage = Math.floor(Math.random() * defMax) + 1;
+
+// 格闘1（最低保証）
+if (attacker.skills.includes("kakutou1")) {
+     const rate = attacker.str / 10;
+  if (chance(rate)) {
+  
+    const minDamage = Math.floor(maxDamage / 2);
+    atkDamage = Math.max(damage, minDamage);
+  }
+}
+
+if (defender.skills.includes("kakutou1")) {
+     const rate = defender.str / 10;
+  if (chance(rate)) {
+  
+    const minDamage = Math.floor(maxDamage / 2);
+    defDamage = Math.max(damage, minDamage);
+  }
+}
+
+
+// 格闘2（最大値アップ）
+if (attacker.skills.includes("kakutou2")) {
+    const rate = attacker.str / 8;
+  if (chance(rate)) {
+   atkDamage += 1;
+  }
+}
+if (defender.skills.includes("kakutou2")) {
+    const rate = defender.str / 8;
+  if (chance(rate)) {
+   defDamage += 1;
+  }
+}
+
+
+
+// 格闘3（2倍）
+if (attacker.skills.includes("kakutou3")) {
+   const rate = attacker.str / 12;
+  if (chance(rate)) {
+  atkDamage *= 2;
+  }
+}
+
+if (defender.skills.includes("kakutou3")) {
+   const rate = defender.str / 12;
+  if (chance(rate)) {
+  defDamage *= 2;
+  }
+}
+
 
   // =====================
   // 忍術1（防御側ダメージ無効）
@@ -122,17 +206,25 @@ while (atkCount > 0 && defCount > 0) {
   atkCount -= defDamage;
 
   // =====================
-  // 忍術3（反撃：防御側）
+  // 忍術3（反撃）
   // =====================
-  if (defender.skills?.includes("ninzyutu3")) {
-    const rate = defender.lea / 10;
-    if (chance(rate)) {
-      const counter = defDamage + atkDamage;
-      atkCount -= counter;
-      log.push(`⚡ 忍術3発動！反撃 ${counter}ダメージ！`);
-    }
+// 防御側の反撃
+if (defender.skills?.includes("ninzyutu3")) {
+  const rate = defender.lea / 10;
+  if (chance(rate)) {
+    const counter = atkDamage;
+    log.push(`⚡ 防御側 忍術3！反撃 ${counter}ダメージ！`);
   }
+}
 
+// 攻撃側の反撃
+if (attacker.skills?.includes("ninzyutu3")) {
+  const rate = attacker.lea / 10;
+  if (chance(rate)) {
+    const counter = defDamage;
+    log.push(`⚡ 攻撃側 忍術3！反撃 ${counter}ダメージ！`);
+  }
+}
   // =====================
   // ログ
   // =====================

@@ -19,13 +19,7 @@ function getRankExp(commandType, result) {
 }
 
 function applyRankExp(general, exp) {
-  general.rankExp = (general.rankExp || 0) + exp;
-
-  // レベルアップ処理（例）
-  while (general.rankExp >= getNextRankExp(general.rank)) {
-    general.rankExp -= getNextRankExp(general.rank);
-    general.rank++;
-  }
+  general.rankPoint = (general.rankPoint || 0) + exp;
 }
 
 function getNextRankExp(rank) {

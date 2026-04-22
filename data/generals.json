@@ -345,51 +345,363 @@
     "cha": 5,
     "countryId": "country_1775102772550",
     "cityId": "city01",
-    "kunren": 100,
+    "kunren": 0,
     "money": 1000,
     "rice": 500,
-    "rankPoint": 0,
+    "rankPoint": 1215,
     "rank": "D",
     "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
+      {
+        "type": "tyouhei",
+        "executeAt": 1776838956000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839016000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839076000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839136000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839196000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839256000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839316000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839376000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839436000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839496000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839556000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839616000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839676000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839736000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839796000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839856000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839916000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839976000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840036000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840096000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840156000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840216000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840276000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840336000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840396000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840456000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840516000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840576000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840636000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840696000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840756000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840816000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840876000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840936000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840996000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776841056000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776841116000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776841176000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776841236000,
+        "executed": false,
+        "data": {
+          "heisyuId": "noumin",
+          "count": 100
+        }
+      },
       null,
       null,
       null,
@@ -418,321 +730,346 @@
     },
     "commandLog": [
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737146578
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838896423
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737146260
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838836932
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737146049
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838776531
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737145829
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838716151
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737145393
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838656799
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737145144
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838596447
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737144928
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838536103
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737144722
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838476784
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737144477
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838416435
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737144270
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838356045
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737144080
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838296669
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737143887
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838236311
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737143665
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838176919
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737143312
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838116610
       },
       {
-        "message": "スキルポイントを1獲得しました",
-        "time": 1776737142586
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776838056276
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010923
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776837996923
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010923
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776837936575
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010923
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776837876166
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010923
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776837816786
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010922
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
+        "executeAt": 1776837756434
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010922
+        "type": "tyouhei",
+        "message": "農民 を 100 人徴兵（100/100） 訓練値-0 階級ポイント＋15",
+        "executeAt": 1776837696032
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010922
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833556719
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010922
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833496059
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010922
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833436547
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010921
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833376234
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010921
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833316859
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010921
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833256474
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010921
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833196091
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010921
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833136739
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010920
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833076358
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010920
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776833016038
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010920
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832956656
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010920
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832896263
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010920
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832836832
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010919
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832776398
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010919
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832716886
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010919
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832656531
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010918
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010918
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010918
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010918
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010917
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010917
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010917
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010917
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010917
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010916
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010916
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010916
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010915
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010915
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010915
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010915
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010915
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010914
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776832640446
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776217010914
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831516312
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776065196660
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831456977
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776065136283
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831396515
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776065076809
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831336185
       },
       {
-        "type": "move",
-        "message": "🏆 許昌で勝利！",
-        "executeAt": 1776065016266
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831276744
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776064896397
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831216258
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776064882322
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831156012
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776064882322
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831096644
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776064882321
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776831036246
       },
       {
-        "type": "move",
-        "message": "国情報が不正です",
-        "executeAt": 1776064882321
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1776830976851
       }
     ],
     "fixedSecond": 36,
     "soldiers": {
-      "noumin": 100
+      "noumin": 200
     },
-    "skillPoints": 15
+    "skillPoints": 15,
+    "battleLog": [
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:43\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:42\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:41\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:40\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:39\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:38\n⚡ 忍術3発動！反撃 2ダメージ！\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:37\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:36\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:35\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:34\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:33\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:32\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:31\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:30\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:29\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:28\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:27\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:26\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:25\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:24\n🌀 忍術1発動！自分ダメージ無効！\n21ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:43 / 相:23\n⚡ 忍術3発動！反撃 2ダメージ！\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:22\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:21\n⚡ 忍術3発動！反撃 2ダメージ！\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:20\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:19\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:18\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:17\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:16\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:15\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:14\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:13\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:12\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:11\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:10\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:9\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:8\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:7\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:6\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:5\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:4\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:3\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:2\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:1\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:0\n🏆 攻撃側の勝利！\n🌿 忍術2発動！自軍 21回復",
+        "time": 1776832640450
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:92\n⚡ 忍術3発動！反撃 2ダメージ！\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:84\n⚡ 忍術3発動！反撃 2ダメージ！\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:81\n⚡ 忍術3発動！反撃 2ダメージ！\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:69\n🌀 忍術1発動！自分ダメージ無効！\n⚡ 忍術3発動！反撃 1ダメージ！\n32ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:27 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:60\n🌀 忍術1発動！自分ダメージ無効！\n⚡ 忍術3発動！反撃 1ダメージ！\n41ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:18 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:57\n⚡ 忍術3発動！反撃 2ダメージ！\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:54\n⚡ 忍術3発動！反撃 2ダメージ！\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:51\n🌀 忍術1発動！自分ダメージ無効！\n50ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:6 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:44\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 19回復",
+        "time": 1776832640447
+      }
+    ]
   },
   {
     "id": "general_1775116143121",
@@ -882,42 +1219,261 @@
     "kunren": 100,
     "money": 1000,
     "rice": 500,
-    "rankPoint": 0,
+    "rankPoint": 3385,
     "rank": "D",
     "skills": [
       "ninzyutu1",
       "ninzyutu2",
-      "ninzyutu3"
+      "ninzyutu3",
+      "kyousyuu1",
+      "kyousyuu2",
+      "kyousyuu3"
     ],
     "skillPoints": 0,
     "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
+      {
+        "type": "tyouhei",
+        "executeAt": 1776838924000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776838984000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839044000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839104000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839164000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839224000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839284000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839344000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839404000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839464000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839524000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839584000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839644000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839704000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839764000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839824000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839884000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776839944000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840004000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840064000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840124000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840184000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840244000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840304000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840364000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840424000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1776840484000,
+        "executed": false,
+        "data": {
+          "heisyuId": "tactician",
+          "count": 65
+        }
+      },
       null,
       null,
       null,
@@ -958,262 +1514,310 @@
     },
     "commandLog": [
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838864117
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838804708
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838744330
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838684947
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838624610
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838564279
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838504978
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838444565
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838384223
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838324862
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838264478
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838204098
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838144741
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838084436
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776838024083
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837964777
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837904374
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837844982
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837784570
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837724203
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837664881
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837604494
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837544129
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837484856
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837424510
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776749628827
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837364099
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747904840
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837304679
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747844144
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837244342
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747784451
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837184819
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747724786
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837124128
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747664062
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837064483
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747604380
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776837004132
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747544731
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776836944811
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747484067
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776834004585
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747424414
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833944929
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747364811
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833884250
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747304301
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833824586
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747244902
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833764950
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747184551
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833704309
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747124290
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833644651
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747064941
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833584001
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776747004566
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833524362
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746944162
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833464729
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746884839
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833404356
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746824475
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833344020
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746764081
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833284648
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746704782
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833224269
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746644372
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833164872
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746584001
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833104531
       },
       {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない",
-        "executeAt": 1776746524582
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1776833044220
       }
     ],
     "fixedSecond": 4,
     "soldiers": {
-      "noumin": 766,
-      "tactician": 65
+      "noumin": 1016,
+      "tactician": 453
     },
     "battleLog": [
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:43\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:42\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:41\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:40\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:39\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:38\n⚡ 忍術3発動！反撃 2ダメージ！\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:37\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:36\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:35\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:34\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:33\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:32\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:31\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:30\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:29\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:28\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:27\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:26\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:25\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:24\n🌀 忍術1発動！自分ダメージ無効！\n21ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:43 / 相:23\n⚡ 忍術3発動！反撃 2ダメージ！\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:22\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:21\n⚡ 忍術3発動！反撃 2ダメージ！\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:20\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:19\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:18\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:17\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:16\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:15\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:14\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:13\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:12\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:11\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:10\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:9\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:8\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:7\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:6\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:5\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:4\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:3\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:2\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:1\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:0\n🏆 攻撃側の勝利！\n🌿 忍術2発動！自軍 21回復",
+        "time": 1776832640450
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:92\n⚡ 忍術3発動！反撃 2ダメージ！\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:84\n⚡ 忍術3発動！反撃 2ダメージ！\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:81\n⚡ 忍術3発動！反撃 2ダメージ！\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:69\n🌀 忍術1発動！自分ダメージ無効！\n⚡ 忍術3発動！反撃 1ダメージ！\n32ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:27 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:60\n🌀 忍術1発動！自分ダメージ無効！\n⚡ 忍術3発動！反撃 1ダメージ！\n41ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:18 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:57\n⚡ 忍術3発動！反撃 2ダメージ！\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:54\n⚡ 忍術3発動！反撃 2ダメージ！\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:51\n🌀 忍術1発動！自分ダメージ無効！\n50ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:6 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:44\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 19回復",
+        "time": 1776832640447
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:93\n🌀 忍術1発動！自分ダメージ無効！\n8ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:58 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:74\n🌀 忍術1発動！自分ダメージ無効！\n27ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:40 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:33\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 32回復",
+        "time": 1776831424751
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:80\n🌀 忍術1発動！自分ダメージ無効！\n21ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:45 / 相:79\n🌀 忍術1発動！自分ダメージ無効！\n22ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:45 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:56\n🌀 忍術1発動！自分ダメージ無効！\n45ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:23 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:50\n🌀 忍術1発動！自分ダメージ無効！\n51ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:18 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:37\n🌀 忍術1発動！自分ダメージ無効！\n64ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:6 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:35\n🌀 忍術1発動！自分ダメージ無効！\n66ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:5 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:32\n🌀 忍術1発動！自分ダメージ無効！\n69ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:3 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:30\n71ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:28\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 30回復",
+        "time": 1776831304970
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:90\n🌀 忍術1発動！自分ダメージ無効！\n11ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:55 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:78\n🌀 忍術1発動！自分ダメージ無効！\n23ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:44 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:74\n🌀 忍術1発動！自分ダメージ無効！\n27ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:41 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:53\n🌀 忍術1発動！自分ダメージ無効！\n48ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:21 / 相:52\n🌀 忍術1発動！自分ダメージ無効！\n49ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:21 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:45\n🌀 忍術1発動！自分ダメージ無効！\n56ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:15 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:39\n🌀 忍術1発動！自分ダメージ無効！\n62ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:10 / 相:38\n🌀 忍術1発動！自分ダメージ無効！\n63ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:10 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:36\n🌀 忍術1発動！自分ダメージ無効！\n65ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:9 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:30\n71ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:28\n73ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:27\n74ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:26\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 20回復",
+        "time": 1776830644805
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n🌀 忍術1発動！自分ダメージ無効！\n4ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:62 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:88\n🌀 忍術1発動！自分ダメージ無効！\n13ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:54 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:84\n🌀 忍術1発動！自分ダメージ無効！\n17ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:51 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:80\n🌀 忍術1発動！自分ダメージ無効！\n21ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:48 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:58\n🌀 忍術1発動！自分ダメージ無効！\n43ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:27 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:55\n🌀 忍術1発動！自分ダメージ無効！\n46ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:25 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:45\n🌀 忍術1発動！自分ダメージ無効！\n56ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:16 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:37\n🌀 忍術1発動！自分ダメージ無効！\n64ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:9 / 相:36\n🌀 忍術1発動！自分ダメージ無効！\n65ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:9 / 相:35\n🌀 忍術1発動！自分ダメージ無効！\n66ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:9 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:30\n71ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:28\n73ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:27\n74ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:26\n75ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:25\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 31回復",
+        "time": 1776830524081
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n🌀 忍術1発動！自分ダメージ無効！\n4ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:62 / 相:96\n🌀 忍術1発動！自分ダメージ無効！\n5ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:62 / 相:95\n🌀 忍術1発動！自分ダメージ無効！\n6ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:62 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:93\n🌀 忍術1発動！自分ダメージ無効！\n8ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:61 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:63\n🌀 忍術1発動！自分ダメージ無効！\n38ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:32 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:50\n🌀 忍術1発動！自分ダメージ無効！\n51ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:20 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:38\n🌀 忍術1発動！自分ダメージ無効！\n63ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:9 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:30\n71ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:28\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 28回復",
+        "time": 1776830404092
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:17\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n🌀 忍術1発動！自分ダメージ無効！\n4ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:62 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:87\n🌀 忍術1発動！自分ダメージ無効！\n14ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:53 / 相:86\n🌀 忍術1発動！自分ダメージ無効！\n15ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:53 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:67\n🌀 忍術1発動！自分ダメージ無効！\n34ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:35 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:52\n🌀 忍術1発動！自分ダメージ無効！\n49ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:21 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:49\n🌀 忍術1発動！自分ダメージ無効！\n52ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:19 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:42\n🌀 忍術1発動！自分ダメージ無効！\n59ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:13 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:30\n71ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:28\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 19回復",
+        "time": 1776830284361
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:17\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:76\n🌀 忍術1発動！自分ダメージ無効！\n25ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:41 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:70\n🌀 忍術1発動！自分ダメージ無効！\n31ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:36 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:65\n🌀 忍術1発動！自分ダメージ無効！\n36ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:32 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:48\n🌀 忍術1発動！自分ダメージ無効！\n53ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:16 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:35\n🌀 忍術1発動！自分ダメージ無効！\n66ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:4 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:30\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 18回復",
+        "time": 1776827164896
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:17\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:95\n🌀 忍術1発動！自分ダメージ無効！\n6ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:60 / 相:94\n🌀 忍術1発動！自分ダメージ無効！\n7ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:60 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:82\n🌀 忍術1発動！自分ダメージ無効！\n19ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:49 / 相:81\n🌀 忍術1発動！自分ダメージ無効！\n20ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:49 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:72\n🌀 忍術1発動！自分ダメージ無効！\n29ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:41 / 相:71\n🌀 忍術1発動！自分ダメージ無効！\n30ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:41 / 相:70\n🌀 忍術1発動！自分ダメージ無効！\n31ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:41 / 相:69\n🌀 忍術1発動！自分ダメージ無効！\n32ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:41 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:65\n🌀 忍術1発動！自分ダメージ無効！\n36ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:38 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:52\n🌀 忍術1発動！自分ダメージ無効！\n49ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:26 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:50\n🌀 忍術1発動！自分ダメージ無効！\n51ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:25 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:44\n🌀 忍術1発動！自分ダメージ無効！\n57ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:20 / 相:43\n🌀 忍術1発動！自分ダメージ無効！\n58ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:20 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:36\n🌀 忍術1発動！自分ダメージ無効！\n65ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:14 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:30\n71ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:28\n🌀 忍術1発動！自分ダメージ無効！\n73ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:7 / 相:27\n🌀 忍術1発動！自分ダメージ無効！\n74ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:7 / 相:26\n75ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:25\n76ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:24\n77ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:23\n78ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:22\n79ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:21\n80ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:20\n81ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:19\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 32回復",
+        "time": 1776827044105
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:17\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n1ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:99\n🌀 忍術1発動！自分ダメージ無効！\n2ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:64 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:95\n🌀 忍術1発動！自分ダメージ無効！\n6ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:61 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:76\n🌀 忍術1発動！自分ダメージ無効！\n25ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:43 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:70\n🌀 忍術1発動！自分ダメージ無効！\n31ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:38 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:62\n🌀 忍術1発動！自分ダメージ無効！\n39ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:31 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:59\n42ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:44\n🌀 忍術1発動！自分ダメージ無効！\n57ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:14 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:40\n61ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:37\n64ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:31\n70ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:30\n🌀 忍術1発動！自分ダメージ無効！\n71ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:1 / 相:29\n72ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:28\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 25回復",
+        "time": 1776826924368
+      },
+      {
+        "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:20\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:1\n🌀 忍術1発動！自分ダメージ無効！\n1ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:65 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:64 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:63 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:62 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:61 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:60 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:59 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:58 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:55 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:54 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:53 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:52 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:51 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:50 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:49 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:48 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:47 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:46 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:45 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:44 / 相:78\n23ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:77\n24ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:42 / 相:76\n25ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:41 / 相:75\n26ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:40 / 相:74\n27ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:39 / 相:73\n28ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:38 / 相:72\n29ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:37 / 相:71\n30ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:36 / 相:70\n31ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:35 / 相:69\n32ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:34 / 相:68\n33ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:33 / 相:67\n34ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:32 / 相:66\n35ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:31 / 相:65\n36ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:30 / 相:64\n37ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:29 / 相:63\n38ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:28 / 相:62\n39ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:27 / 相:61\n40ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:26 / 相:60\n41ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:25 / 相:59\n🌀 忍術1発動！自分ダメージ無効！\n42ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:25 / 相:58\n43ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:24 / 相:57\n44ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:23 / 相:56\n45ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:55\n46ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:21 / 相:54\n47ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:20 / 相:53\n48ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:19 / 相:52\n49ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:18 / 相:51\n50ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:17 / 相:50\n51ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:16 / 相:49\n52ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:15 / 相:48\n53ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:14 / 相:47\n54ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:13 / 相:46\n55ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:12 / 相:45\n56ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:11 / 相:44\n57ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:10 / 相:43\n58ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:9 / 相:42\n59ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:8 / 相:41\n60ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:7 / 相:40\n🌀 忍術1発動！自分ダメージ無効！\n61ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:7 / 相:39\n62ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:6 / 相:38\n63ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:37\n🌀 忍術1発動！自分ダメージ無効！\n64ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:5 / 相:36\n65ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:4 / 相:35\n66ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:3 / 相:34\n67ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:2 / 相:33\n68ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:1 / 相:32\n69ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:0 / 相:31\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 28回復",
+        "time": 1776826804473
+      },
       {
         "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:7\n相手 攻撃:13 防御:21\n最大ダメージ 自:1 / 相:6\n1ターン目 ▶ 自:1ダメ / 相:3ダメ\n残兵 ▶ 自:62 / 相:99\n2ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:58 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:57 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:56 / 相:96\n5ターン目 ▶ 自:1ダメ / 相:2ダメ\n残兵 ▶ 自:54 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:50 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:44 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:5ダメ\n残兵 ▶ 自:39 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:35 / 相:91\n🌀 忍術1発動！自分ダメージ無効！\n10ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:35 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:29 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:25 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:2ダメ\n残兵 ▶ 自:23 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:19 / 相:86\n15ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:13 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:2ダメ\n残兵 ▶ 自:11 / 相:84\n17ターン目 ▶ 自:1ダメ / 相:5ダメ\n残兵 ▶ 自:6 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:5 / 相:82\n19ターン目 ▶ 自:1ダメ / 相:3ダメ\n残兵 ▶ 自:2 / 相:81\n🌀 忍術1発動！自分ダメージ無効！\n20ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:2 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:5ダメ\n残兵 ▶ 自:0 / 相:79\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 13回復",
         "time": 1776745384430

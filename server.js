@@ -195,7 +195,7 @@ function getRankIndex(rank) {
 
 
 
-function processCommands(general) {
+function processCommands(general, generals) {
 
   if (!general.cityId) {
     console.log("⚠ cityId消えてる:", general);
@@ -223,7 +223,7 @@ function processCommands(general) {
 
       if (handler && typeof handler.execute === "function") {
 
-        const result = handler.execute(general, cmd);
+       const result = handler.execute(general, cmd, generals);
 
         // ✅ ログ
         if (result && result.message && !cmd.logged) {
@@ -267,7 +267,7 @@ function processCommands(general) {
 
   const active = general.commandQueue
     .filter(cmd => cmd && !cmd.executed) // ← 未実行だけ残す
-    .sort((a, b) => a.executeAt - b.executeAt); // ← 時間順
+  
 
   // 空で埋める
   while (active.length < 60) {
@@ -336,7 +336,7 @@ app.get("/user/:id", (req, res) => {
   if (!general) return res.send("武将が存在しません");
 
   const country = countries.find(c => c.id === general.countryId);
-  processCommands(general);
+ processCommands(general, generals);
 
 saveJSON("generals.json", generals);
 
@@ -619,7 +619,7 @@ setInterval(() => {
   const generals = loadJSON("generals.json");
 
   generals.forEach(g => {
-    processCommands(g);
+   processCommands(g, generals);
   });
 
   saveJSON("generals.json", generals); // ← これ追加
@@ -627,7 +627,7 @@ setInterval(() => {
 
 
 commandHandlers.declareWar = {
-  execute: (general, cmd) => {
+ execute: (general, cmd, generals) => {
     const countries = loadJSON("countries.json");
 
     const myCountry = countries.find(c => c.id === general.countryId);

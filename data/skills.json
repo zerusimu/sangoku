@@ -16,6 +16,44 @@
     "level": 3,
     "cost": 15,
     "prev": "ninzyutu2"
+  },
+
+"kyousyuu1":{
+ "name": "強襲１",
+    "level": 1,
+    "cost": 5
+},
+  "kyousyuu2": {
+    "name": "強襲２",
+    "level": 2,
+    "cost": 10,
+    "prev": "kyousyuu1"
+  },
+  "kyousyuu3": {
+    "name": "強襲３",
+    "level": 3,
+    "cost": 15,
+    "prev": "kyousyuu2"
+  },
+
+"kakutou1":{
+ "name": "格闘１",
+    "level": 1,
+    "cost": 5
+},
+  "kakutou2": {
+    "name": "格闘２",
+    "level": 2,
+    "cost": 10,
+    "prev": "kakutou1"
+  },
+  "kakutou3": {
+    "name": "格闘３",
+    "level": 3,
+    "cost": 15,
+    "prev": "kakutou2"
   }
+
+
 }
 
