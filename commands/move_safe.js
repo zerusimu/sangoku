@@ -1,4 +1,5 @@
 const { loadJSON } = require("../utils/json"); // ←必ず一番上
+const { getRankExp, applyRankExp } = require("../utils/rankSystem");
 
 module.exports = {
  execute: (general, cmd, generals) => {
@@ -6,6 +7,12 @@ module.exports = {
     const cities = loadJSON("cities.json");
 
     const targetCity = cities.find(c => c.id === cmd.data?.targetCity);
+
+// ★ 最初に経験値
+const exp = getRankExp("move_safe");
+applyRankExp(general, exp);
+
+
 
     if (!targetCity) {
       return { success: false, message: "都市が存在しない" };

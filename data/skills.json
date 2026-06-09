@@ -52,8 +52,25 @@
     "level": 3,
     "cost": 15,
     "prev": "kakutou2"
-  }
+  },
 
+  "kobu1":{
+ "name": "鼓舞１",
+    "level": 1,
+    "cost": 5
+},
+  "kobu2": {
+    "name": "鼓舞２",
+    "level": 2,
+    "cost": 10,
+    "prev": "kobu1"
+  },
+  "kobu3": {
+    "name": "鼓舞３",
+    "level": 3,
+    "cost": 15,
+    "prev": "kobu2"
+  }
 
 }
 

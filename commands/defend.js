@@ -1,8 +1,9 @@
 const { loadJSON, saveJSON } = require("../utils/json");
+const { getRankExp, applyRankExp } = require("../utils/rankSystem");
+
 
 function execute(general, cmd) {
   const cities = loadJSON("cities.json");
-
   const city = cities.find(c => String(c.id) === String(general.cityId));
 
   if (!general.cityId) {
@@ -20,6 +21,11 @@ function execute(general, cmd) {
   }
 
   saveJSON("cities.json", cities);
+
+// 守備についたら経験値
+const exp = getRankExp("defend");
+applyRankExp(general, exp);
+
 
   return { message: "城の守備についた" };
 }

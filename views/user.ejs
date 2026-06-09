@@ -141,7 +141,7 @@ function getCommandName(type) {
   <% } %>
 
 <%
-const city = cities.find(c => c.id === general.cityId);
+const city = cities.find(c => c.id === general.cityId) || null;
 %>
 
 <h3>守備武将</h3>
@@ -164,7 +164,7 @@ const city = cities.find(c => c.id === general.cityId);
 
 <% } %>
 
-<% if (general.name === country.ruler) { %>
+<% if (country && general.name === country.ruler) { %>
   <form action="/declare-war" method="POST">
     <select name="targetCountryId">
       <% countries.forEach(c => { %>
@@ -182,19 +182,22 @@ const city = cities.find(c => c.id === general.cityId);
 <%
   let cls = "neutral";
 
-  if (city.owner === general.countryId) {
-    cls = "mine";
-  } else if (city.owner) {
-    cls = "enemy";
-  }
+  if (city) {
+    if (city.owner === general.countryId) {
+      cls = "mine";
+    } else if (city.owner) {
+      cls = "enemy";
+    }
 
-  if (city.id === general.cityId) {
-    cls += " current"; // ★追加
+    if (city.id === general.cityId) {
+      cls += " current";
+    }
   }
 %>
 
 <div class="map-cell <%= cls %>">
- 現在の都市： <%= city.name %>
+ 現在の都市：
+ <%= city ? city.name : "なし" %>
 </div>
 
 
@@ -272,20 +275,59 @@ const city = cities.find(c => c.id === general.cityId);
   <% }) %>
 </table>
 
+<% if (general.recruitOffers?.length > 0) { %>
 
+<h2>登用依頼</h2>
 
+<% general.recruitOffers.forEach(offer => { %>
 
+<div style="border:1px solid #999;padding:10px;margin:10px;">
 
+  <h3>
+    【<%= offer.countryName %>】
+    <%= offer.fromName %>
+  </h3>
 
+  <p>
+    <%= offer.message %>
+  </p>
 
+  <form method="post"
+        action="/recruit/accept">
 
+    <input
+      type="hidden"
+      name="offerId"
+      value="<%= offer.id %>">
 
+    <button type="submit">
+      承諾
+    </button>
 
+  </form>
 
+  <form method="post"
+        action="/recruit/reject">
 
+    <input
+      type="hidden"
+      name="offerId"
+      value="<%= offer.id %>">
 
+    <button type="submit">
+      拒否
+    </button>
+
+  </form>
 
 </div>
+
+<% }) %>
+
+<% } %>
+</div>
+
+
 <!-- ================= 右 ================= -->
 <div class="right">  
 <h3>一括設定</h3>
@@ -405,6 +447,7 @@ const city = cities.find(c => c.id === general.cityId);
     <option value="defend" <%= s.command === "defend" ? "selected" : "" %>>守備</option>
     <option value="move" <%= s.command === "move" ? "selected" : "" %>>出兵</option>
 <option value="move_safe"<%= s.command === "move_safe" ? "selected" : "" %>>移動</option>
+<option value="move_safe"<%= s.command === "recruit" ? "selected" : "" %>>登用</option>
   </select>
 
   <!-- ✅ 出兵入力（selectの外に出す） -->

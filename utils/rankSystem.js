@@ -1,5 +1,12 @@
 function getRankExp(commandType, result) {
   switch (commandType) {
+
+
+
+    
+      case "defend":
+      return 20;
+    
     case "kunren":
       return 15;
 

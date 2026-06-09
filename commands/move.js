@@ -3,6 +3,9 @@ const { simulateBattle } = require("../battle/battle");
 const { removeIfDead, removeFromAllDefenders } = require("../utils/defense");
 const { addBattleLog } = require("../utils/log");
 const { getRankExp, applyRankExp } = require("../utils/rankSystem");
+const {
+  checkCountryDestroyed
+} = require("../utils/country");
 
 module.exports = {
  execute: (general, cmd, generals) => {
@@ -53,6 +56,17 @@ module.exports = {
       removeIfDead(general);
       removeIfDead(defender);
 
+// =====================
+// 🔥 防衛解除（今回やりたい処理）
+// =====================
+if (result.winner === "attacker" && defender.army.count <= 0) {
+  defender.cityId = null;
+
+  addBattleLog(defender, [`💀 ${defender.name} は敗北し、防衛から外れた`]);
+}
+
+
+
       const battleLog = result.log.replace(/\n/g, "<br>");
 
       needSave = true; // ★ 戦闘したら必ず保存
@@ -67,27 +81,53 @@ module.exports = {
         message = `⚔️ 勝利（階級値+${exp}）<br>${battleLog}`;
       }
 
-      // 制圧
-      else {
-        removeFromAllDefenders(general.id);
-        general.cityId = targetCity.id;
-        targetCity.owner = general.countryId;
+// 制圧
+else {
 
-        message = `🏆 ${targetCity.name} 制圧！（階級値+${exp}）<br>${battleLog}`;
-      }
-    }
+  // 制圧前の所有国を保存
+  const oldOwner = targetCity.owner;
+
+  removeFromAllDefenders(general.id);
+
+  general.cityId = targetCity.id;
+
+  // 都市制圧
+  targetCity.owner = general.countryId;
+
+  // 滅亡判定
+  checkCountryDestroyed(
+    oldOwner,
+    cities,
+    generals
+  );
+
+  message = `🏆 ${targetCity.name} 制圧！（階級値+${exp}）<br>${battleLog}`;
+}
 
     // =====================
     // 無人
     // =====================
-    else {
+} else {
 
       const exp = getRankExp("move_safe");
       applyRankExp(general, exp);
 
-      removeFromAllDefenders(general.id);
-      general.cityId = targetCity.id;
-      targetCity.owner = general.countryId;
+     // 制圧前の所有国を保存
+const oldOwner = targetCity.owner;
+
+removeFromAllDefenders(general.id);
+
+general.cityId = targetCity.id;
+
+// 都市制圧
+targetCity.owner = general.countryId;
+
+// 滅亡判定
+checkCountryDestroyed(
+  oldOwner,
+  cities,
+  generals
+);
 
       message = `${targetCity.name} に到着（無人）（階級値+${exp}）`;
 

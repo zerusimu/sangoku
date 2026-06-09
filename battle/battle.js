@@ -1,6 +1,12 @@
 const { loadJSON } = require("../utils/json");
 const skills = require("../data/skills.json");
 
+function ensureSkills(g) {
+  if (!g.skills) g.skills = [];
+}
+
+
+
 // 兵種タイプ判定
 function getType(id) {
   if (id.includes("infantry")) return "infantry";
@@ -31,6 +37,12 @@ function getAdvantage(attackerType, defenderType) {
 }
 
 function simulateBattle(attacker, defender) {
+
+ensureSkills(attacker);
+ensureSkills(defender);
+
+
+
   const heisyu = loadJSON("heisyu.json");
 
   const atkUnit = heisyu.find(h => h.id === attacker.army.type);
@@ -45,13 +57,13 @@ function simulateBattle(attacker, defender) {
     + Math.floor(attacker.int / 10) 
     +  Math.floor(attacker.cha / 10);  
 
-  let atkDef = atkUnit.params.def + Math.floor(attacker.lea / 10)
+  let atkDef = atkUnit.params.def 
    + Math.floor(attacker.kunren / 10)  ;
 
   let defPower = defUnit.params.atk + Math.floor(defender.str / 10)
    + Math.floor(defender.int / 10)
    +  Math.floor(defender.cha / 10)  ;
-  let defDef = defUnit.params.def + Math.floor(defender.lea / 10)
+  let defDef = defUnit.params.def 
     + Math.floor(defender.kunren / 10) ;
 
 // =====================

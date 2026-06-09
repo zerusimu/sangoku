@@ -39,3 +39,42 @@
     </table>
   <% } %>
 <% }) %>
+
+<hr>
+
+<h2>無所属武将</h2>
+
+<% if (freeGenerals.length === 0) { %>
+
+  <p>無所属武将はいません</p>
+
+<% } else { %>
+
+<table border="1" cellpadding="4">
+  <tr>
+    <th>名前</th>
+    <th>武力</th>
+    <th>知力</th>
+    <th>統率</th>
+    <th>魅力</th>
+  </tr>
+
+  <% freeGenerals.forEach(g => { %>
+    <tr>
+      <td><%= g.name %></td>
+      <td><%= g.str %></td>
+      <td><%= g.int %></td>
+      <td><%= g.lea %></td>
+      <td><%= g.cha %></td>
+   <td>
+    <a href="/recruit/<%= g.id %>">
+    登用
+  </a>
+</td>
+    </tr>
+  <% }) %>
+
+</table>
+
+<% } %>
+

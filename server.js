@@ -7,7 +7,9 @@ const { battle } = require("./logic/battle");
 const { recruit } = require("./logic/army");
 const { getRecruitTimeByIndex } = require("./logic/recruit");
 const { loadJSON, saveJSON } = require("./utils/json");
-
+const {
+  cleanupCountries
+} = require("./utils/country");
 const app = express();
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -151,13 +153,13 @@ generals.push({
 skills: [],
 skillPoints: 0,
 
-
   commandQueue: [],
 
   army: {
     name: "農民",
     count: 0
-  }
+  },
+   recruitOffers: []
 });
 
   // ===== ユーザー作成 =====
@@ -277,21 +279,49 @@ function processCommands(general, generals) {
   general.commandQueue = active;
 }
 
+
 app.get("/countries", (req, res) => {
   const countries = loadJSON("countries.json");
   const cities = loadJSON("cities.json");
-  const generals = loadJSON("generals.json"); // ★変更
+  const generals = loadJSON("generals.json");
 
-  const countryViews = countries.map(country => {
+  // 都市を1つ以上持つ国だけ残す
+  const aliveCountries = cleanupCountries(
+    countries,
+    cities
+  );
+
+  const countryViews = aliveCountries.map(country => {
+
+    const countryGenerals = generals.filter(
+      g => g.countryId === country.id
+    );
+
     return {
       ...country,
-      cityList: cities.filter(c => country.cities.includes(c.id)),
-      generals: generals.filter(g => g.countryId === country.id) // ★変更
+      cityList: cities.filter(
+        c => c.owner === country.id
+      ),
+      generals: countryGenerals
     };
   });
 
-  res.render("countries", { countries: countryViews });
+  // 無所属武将
+  const freeGenerals = generals.filter(
+    g => !g.countryId
+  );
+
+  res.render("countries", {
+    countries: countryViews,
+    freeGenerals
+  });
 });
+
+
+
+
+
+
 
 app.get("/login", (req, res) => {
   res.render("login");
@@ -336,6 +366,9 @@ app.get("/user/:id", (req, res) => {
   if (!general) return res.send("武将が存在しません");
 
   const country = countries.find(c => c.id === general.countryId);
+
+  console.log("general.countryId =", general.countryId);
+console.log("country =", country);
  processCommands(general, generals);
 
 saveJSON("generals.json", generals);
@@ -386,6 +419,189 @@ saveJSON("generals.json", generals);
   console.log("表示中の武将ID:", general.id);
   console.log("ログ件数:", general.commandLog?.length);
 });
+
+
+
+
+
+
+app.post("/recruit/accept", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+  const cities = loadJSON("cities.json");
+
+  const general =
+    generals.find(
+      g => g.id === req.session.generalId
+    );
+
+  if (!general) {
+    console.log("generalが見つからない");
+    console.log(req.session);
+    return res.send("ログイン情報が取得できません");
+  }
+
+  const offerId = Number(req.body.offerId);
+
+  if (!general.recruitOffers) {
+    return res.send("登用依頼が存在しません");
+  }
+
+  const offer =
+    general.recruitOffers.find(
+      o => o.id === offerId
+    );
+
+  if (!offer) {
+    return res.redirect(`/user/${general.id}`);
+  }
+
+  // 国へ加入
+  general.countryId = offer.countryId;
+
+  // 所属都市を設定
+  const capital =
+    cities.find(
+      c => c.owner === offer.countryId
+    );
+
+  if (capital) {
+    general.cityId = capital.id;
+  }
+
+  const recruiter =
+    generals.find(
+      g => g.id === offer.fromId
+    );
+
+  if (recruiter) {
+    addBattleLog(
+      recruiter,
+      [`📨 ${general.name} が登用を承諾しました`]
+    );
+  }
+
+  addBattleLog(
+    general,
+    [`🏛️ ${offer.countryName || "所属国"} に仕官しました`]
+  );
+
+  general.recruitOffers =
+    general.recruitOffers.filter(
+      o => o.id !== offerId
+    );
+
+  saveJSON("generals.json", generals);
+
+  res.redirect(`/user/${general.id}`);
+});
+
+
+app.post("/recruit/reject", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+
+  const general =
+    generals.find(
+      g => g.id === req.session.generalId
+    );
+
+  const offerId =
+    Number(req.body.offerId);
+
+  general.recruitOffers =
+    general.recruitOffers.filter(
+      o => o.id !== offerId
+    );
+
+const recruiter = generals.find(
+  g => g.id === offer.fromId
+);
+
+if (recruiter) {
+  addBattleLog(
+    recruiter,
+    [`❌ ${general.name} が登用を辞退しました`]
+  );
+}
+
+addBattleLog(
+  general,
+  [`📨 ${offer.fromName} からの登用を断りました`]
+);
+
+
+  saveJSON(
+    "generals.json",
+    generals
+  );
+
+  res.redirect("/mypage");
+
+
+
+
+});
+
+app.get("/recruit/:targetId", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+
+  const target = generals.find(
+    g => g.id === req.params.targetId
+  );
+
+  if (!target) {
+    return res.send("武将が存在しません");
+  }
+
+  res.render("recruit", {
+    target
+  });
+});
+
+app.post("/recruit/send", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+  const countries = loadJSON("countries.json");
+
+  const sender =
+    generals.find(
+      g => g.id === req.session.generalId
+    );
+
+  const target =
+    generals.find(
+      g => g.id === req.body.targetId
+    );
+
+  const country =
+    countries.find(
+      c => c.id === sender.countryId
+    );
+
+  if (!target.recruitOffers) {
+    target.recruitOffers = [];
+  }
+
+  target.recruitOffers.push({
+    id: Date.now(),
+    fromId: sender.id,
+    fromName: sender.name,
+    countryId: sender.countryId,
+    countryName: country?.name || "無所属",
+    message: req.body.message
+  });
+
+  saveJSON("generals.json", generals);
+
+  res.redirect(`/user/${sender.id}`);
+});
+
+
+
+
+
 
 
 app.get("/recruit/:index", (req, res) => {
@@ -462,19 +678,34 @@ const moveTargets = req.body.move_targetCity || {};
   // 🔥 完全に新しく作り直す
   let queue = [];
 
-  let baseTime = getBaseTimeWithFixedSecond(general.fixedSecond);
+  let oldQueue = general.commandQueue || [];
 
-  for (let i = 0; i < 60; i++) {
-    const cmd = commands[i];
-    if (!cmd) continue;
+for (let i = 0; i < 60; i++) {
+  const cmd = commands[i];
+  if (!cmd) {
+    queue.push(null);
+    continue;
+  }
 
-    baseTime += INTERVAL;
+  let oldCmd = oldQueue[i];
 
-    let entry = {
-      type: cmd,
-      executed: false,
-      executeAt: baseTime
-    };
+  let executeAt;
+
+  // 🔥 既存コマンドが同じなら時間を維持
+if (oldCmd) {
+  // 🔥 indexが同じなら無条件で時間維持
+  executeAt = oldCmd.executeAt;
+} else {
+  // 新規だけ時間付与
+  executeAt = Date.now() + (i + 1) * INTERVAL;
+}
+
+
+  let entry = {
+    type: cmd,
+    executed: false,
+    executeAt
+  };
 
 
 if (cmd === "move" || cmd === "move_safe") {
