@@ -31,6 +31,17 @@ function getRankByPoint(point) {
   return "D";
 }
 
+function getTrainingBonus(count) {
+  if (count >= 120) return 60;
+  if (count >= 80) return 40;
+  if (count >= 40) return 20;
+  return 0;
+}
+
+
+
+
+
 
 // =========================
 // JSON 読み書き共通関数
@@ -145,7 +156,8 @@ generals.push({
 
   countryId,
   cityId,            // ★都市ID
-   kunren:0,         // 訓練値      
+   kunren:0,         // 訓練値 
+    trainingCount: 0,     
   money: 1000,       // ★初期資金
   rice: 500,         // ★兵糧
   rankPoint: 0,    // ランクポイントの初期値
@@ -279,46 +291,37 @@ function processCommands(general, generals) {
   general.commandQueue = active;
 }
 
-
 app.get("/countries", (req, res) => {
+
   const countries = loadJSON("countries.json");
   const cities = loadJSON("cities.json");
   const generals = loadJSON("generals.json");
 
-  // 都市を1つ以上持つ国だけ残す
-  const aliveCountries = cleanupCountries(
-    countries,
-    cities
+  const currentGeneral = generals.find(
+    g => g.id === req.session.generalId
   );
 
-  const countryViews = aliveCountries.map(country => {
-
-    const countryGenerals = generals.filter(
+  const countryViews = countries.map(country => ({
+    ...country,
+    cityList: cities.filter(
+      c => c.owner === country.id
+    ),
+    generals: generals.filter(
       g => g.countryId === country.id
-    );
+    )
+  }));
 
-    return {
-      ...country,
-      cityList: cities.filter(
-        c => c.owner === country.id
-      ),
-      generals: countryGenerals
-    };
-  });
-
-  // 無所属武将
   const freeGenerals = generals.filter(
     g => !g.countryId
   );
 
   res.render("countries", {
     countries: countryViews,
-    freeGenerals
+    freeGenerals,
+    currentGeneral
   });
+
 });
-
-
-
 
 
 
@@ -355,7 +358,6 @@ app.get("/user/:id", (req, res) => {
   const countries = loadJSON("countries.json");
   const cities = loadJSON("cities.json");
   const heisyu = loadJSON("heisyu.json");
-
 
 
   // 武将取得
@@ -405,6 +407,15 @@ saveJSON("generals.json", generals);
   }
  if (!general.battleLog) general.battleLog = [];
 
+const trainingBonus = getTrainingBonus(
+  general.trainingCount || 0
+);
+
+
+
+  console.log("表示中の武将ID:", general.id);
+  console.log("ログ件数:", general.commandLog?.length);
+
   res.render("user", {
     general,
     generals,
@@ -413,11 +424,12 @@ saveJSON("generals.json", generals);
     cities,
     schedule,
     heisyu,
+    trainingBonus,
     commandLog: general.commandLog || []
   });
 
-  console.log("表示中の武将ID:", general.id);
-  console.log("ログ件数:", general.commandLog?.length);
+
+
 });
 
 
@@ -509,6 +521,15 @@ app.post("/recruit/reject", (req, res) => {
   const offerId =
     Number(req.body.offerId);
 
+const offer =
+  general.recruitOffers.find(
+    o => o.id === offerId
+  );
+
+if (!offer) {
+  return res.redirect(`/user/${general.id}`);
+}
+
   general.recruitOffers =
     general.recruitOffers.filter(
       o => o.id !== offerId
@@ -536,7 +557,7 @@ addBattleLog(
     generals
   );
 
-  res.redirect("/mypage");
+res.redirect(`/user/${general.id}`);
 
 
 
@@ -574,6 +595,10 @@ app.post("/recruit/send", (req, res) => {
     generals.find(
       g => g.id === req.body.targetId
     );
+
+  if (!sender.countryId) {
+    return res.send("無所属は登用できません");
+  }
 
   const country =
     countries.find(

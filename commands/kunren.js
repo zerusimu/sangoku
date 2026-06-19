@@ -1,4 +1,5 @@
 const { getRankExp, applyRankExp } = require("../utils/rankSystem");
+const { getTrainingBonus } = require("../utils/trainingBonus");
 
 module.exports = {
   execute(general, cmd) {
@@ -17,9 +18,15 @@ if (general.kunren >= MAX_KUNREN) {
 
     // ★ 10〜15ランダム
     const up = Math.floor(Math.random() * 6) + 10;
+const bonus = getTrainingBonus(
+  general.trainingCount || 0
+);
 
-    general.kunren += up;
+const finalUp = Math.floor(up * bonus);
 
+general.kunren += finalUp;
+general.trainingCount =
+  (general.trainingCount || 0) + 1;
     // ★ 上限処理
     if (general.kunren > MAX_KUNREN) {
       general.kunren = MAX_KUNREN;
@@ -27,7 +34,7 @@ if (general.kunren >= MAX_KUNREN) {
 
 
     return {
-      message: `訓練を行い、訓練値が ${up} 上がり ${general.kunren} になった（階級値+${exp}）`
+      message: `訓練を行い、訓練値が ${finalUp} 上がり ${general.kunren} になった（階級値+${exp}）`
     };
   }
 };

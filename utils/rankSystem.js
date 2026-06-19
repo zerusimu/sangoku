@@ -10,6 +10,8 @@ function getRankExp(commandType, result) {
     case "kunren":
       return 15;
 
+case "moukunren":
+      return 15;
 
     case "move_safe":
       return 15;
