@@ -17,6 +17,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const session = require("express-session");
 
+const {
+  processSalary
+} = require("./utils/salarySystem");
+
+
 app.use(session({
   secret: "secret-key",
   resave: false,
@@ -159,7 +164,9 @@ generals.push({
    kunren:0,         // 訓練値 
     trainingCount: 0,     
   money: 1000,       // ★初期資金
-  rice: 500,         // ★兵糧
+  rice: 1000,         // ★兵糧
+  lastSalaryAt: Date.now(),
+  formation: "gyorin",
   rankPoint: 0,    // ランクポイントの初期値
    rank: "D", // 初期ランク
 skills: [],
@@ -167,10 +174,10 @@ skillPoints: 0,
 
   commandQueue: [],
 
-  army: {
-    name: "農民",
-    count: 0
-  },
+army: {
+  type: "noumin",
+  count: 0
+},
    recruitOffers: []
 });
 
@@ -211,6 +218,8 @@ function getRankIndex(rank) {
 
 function processCommands(general, generals) {
 
+   if (!general) return;
+   
   if (!general.cityId) {
     console.log("⚠ cityId消えてる:", general);
   }
@@ -358,6 +367,7 @@ app.get("/user/:id", (req, res) => {
   const countries = loadJSON("countries.json");
   const cities = loadJSON("cities.json");
   const heisyu = loadJSON("heisyu.json");
+const formations = loadJSON("formations.json");
 
 
   // 武将取得
@@ -366,6 +376,20 @@ app.get("/user/:id", (req, res) => {
   );
 
   if (!general) return res.send("武将が存在しません");
+processSalary(general);
+
+const currentFormation =
+  formations.find(
+    f => f.id === general.formation
+  );
+
+
+
+
+
+
+saveJSON("generals.json", generals);
+
 
   const country = countries.find(c => c.id === general.countryId);
 
@@ -416,20 +440,44 @@ const trainingBonus = getTrainingBonus(
   console.log("表示中の武将ID:", general.id);
   console.log("ログ件数:", general.commandLog?.length);
 
-  res.render("user", {
-    general,
-    generals,
-    countries,
-    country,
-    cities,
-    schedule,
-    heisyu,
-    trainingBonus,
-    commandLog: general.commandLog || []
-  });
+res.render("user", {
+  general,
+  generals,
+  countries,
+  country,
+  cities,
+  schedule,
+  heisyu,
+  formations,
+  currentFormation,
+  trainingBonus,
+  commandLog: general.commandLog || []
+});
 
 
 
+});
+
+app.post("/formation", (req, res) => {
+
+   console.log("session.generalId=", req.session.generalId);
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(
+    g => g.id === req.session.generalId
+  );
+  console.log("general=", general);
+
+
+  if (!general) {
+   return res.redirect("/countries");
+}
+
+  general.formation = req.body.formation;
+
+  saveJSON("generals.json", generals);
+
+  res.redirect(`/user/${general.id}`);
 });
 
 
@@ -1084,5 +1132,19 @@ app.post("/declare-war", (req, res) => {
 
 app.listen(3000, () => {
   console.log("http://localhost:3000/register でアクセスできます");
+const generals = loadJSON("generals.json");
+
+console.log(
+  "起動時 generals:",
+  generals.map(g => g.name)
+);
+
+const nnn = generals.find(g => g.name === "nnn");
+
+console.log(
+  "起動時NNN",
+  JSON.stringify(nnn, null, 2)
+);
+
 
 });

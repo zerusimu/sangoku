@@ -6,7 +6,8 @@
     "alive": true,
     "wars": [
       "country_1775102772550",
-      "country_1775116143121"
+      "country_1775116143121",
+      "country_1782193193714"
     ],
     "cities": [
       "city06"
@@ -19,7 +20,8 @@
     "alive": true,
     "wars": [
       "country_1775102772550",
-      "country_1775116143121"
+      "country_1775116143121",
+      "country_1782193193714"
     ],
     "cities": [
       "city03"
@@ -36,7 +38,8 @@
     "wars": [
       "country_1773901789153",
       "country_1773901810996",
-      "country_1775116143121"
+      "country_1775116143121",
+      "country_1782193193714"
     ]
   },
   {
@@ -49,6 +52,35 @@
     ],
     "wars": [
       "country_1775102772550",
+      "country_1773901789153",
+      "country_1773901810996",
+      "country_1782193193714"
+    ]
+  },
+  {
+    "id": "country_1782189336948",
+    "name": "bbb",
+    "ruler": "bbb",
+    "alive": true,
+    "cities": [
+      "city04"
+    ],
+    "wars": [
+      "country_1782193193714"
+    ]
+  },
+  {
+    "id": "country_1782193193714",
+    "name": "mmm",
+    "ruler": "mmm",
+    "alive": true,
+    "cities": [
+      "city02"
+    ],
+    "wars": [
+      "country_1775102772550",
+      "country_1775116143121",
+      "country_1782189336948",
       "country_1773901789153",
       "country_1773901810996"
     ]

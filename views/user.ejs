@@ -91,15 +91,6 @@ function getCommandName(type) {
   return commandNames[type] || type;
 }
 // ★↑↑ここまで追加↑↑
-
-
-
-
-
-
-
-
-
 %>
 
 
@@ -114,7 +105,6 @@ function getCommandName(type) {
 <!-- ================= 左 ================= -->
 
 
-
 <div class="left">
   <p><a href="/countries">国一覧へ</a></p>
 
@@ -127,6 +117,25 @@ function getCommandName(type) {
   <p>訓練回数: <%= general.trainingCount || 0 %></p>
 <p>訓練補正: <%=  general.trainingBonus %></p>
  <p>お金: <%= general.money %></p>
+  <p>お米: <%= general.rice %></p>
+ <% if (general.offlineReward) { %>
+<div style="border:1px solid gold;padding:10px;">
+  留守中の収益<br>
+
+  支給回数:
+  <%= general.offlineReward.count %>回
+
+  <br>
+
+  お金:
+  <%= general.offlineReward.money %>
+
+  <br>
+
+  お米:
+  <%= general.offlineReward.rice %>
+</div>
+<% } %>
  <p>ランク: <%= general.rank %> </p>
  <p>ランクポイント:  <%= general.rankPoint %></p>
 <p><a href="/skills">スキル一覧・習得</a></p>
@@ -135,6 +144,39 @@ function getCommandName(type) {
 %>
 <p>兵種: <%= h ? h.name : general.army.type %></p>
 <p>兵数: <%= general.army.count %> / <%= general.lea %></p>
+
+<p>
+  陣形:
+  <%= currentFormation ? currentFormation.name : "魚鱗の陣" %>
+</p>
+
+<form action="/formation" method="POST">
+
+<select name="formation">
+
+<% formations.forEach(f => { %>
+
+  <% if (general.rankPoint >= f.requiredRank) { %>
+
+    <option
+      value="<%= f.id %>"
+      <%= general.formation === f.id ? "selected" : "" %>
+    >
+      <%= f.name %>
+    </option>
+
+  <% } %>
+
+<% }) %>
+
+</select>
+
+
+<button type="submit">
+陣形変更
+</button>
+
+</form>
 
   <% if (country) { %>
     <h2>所属国</h2>

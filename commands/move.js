@@ -7,8 +7,27 @@ const {
   checkCountryDestroyed
 } = require("../utils/country");
 
+function setAutoDefender(city, general) {
+  city.defenders = city.defenders || [];
+
+  if (!city.defenders.includes(general.id)) {
+    city.defenders.unshift(general.id);
+  }
+}
+
+
+
+
 module.exports = {
  execute: (general, cmd, generals) => {
+
+
+
+
+
+
+
+
 
     const cities = loadJSON("cities.json");
 
@@ -19,9 +38,11 @@ module.exports = {
     }
 
     // 防衛チェック
-    const defenders = generals.filter(
-      g => g.cityId === targetCity.id && g.id !== general.id
-    );
+  const defenders = generals.filter(
+  g =>
+    targetCity.defenders?.includes(g.id) &&
+    g.id !== general.id
+);
 
     if (general.army.count <= 0) {
       return {
@@ -44,27 +65,26 @@ module.exports = {
       const exp = getRankExp("move", {
         win: result.winner === "attacker"
       });
+   console.log("防御側データ", defender);
       applyRankExp(general, exp);
 
       addBattleLog(general, result.log);
       addBattleLog(defender, result.log);
 
-      // 兵数反映
-      general.army.count = result.attackerRemaining;
-      defender.army.count = result.defenderRemaining;
+// 兵数反映
+general.army.count = result.attackerRemaining;
+defender.army.count = result.defenderRemaining;
 
-      removeIfDead(general);
-      removeIfDead(defender);
+// 兵0なら守備解除
+removeIfDead(general);
+removeIfDead(defender);
 
-// =====================
-// 🔥 防衛解除（今回やりたい処理）
-// =====================
-if (result.winner === "attacker" && defender.army.count <= 0) {
-  defender.cityId = null;
-
-  addBattleLog(defender, [`💀 ${defender.name} は敗北し、防衛から外れた`]);
+if (result.defenderDead) {
+  addBattleLog(
+    defender,
+    [`💀 ${defender.name} は敗北し、防衛から外れた`]
+  );
 }
-
 
 
       const battleLog = result.log.replace(/\n/g, "<br>");
@@ -94,6 +114,18 @@ else {
   // 都市制圧
   targetCity.owner = general.countryId;
 
+// 自動守備
+setAutoDefender(
+  targetCity,
+  general
+);
+
+
+
+
+
+
+
   // 滅亡判定
   checkCountryDestroyed(
     oldOwner,
@@ -121,6 +153,14 @@ general.cityId = targetCity.id;
 
 // 都市制圧
 targetCity.owner = general.countryId;
+
+// 自動守備
+setAutoDefender(
+  targetCity,
+  general
+);
+
+
 
 // 滅亡判定
 checkCountryDestroyed(

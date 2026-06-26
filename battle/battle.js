@@ -1,11 +1,14 @@
 const { loadJSON } = require("../utils/json");
 const skills = require("../data/skills.json");
+const formations = require("../data/formations.json");
 
 function ensureSkills(g) {
   if (!g.skills) g.skills = [];
 }
 
-
+function getFormation(id) {
+  return formations.find(f => f.id === id);
+}
 
 // 兵種タイプ判定
 function getType(id) {
@@ -45,10 +48,74 @@ ensureSkills(defender);
 
   const heisyu = loadJSON("heisyu.json");
 
-  const atkUnit = heisyu.find(h => h.id === attacker.army.type);
-  const defUnit = heisyu.find(h => h.id === defender.army.type);
+
+console.log("攻撃兵種:", attacker.army);
+console.log("防御兵種:", defender.army);
+console.log(
+  "防御武将全体:",
+  JSON.stringify(defender, null, 2)
+);
+
+if (!attacker.army?.type) {
+  throw new Error(`${attacker.name} の army.type がありません`);
+}
+
+if (!defender.army?.type) {
+  throw new Error(`${defender.name} の army.type がありません`);
+}
+
+const atkUnit = heisyu.find(
+  h => h.id === attacker.army.type
+);
+
+const defUnit = heisyu.find(
+  h => h.id === defender.army.type
+);
+
+if (!atkUnit) {
+  throw new Error(
+    `${attacker.name} の兵種 ${attacker.army.type} が存在しません`
+  );
+}
+
+if (!defUnit) {
+  throw new Error(
+    `${defender.name} の兵種 ${defender.army.type} が存在しません`
+  );
+}
+
+
+
+
+
+
+console.log("atkUnit:", atkUnit);
+console.log("defUnit:", defUnit);
+
+if (!atkUnit) {
+  throw new Error(
+    `攻撃側兵種が見つかりません: ${attacker.army.type}`
+  );
+}
+
+if (!defUnit) {
+  throw new Error(
+    `防御側兵種が見つかりません: ${defender.army.type}`
+  );
+}
+
+
+
+
 
   const log = [];
+
+const atkFormation =
+  getFormation(attacker.formation || "gyorin");
+
+const defFormation =
+  getFormation(defender.formation || "gyorin");
+
 
   // =====================
   // 基本ステータス
@@ -65,6 +132,106 @@ ensureSkills(defender);
    +  Math.floor(defender.cha / 10)  ;
   let defDef = defUnit.params.def 
     + Math.floor(defender.kunren / 10) ;
+
+
+//----------------------------------------
+// 陣形　-----------------------------------
+// ----------------------------------------
+
+if (atkFormation.id === "gyorin") {
+  atkPower = Math.floor(atkPower * 1.15);
+  log.push("🐟 魚鱗の陣発動！攻撃+15%");
+}
+
+if (defFormation.id === "gyorin") {
+  defPower = Math.floor(defPower * 1.15);
+  log.push("🐟 敵軍 魚鱗の陣発動！");
+}
+
+if (atkFormation.id === "gankou") {
+  atkDef = Math.floor(atkDef * 1.15);
+  log.push("🦢 雁行の陣発動！防御+15%");
+}
+
+if (defFormation.id === "gankou") {
+  defDef = Math.floor(defDef * 1.15);
+  log.push("🦢 敵軍 雁行の陣発動！");
+}
+
+if (atkFormation.id === "engetsu") {
+
+  const bonus = Math.min(
+    40,
+    Math.max(
+      0,
+      defender.army.count - attacker.army.count
+    )
+  );
+
+  atkPower += bonus;
+
+  log.push(
+    `🌙 偃月の陣発動！攻撃+${bonus}`
+  );
+}
+
+if (defFormation.id === "engetsu") {
+
+  const bonus = Math.min(
+    40,
+    Math.max(
+      0,
+      attacker.army.count - defender.army.count
+    )
+  );
+
+  defPower += bonus;
+
+  log.push(
+    `🌙 敵軍 偃月の陣発動！攻撃+${bonus}`
+  );
+}
+
+if (atkFormation.id === "kakuyoku") {
+
+  const bonus = Math.min(
+    40,
+    Math.max(
+      0,
+      attacker.army.count - defender.army.count
+    )
+  );
+
+  atkPower += bonus;
+
+  log.push(
+    `🪽 鶴翼の陣発動！攻撃+${bonus}`
+  );
+}
+
+if (defFormation.id === "kakuyoku") {
+
+  const bonus = Math.min(
+    40,
+    Math.max(
+      0,
+      defender.army.count - attacker.army.count
+    )
+  );
+
+  defPower += bonus;
+
+  log.push(
+    `🪽 敵軍 鶴翼の陣発動！攻撃+${bonus}`
+  );
+}
+
+
+
+
+
+
+
 
 // =====================
 // 強襲（攻撃側のみ）
@@ -270,6 +437,13 @@ if (attacker.skills?.includes("ninzyutu3")) {
   );
 
 // =====================
+// 戦闘中に0になったか記録
+// =====================
+const attackerDead = atkCount <= 0;
+const defenderDead = defCount <= 0;
+
+
+// =====================
 // 忍術2（戦闘後回復）
 // =====================
 const atkLost = attacker.army.count - Math.max(0, atkCount);
@@ -297,12 +471,14 @@ if (defender.skills?.includes("ninzyutu2")) {
 
 
 
-  return {
-    winner,
-    attackerRemaining: Math.max(0, atkCount),
-    defenderRemaining: Math.max(0, defCount),
-   log: log.join("\n") // ← 重要
-  };
+return {
+  winner,
+  attackerRemaining: Math.max(0, atkCount),
+  defenderRemaining: Math.max(0, defCount),
+  defenderDead: Math.max(0, defCount) <= 0,
+  attackerDead: Math.max(0, atkCount) <= 0,
+  log: log.join("\n")
+};
 }
 
 module.exports = { simulateBattle };

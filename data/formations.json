@@ -1,0 +1,81 @@
+[
+  {
+    "id": "gyorin",
+    "name": "魚鱗の陣",
+    "requiredRank": 0,
+
+    "attackBonus": 15,
+    "defenseBonus": 0,
+
+    "strong": [
+      "engetsu",
+      "kakuyoku"
+    ],
+
+    "weak": [
+      "gankou"
+    ],
+
+    "special": null
+  },
+
+  {
+    "id": "engetsu",
+    "name": "偃月の陣",
+    "requiredRank": 0,
+
+    "attackBonus": 0,
+    "defenseBonus": 0,
+
+    "strong": [
+      "gankou",
+      "kakuyoku"
+    ],
+
+    "weak": [
+      "gyorin"
+    ],
+
+    "special": "enemyAdvantage"
+  },
+
+  {
+    "id": "gankou",
+    "name": "雁行の陣",
+    "requiredRank": 0,
+
+    "attackBonus": 0,
+    "defenseBonus": 15,
+
+    "strong": [
+      "gyorin"
+    ],
+
+    "weak": [
+      "engetsu",
+      "kakuyoku"
+    ],
+
+    "special": null
+  },
+
+  {
+    "id": "kakuyoku",
+    "name": "鶴翼の陣",
+    "requiredRank": 0,
+
+    "attackBonus": 0,
+    "defenseBonus": 0,
+
+    "strong": [
+      "gankou"
+    ],
+
+    "weak": [
+      "gyorin",
+      "engetsu"
+    ],
+
+    "special": "selfAdvantage"
+  }
+]
