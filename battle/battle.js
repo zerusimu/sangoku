@@ -120,14 +120,14 @@ const defFormation =
   // =====================
   // 基本ステータス
   // =====================
-  let atkPower = atkUnit.params.atk + Math.floor(attacker.str * attacker.str / 10)
+  let atkPower = atkUnit.params.atk + attacker.str 
     + Math.floor(attacker.int / 10) 
     +  Math.floor(attacker.cha / 10);  
 
   let atkDef = atkUnit.params.def 
    + Math.floor(attacker.kunren / 10)  ;
 
-  let defPower = defUnit.params.atk + Math.floor(defender.str / 10)
+  let defPower = defUnit.params.atk + defender.str 
    + Math.floor(defender.int / 10)
    +  Math.floor(defender.cha / 10)  ;
   let defDef = defUnit.params.def 
@@ -280,8 +280,8 @@ if (assaultRate > 0) {
   // =====================
   // 最大ダメージ
   // =====================
- const atkMax = Math.max(3, Math.floor(atkPower * 1.2 - defDef * 0.7 + atkBonus));
-const defMax = Math.max(3, Math.floor(defPower * 1.2 - atkDef * 0.7 + defBonus));
+ const atkMax = Math.max(3, Math.floor(atkPower * 1.2 - defDef * 0.7 + atkBonus) / 11);
+const defMax = Math.max(3, Math.floor(defPower * 1.2 - atkDef * 0.7 + defBonus) / 11);
 
   // =====================
   // 初期ログ
