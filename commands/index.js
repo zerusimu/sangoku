@@ -8,6 +8,7 @@ module.exports = {
   move: require("./move") ,
   move_safe: require("./move_safe") ,
   recruit: require("./recruit"),
+  chat: require("./chat"),
 };
 
 

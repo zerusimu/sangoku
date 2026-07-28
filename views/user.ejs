@@ -273,6 +273,256 @@ const city = cities.find(c => c.id === general.cityId) || null;
 
   </div>
 
+<hr>
+
+<h2>💬 チャット</h2>
+
+<div style="margin-bottom:10px;">
+  <button onclick="showChat('global')">🌍 全体</button>
+  <button onclick="showChat('country')">🏛 国</button>
+    <button onclick="showChat('private')">📨 個人</button>
+</div>
+
+<!-- ===================== -->
+<!-- 全体チャット -->
+<!-- ===================== -->
+<div id="globalChat">
+
+<h3>🌍 全体チャット</h3>
+
+<form action="/chat/global" method="POST">
+  <input
+    type="text"
+    name="message"
+    maxlength="100"
+    placeholder="全体へ発言">
+
+  <button type="submit">
+    発言
+  </button>
+</form>
+
+<div style="
+border:1px solid #666;
+padding:10px;
+height:250px;
+overflow-y:auto;
+background:#f8f8f8;
+">
+
+<% if (globalChat.length === 0) { %>
+
+  <div>まだ発言はありません。</div>
+
+<% } else { %>
+
+<% globalChat.forEach(chat => { %>
+
+<div style="margin-bottom:6px;">
+
+<b><%= chat.generalName %></b>
+
+：
+
+<%= chat.message %>
+
+<br>
+
+<small>
+<%= new Date(chat.time).toLocaleString("ja-JP") %>
+</small>
+
+</div>
+
+<hr>
+
+<% }) %>
+
+<% } %>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+<!-- 国チャット -->
+<!-- ===================== -->
+<div id="countryChat" style="display:none;">
+
+<h3>🏛 国チャット</h3>
+
+<form action="/chat" method="POST">
+  <input
+    type="text"
+    name="message"
+    maxlength="100"
+    placeholder="国チャットへ発言">
+
+  <button type="submit">
+    発言
+  </button>
+</form>
+
+<div style="
+border:1px solid #666;
+padding:10px;
+height:250px;
+overflow-y:auto;
+background:#f8f8f8;
+">
+
+<% if (countryChat.length === 0) { %>
+
+  <div>まだ発言はありません。</div>
+
+<% } else { %>
+
+<% countryChat.forEach(chat => { %>
+
+<div style="margin-bottom:6px;">
+
+<b><%= chat.generalName %></b>
+
+：
+
+<%= chat.message %>
+
+<br>
+
+<small>
+<%= new Date(chat.time).toLocaleString("ja-JP") %>
+</small>
+
+</div>
+
+<hr>
+
+<% }) %>
+
+<% } %>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+<!-- 個人チャット -->
+<!-- ===================== -->
+<div id="privateChat" style="display:none;">
+
+<h3>📨 個人チャット</h3>
+
+<form action="/chat/private" method="POST">
+
+<select name="targetId">
+
+<% generals
+  .filter(g => g.id !== general.id)
+  .forEach(g => { %>
+
+<option value="<%= g.id %>">
+
+<%= g.name %>
+
+<% if (g.countryId) { %>
+
+（<%= countries.find(c => c.id === g.countryId)?.name || "所属不明" %>）
+
+<% } else { %>
+
+（無所属）
+
+<% } %>
+
+</option>
+
+<% }) %>
+
+</select>
+
+<input
+type="text"
+name="message"
+maxlength="100"
+placeholder="個人メッセージ">
+
+<button type="submit">
+送信
+</button>
+
+</form>
+
+<div style="
+border:1px solid #666;
+padding:10px;
+height:250px;
+overflow-y:auto;
+background:#f8f8f8;
+">
+
+<% if (privateChat.length === 0) { %>
+
+<div>まだ個人チャットはありません。</div>
+
+<% } else { %>
+
+<% privateChat.forEach(chat => { %>
+
+<div style="margin-bottom:6px;">
+
+<b><%= chat.generalName %></b>
+
+→ あなた
+
+<br>
+
+<%= chat.message %>
+
+<br>
+
+<small>
+<%= new Date(chat.time).toLocaleString("ja-JP") %>
+</small>
+
+</div>
+
+<hr>
+
+<% }) %>
+
+<% } %>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function showChat(type){
+
+  document.getElementById("globalChat").style.display="none";
+  document.getElementById("countryChat").style.display="none";
+  document.getElementById("privateChat").style.display="none";
+
+  document.getElementById(type + "Chat").style.display = "block";
+
+}
+
+</script>
+
+
+
+
+
 <% if (general.recruitOffers?.length > 0) { %>
 
 <h2>登用依頼</h2>

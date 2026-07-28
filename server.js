@@ -16,6 +16,20 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const session = require("express-session");
+const {
+  addGlobalChat,
+  getGlobalChat,
+
+  addCountryChat,
+  getCountryChat,
+
+  addPrivateChat,
+  getPrivateChat,
+
+  addSystemLog,
+  getSystemLog
+
+} = require("./utils/chat");
 
 const {
   processSalary
@@ -435,10 +449,9 @@ const trainingBonus = getTrainingBonus(
   general.trainingCount || 0
 );
 
+console.log("現在の国ID:", general.countryId);
+console.log(getCountryChat(general.countryId));
 
-
-  console.log("表示中の武将ID:", general.id);
-  console.log("ログ件数:", general.commandLog?.length);
 
 res.render("user", {
   general,
@@ -451,6 +464,11 @@ res.render("user", {
   formations,
   currentFormation,
   trainingBonus,
+    // チャット
+  globalChat: getGlobalChat(),
+  countryChat: getCountryChat(general.countryId),
+privateChat: getPrivateChat(general.id),
+  systemLog: getSystemLog(),
   commandLog: general.commandLog || []
 });
 
@@ -479,6 +497,88 @@ app.post("/formation", (req, res) => {
 
   res.redirect(`/user/${general.id}`);
 });
+
+app.post("/chat", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(
+    g => g.id === req.session.generalId
+  );
+
+  if (!general) {
+    return res.redirect("/login");
+  }
+
+  const message = (req.body.message || "").trim();
+
+  if (!message) {
+    return res.redirect(`/user/${general.id}`);
+  }
+
+  addCountryChat(
+    general.countryId,
+    general.name,
+    message
+  );
+
+  res.redirect(`/user/${general.id}`);
+});
+
+app.post("/chat/global", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(
+    g => g.id === req.session.generalId
+  );
+
+  if (!general) {
+    return res.redirect("/login");
+  }
+
+  const message = (req.body.message || "").trim();
+
+  if (message.length > 0) {
+    addGlobalChat(
+      general.name,
+      message
+    );
+  }
+
+  res.redirect(`/user/${general.id}`);
+});
+
+
+app.post("/chat/private", (req, res) => {
+
+  const generals = loadJSON("generals.json");
+
+  const general = generals.find(
+    g => g.id === req.session.generalId
+  );
+
+  if (!general) {
+    return res.redirect("/countries");
+  }
+
+  const toId = req.body.toId;
+  const message = (req.body.message || "").trim();
+
+  if (!message || !toId) {
+    return res.redirect(`/user/${general.id}`);
+  }
+
+  addPrivateChat(
+    general.id,
+    toId,
+    general.name,
+    message
+  );
+
+  res.redirect(`/user/${general.id}`);
+});
+
 
 
 

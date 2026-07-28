@@ -8,687 +8,810 @@
     "cha": 100,
     "countryId": "country_1773901810996",
     "cityId": "city03",
-    "kunren": 24,
+    "kunren": 0,
     "trainingCount": 0,
-    "money": 67000,
-    "rice": 67000,
-    "rankPoint": 9700,
+    "money": 453000,
+    "rice": 453000,
+    "rankPoint": 11260,
     "rank": "C",
     "commandQueue": [
       {
+        "type": "moukunren",
+        "executeAt": 1785214194141,
+        "executed": false
+      },
+      {
+        "type": "moukunren",
+        "executeAt": 1785214254141,
+        "executed": false
+      },
+      {
+        "type": "defend",
+        "executeAt": 1785214314141,
+        "executed": false
+      },
+      {
         "type": "tyouhei",
-        "executeAt": 1782714505381,
+        "executeAt": 1785214374141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714565381,
+        "executeAt": 1785214434141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714625381,
+        "executeAt": 1785214494141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714685381,
+        "executeAt": 1785214554141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714745381,
+        "executeAt": 1785214614141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714805381,
+        "executeAt": 1785214674141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714865381,
+        "executeAt": 1785214734141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714925381,
+        "executeAt": 1785214794141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782714985381,
+        "executeAt": 1785214854141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715045381,
+        "executeAt": 1785214914141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715105381,
+        "executeAt": 1785214974141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715165381,
+        "executeAt": 1785215034141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715225381,
+        "executeAt": 1785215094141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715285381,
+        "executeAt": 1785215154141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715345381,
+        "executeAt": 1785215214141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715405381,
+        "executeAt": 1785215274141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715465381,
+        "executeAt": 1785215334141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715525381,
+        "executeAt": 1785215394141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715585381,
+        "executeAt": 1785215454141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715645381,
+        "executeAt": 1785215514141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715705381,
+        "executeAt": 1785215574141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715765381,
+        "executeAt": 1785215634141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715825381,
+        "executeAt": 1785215694141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715885381,
+        "executeAt": 1785215754141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782715945381,
+        "executeAt": 1785215814141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716005381,
+        "executeAt": 1785215874141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716065381,
+        "executeAt": 1785215934141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716125381,
+        "executeAt": 1785215994141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716185381,
+        "executeAt": 1785216054141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716245381,
+        "executeAt": 1785216114141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716305381,
+        "executeAt": 1785216174141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716365381,
+        "executeAt": 1785216234141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716425381,
+        "executeAt": 1785216294141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716485381,
+        "executeAt": 1785216354141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716545381,
+        "executeAt": 1785216414141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716605381,
+        "executeAt": 1785216474141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716665381,
+        "executeAt": 1785216534141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716725381,
+        "executeAt": 1785216594141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716785381,
+        "executeAt": 1785216654141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716845381,
+        "executeAt": 1785216714141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716905381,
+        "executeAt": 1785216774141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782716965381,
+        "executeAt": 1785216834141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
       {
         "type": "tyouhei",
-        "executeAt": 1782717025381,
+        "executeAt": 1785216894141,
         "executed": false,
         "data": {
-          "heisyuId": "support",
+          "heisyuId": "warrior",
           "count": 65
         }
       },
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
+      {
+        "type": "tyouhei",
+        "executeAt": 1785216954141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217014141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217074141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217134141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217194141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217254141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217314141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217374141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217434141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217494141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217554141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217614141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
+      {
+        "type": "tyouhei",
+        "executeAt": 1785217674141,
+        "executed": false,
+        "data": {
+          "heisyuId": "warrior",
+          "count": 65
+        }
+      },
       null
     ],
     "army": {
-      "type": "support",
+      "type": "warrior",
       "count": 65
     },
     "fixedSecond": 36,
     "commandLog": [
       {
         "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714445868
+        "message": "無ラン武特 を 65 人徴兵（65/65） 訓練値-0 階級ポイント＋15",
+        "executeAt": 1785214135007
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714385439
+        "executeAt": 1785127249311
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714325983
+        "executeAt": 1785127188910
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714265512
+        "executeAt": 1785127129472
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714206061
+        "executeAt": 1785127069004
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714145665
+        "executeAt": 1785127009520
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714086255
+        "executeAt": 1785126949043
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782714025824
+        "executeAt": 1785126889587
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713949337
+        "executeAt": 1785126829106
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713889964
+        "executeAt": 1785126769643
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713829518
+        "executeAt": 1785126709154
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713770085
+        "executeAt": 1785126649742
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713709670
+        "executeAt": 1785126589312
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713649234
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🦢 雁行の陣発動！防御+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:97 防御:9<br>相手 攻撃:128 防御:1<br>最大ダメージ 自:10 / 相:13<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782713589821
+        "executeAt": 1785126528833
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713529320
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:112 防御:8<br>相手 攻撃:128 防御:1<br>最大ダメージ 自:12 / 相:13<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782713469914
+        "executeAt": 1785126469404
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713409481
+        "executeAt": 1785126408965
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713349667
+        "executeAt": 1785126349526
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713289229
+        "executeAt": 1785126289117
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713229852
+        "executeAt": 1785126229733
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713169425
+        "executeAt": 1785126169297
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713110012
+        "executeAt": 1785126108874
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782713049524
+        "executeAt": 1785126049533
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712990090
+        "executeAt": 1785125989092
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712929553
+        "executeAt": 1785125929676
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712870088
+        "executeAt": 1785125869167
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712809645
+        "executeAt": 1785125809714
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712749213
+        "executeAt": 1785125749213
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712689231
+        "executeAt": 1785125688793
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712629283
+        "executeAt": 1785125629395
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712569886
+        "executeAt": 1785125568999
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712509410
+        "executeAt": 1785125509593
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712450025
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:110 防御:8<br>相手 攻撃:108 防御:1<br>最大ダメージ 自:11 / 相:11<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782712389591
+        "executeAt": 1785125449177
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712329173
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:110 防御:8<br>相手 攻撃:108 防御:1<br>最大ダメージ 自:11 / 相:11<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782712269777
+        "executeAt": 1785125389758
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712209285
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:110 防御:8<br>相手 攻撃:108 防御:1<br>最大ダメージ 自:11 / 相:11<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782712149942
+        "executeAt": 1785125329341
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712089237
+        "executeAt": 1785125268917
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782712029190
+        "executeAt": 1785125209471
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782711969786
+        "executeAt": 1785125148998
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782711909359
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:14 防御:8<br>相手 攻撃:72 防御:1<br>最大ダメージ 自:1 / 相:7<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782711849939
+        "executeAt": 1785125089563
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782711789467
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:14 防御:8<br>相手 攻撃:72 防御:1<br>最大ダメージ 自:1 / 相:7<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782711730060
+        "executeAt": 1785125029189
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782711669586
-      },
-      {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:14 防御:8<br>相手 攻撃:72 防御:1<br>最大ダメージ 自:1 / 相:7<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782711610117
+        "executeAt": 1785124969755
       },
       {
         "type": "tyouhei",
         "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
-        "executeAt": 1782711549671
+        "executeAt": 1785124909291
       },
       {
-        "type": "move",
-        "message": "⚔️ 勝利（階級値+25）<br>🐟 魚鱗の陣発動！攻撃+15%<br>🪽 敵軍 鶴翼の陣発動！攻撃+0<br>⚔️ 戦闘開始<br>自分 攻撃:14 防御:8<br>相手 攻撃:72 防御:1<br>最大ダメージ 自:1 / 相:7<br>🏆 攻撃側の勝利！<br>🌿 忍術2発動！自軍 0回復",
-        "executeAt": 1782711489258
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124848856
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124789414
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124728964
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124669517
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124609101
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124549761
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124489396
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124428939
+      },
+      {
+        "type": "tyouhei",
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1785124369545
       }
     ],
     "soldiers": {
-      "noumin": 65,
-      "support": 263
+      "noumin": 130,
+      "support": 263,
+      "warrior": 65
     },
-    "skillPoints": 0,
+    "skillPoints": 1,
     "skills": [
       "ninzyutu1",
       "ninzyutu2",
       "ninzyutu3",
       "kyousyuu1",
       "kyousyuu2",
-      "kyousyuu3"
+      "kyousyuu3",
+      "kobu1",
+      "kobu2",
+      "kobu3",
+      "kakutou1",
+      "kakutou2",
+      "kakutou3"
     ],
     "battleLog": [
       {
@@ -799,12 +922,12 @@
       }
     ],
     "recruitOffers": [],
-    "lastSalaryAt": 1782710092095,
+    "lastSalaryAt": 1785212553680,
     "formation": "gankou",
     "offlineReward": {
-      "count": 11,
-      "money": 66000,
-      "rice": 66000
+      "count": 1,
+      "money": 8000,
+      "rice": 8000
     }
   },
   {
@@ -816,11 +939,11 @@
     "cha": 5,
     "countryId": null,
     "cityId": "city03",
-    "kunren": 0,
-    "trainingCount": 0,
-    "money": 1000,
-    "rice": 1000,
-    "rankPoint": 1800,
+    "kunren": 100,
+    "trainingCount": 8,
+    "money": 158500,
+    "rice": 158500,
+    "rankPoint": 2700,
     "rank": "D",
     "commandQueue": [
       null,
@@ -890,6 +1013,306 @@
     },
     "commandLog": [
       {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 12 上がり 100 になった（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 11 上がり 88 になった（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 14 上がり 77 になった（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 15 上がり 63 になった（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 11 上がり 48 になった（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 15 上がり 37 になった（階級値+15）",
+        "executeAt": 1784175386485
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 11 上がり 22 になった（階級値+15）",
+        "executeAt": 1783319448751
+      },
+      {
+        "type": "kunren",
+        "message": "訓練を行い、訓練値が 11 上がり 11 になった（階級値+15）",
+        "executeAt": 1783319388331
+      },
+      {
         "message": "⚔️ mmm が  に宣戦布告しました！",
         "time": 1782193221858
       },
@@ -908,306 +1331,6 @@
       {
         "message": "⚔️ mmm が xxx に宣戦布告しました！",
         "time": 1782193209626
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792073
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792073
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792073
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792073
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792073
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792072
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792071
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792071
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792071
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792071
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792071
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792070
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792069
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792069
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792069
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792069
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792068
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792068
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792067
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792065
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792065
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792062
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792062
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1777265792061
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838896423
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838836932
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838776531
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838716151
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838656799
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838596447
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838536103
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838476784
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838416435
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838356045
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838296669
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838236311
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838176919
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838116610
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776838056276
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776837996923
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776837936575
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776837876166
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776837816786
-      },
-      {
-        "type": "tyouhei",
-        "message": "これ以上徴兵できない（最大 100）階級ポイント＋15",
-        "executeAt": 1776837756434
-      },
-      {
-        "type": "tyouhei",
-        "message": "農民 を 100 人徴兵（100/100） 訓練値-0 階級ポイント＋15",
-        "executeAt": 1776837696032
       }
     ],
     "fixedSecond": 36,
@@ -1393,8 +1516,13 @@
     ],
     "skills": [],
     "recruitOffers": [],
-    "lastSalaryAt": 1782192274113,
-    "formation": "kakuyoku"
+    "lastSalaryAt": 1785213880530,
+    "formation": "kakuyoku",
+    "offlineReward": {
+      "count": 43,
+      "money": 107500,
+      "rice": 107500
+    }
   },
   {
     "id": "general_1775116143121",
@@ -1987,7 +2115,8 @@
         "message": "⚔️ 戦闘開始\n自分 攻撃:1 防御:7\n相手 攻撃:13 防御:11\n最大ダメージ 自:1 / 相:6\n1ターン目 ▶ 自:1ダメ / 相:3ダメ\n残兵 ▶ 自:62 / 相:99\n🌀 忍術1発動！自分ダメージ無効！\n2ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:62 / 相:98\n3ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:58 / 相:97\n4ターン目 ▶ 自:1ダメ / 相:5ダメ\n残兵 ▶ 自:53 / 相:96\n🌀 忍術1発動！自分ダメージ無効！\n5ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:53 / 相:95\n6ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:49 / 相:94\n7ターン目 ▶ 自:1ダメ / 相:5ダメ\n残兵 ▶ 自:44 / 相:93\n8ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:43 / 相:92\n9ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:37 / 相:91\n10ターン目 ▶ 自:1ダメ / 相:5ダメ\n残兵 ▶ 自:32 / 相:90\n11ターン目 ▶ 自:1ダメ / 相:3ダメ\n残兵 ▶ 自:29 / 相:89\n12ターン目 ▶ 自:1ダメ / 相:2ダメ\n残兵 ▶ 自:27 / 相:88\n13ターン目 ▶ 自:1ダメ / 相:4ダメ\n残兵 ▶ 自:23 / 相:87\n14ターン目 ▶ 自:1ダメ / 相:1ダメ\n残兵 ▶ 自:22 / 相:86\n🌀 忍術1発動！自分ダメージ無効！\n15ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:22 / 相:85\n16ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:16 / 相:84\n🌀 忍術1発動！自分ダメージ無効！\n17ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:16 / 相:83\n18ターン目 ▶ 自:1ダメ / 相:3ダメ\n残兵 ▶ 自:13 / 相:82\n🌀 忍術1発動！自分ダメージ無効！\n19ターン目 ▶ 自:1ダメ / 相:0ダメ\n残兵 ▶ 自:13 / 相:81\n20ターン目 ▶ 自:1ダメ / 相:3ダメ\n残兵 ▶ 自:10 / 相:80\n21ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:4 / 相:79\n22ターン目 ▶ 自:1ダメ / 相:6ダメ\n残兵 ▶ 自:0 / 相:78\n💀 防御側の勝利！\n🌿 忍術2発動！自軍 24回復",
         "time": 1776744311175
       }
-    ]
+    ],
+    "lastSalaryAt": 1785213850515
   },
   {
     "id": "general_1782189336948",
