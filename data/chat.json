@@ -1,19 +1,27 @@
 {
-  "global": [
-    {
-      "generalName": "ooo",
-      "message": "よろしくお願いします。",
-      "time": 1785212572280
-    }
-  ],
-  "country": [
-    {
-      "countryId": "country_1773901810996",
-      "generalName": "ooo",
-      "message": "よろしくおねがいします",
-      "time": 1785212646755
-    }
-  ],
+  "global": [],
+  "country": [],
   "private": [],
-    "system": []
+  "system": [
+    {
+      "message": "⚔️ ooo が ddd に宣戦布告しました！",
+      "time": 1785734006387
+    },
+    {
+      "message": "👤 ppp が ooo に仕官しました。",
+      "time": 1785733657517
+    },
+    {
+      "message": "🏛 lll が建国されました！（君主：lll）",
+      "time": 1785733567795
+    },
+    {
+      "message": "👤 ddd が新たに登場しました。",
+      "time": 1785733104822
+    },
+    {
+      "message": "🏛 ddd が建国されました！（君主：ddd）",
+      "time": 1785733104818
+    }
+  ]
 }

@@ -104,6 +104,27 @@ function getCommandName(type) {
 
 <!-- ================= 左 ================= -->
 
+<hr>
+
+<form
+action="/admin/reset"
+method="POST"
+onsubmit="return confirm('ゲームを初期化します。本当に実行しますか？');">
+
+<button
+style="
+background:red;
+color:white;
+padding:10px 20px;
+font-size:18px;
+">
+🔄 ゲームリセット
+</button>
+
+</form>
+
+
+
 
 <div class="left">
   <p><a href="/countries">国一覧へ</a></p>
@@ -278,15 +299,69 @@ const city = cities.find(c => c.id === general.cityId) || null;
 <h2>💬 チャット</h2>
 
 <div style="margin-bottom:10px;">
+  <button onclick="showChat('system')">📢 システム</button>
   <button onclick="showChat('global')">🌍 全体</button>
   <button onclick="showChat('country')">🏛 国</button>
     <button onclick="showChat('private')">📨 個人</button>
 </div>
 
 <!-- ===================== -->
+<!-- システムログ -->
+<!-- ===================== -->
+<div id="systemChat">
+
+<h3>📢 システムログ</h3>
+
+<div style="
+border:1px solid #666;
+padding:10px;
+height:250px;
+overflow-y:auto;
+background:#f8f8f8;
+">
+
+<% if (systemLog.length === 0) { %>
+
+<div>まだシステムログはありません。</div>
+
+<% } else { %>
+
+<% systemLog.forEach(chat => { %>
+
+<div style="margin-bottom:6px;">
+
+<%= chat.message %>
+
+<br>
+
+<small>
+<%= new Date(chat.time).toLocaleString("ja-JP") %>
+</small>
+
+</div>
+
+<hr>
+
+<% }) %>
+
+<% } %>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ===================== -->
 <!-- 全体チャット -->
 <!-- ===================== -->
-<div id="globalChat">
+<div id="globalChat" style="display:none;">
 
 <h3>🌍 全体チャット</h3>
 
@@ -508,6 +583,7 @@ background:#f8f8f8;
 <script>
 
 function showChat(type){
+  document.getElementById("systemChat").style.display="none";
 
   document.getElementById("globalChat").style.display="none";
   document.getElementById("countryChat").style.display="none";
@@ -647,7 +723,7 @@ function showChat(type){
   <option value="defend">守備</option>
   <option value="move">出兵</option>
     <option value="move_safe">移動</option>
-
+     <option value="buyEquipment">装備購入</option>
 </select>
 
 <!-- ★追加：一括 移動・出兵用 -->
@@ -686,6 +762,29 @@ function showChat(type){
 
 
 <div id="bulkTyouheiBox" style="display:none; margin-top:10px;">
+
+<select id="bulkEquipment">
+
+<option value="weapon">
+武器
+</option>
+
+<option value="armor">
+防具
+</option>
+
+<option value="book">
+書物
+</option>
+
+<option value="flag">
+旗
+</option>
+
+</select>
+
+</div>
+
 <select id="bulkHeisyu">
   <%
 
@@ -767,6 +866,10 @@ function showChat(type){
     <option value="defend" <%= s.command === "defend" ? "selected" : "" %>>守備</option>
     <option value="move" <%= s.command === "move" ? "selected" : "" %>>出兵</option>
 <option value="move_safe"<%= s.command === "move_safe" ? "selected" : "" %>>移動</option>
+<option value="buyEquipment"
+<%= s.command === "buyEquipment" ? "selected" : "" %>>
+装備購入
+</option>
 
   </select>
 
@@ -803,6 +906,42 @@ function showChat(type){
 <p>現在地ID: <%= general.cityId %></p>
 <p>現在地: <%= currentCity ? currentCity.name : "なし" %></p>
 　ここまで　-->
+
+<!-- 装備購入入力 -->
+
+<div class="equipment-input"
+style="<%= s.command === 'buyEquipment' ? '' : 'display:none;' %>">
+
+
+<select name="equipment_type[<%= s.index %>]">
+
+<option value="weapon">
+武器
+</option>
+
+<option value="armor">
+防具
+</option>
+
+<option value="book">
+書物
+</option>
+
+<option value="flag">
+旗
+</option>
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
     <!-- 徴兵入力 -->
 <div class="tyouhei-input"style="<%= s.command === 'tyouhei' ? '' : 'display:none;' %>">
 
@@ -913,6 +1052,13 @@ function applyBulk() {
       if (countInput) countInput.value = bulkCount;
     }
 
+    if (value === "buyEquipment") {
+
+ const equipmentSelect =
+ document.getElementById("bulkEquipment");
+
+}
+
     // ★移動・出兵
     if (value === "move" || value === "move_safe") {
       if (moveSelect && bulkCity) {
@@ -943,6 +1089,7 @@ document.querySelectorAll("tr").forEach(row => {
   const select = row.querySelector(".command-select");
   const tyouheiBox = row.querySelector(".tyouhei-input");
   const moveBox = row.querySelector(".move-input");
+  const equipmentBox = row.querySelector(".equipment-input");
 
   if (!select) return;
 
@@ -956,6 +1103,18 @@ if (moveBox) {
       ? "block"
       : "none";
 }
+
+if (equipmentBox) {
+
+equipmentBox.style.display =
+select.value === "buyEquipment"
+?"block"
+:"none";
+
+}
+
+
+
   };
 
   select.addEventListener("change", update);

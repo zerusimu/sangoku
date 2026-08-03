@@ -1,0 +1,40 @@
+[
+  {
+    "id": "sword001",
+    "name": "鉄の剣",
+    "type": "weapon",
+    "price": 1000,
+    "effect": {
+      "atk": 5
+    }
+  },
+  {
+    "id": "armor001",
+    "name": "革鎧",
+    "type": "armor",
+    "price": 1000,
+    "effect": {
+      "def": 5
+    }
+  },
+  {
+    "id": "book001",
+    "name": "孫子の兵法書",
+    "type": "book",
+    "price": 3000,
+    "effect": {
+      "atk": 10,
+      "def": 10
+    }
+  },
+  {
+    "id": "flag001",
+    "name": "龍旗",
+    "type": "flag",
+    "price": 3000,
+    "effect": {
+      "atk": 10,
+      "def": 10
+    }
+  }
+]

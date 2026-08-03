@@ -186,6 +186,15 @@ generals.push({
 skills: [],
 skillPoints: 0,
 
+// 装備
+equipment: {
+  weapon: null,
+  armor: null,
+  book: null,
+  flag: null
+},
+
+
   commandQueue: [],
 
 army: {
@@ -208,6 +217,7 @@ army: {
   saveJSON("countries.json", countries);
   saveJSON("cities.json", cities);
 
+
   res.send("登録完了！<a href='/login'>ログインへ</a>");
 
 console.log("新規武将作成:", {
@@ -216,7 +226,31 @@ console.log("新規武将作成:", {
   countryId,
   cityId
 });
+
 console.log("現在の武将数:", generals.length);
+
+// =====================
+// システムログ
+// =====================
+if (mode === "create") {
+
+  addSystemLog(
+    `🏛 ${countryName} が建国されました！（君主：${name}）`
+  );
+
+} else {
+
+  const country = countries.find(
+    c => c.id === countryId
+  );
+
+  addSystemLog(
+    `👤 ${name} が ${country.name} に仕官しました。`
+  );
+
+}
+
+
 
 });
 
@@ -1054,13 +1088,15 @@ commandHandlers.declareWar = {
 
     saveJSON("countries.json", countries);
 
-    // 🔥 全体ログ用
+    /* 🔥 全体ログ用
     return {
       success: true,
       message: `⚔️ ${myCountry.name} が ${target.name} に宣戦布告！`,
       global: true // ← これ重要
     };
+    */
   }
+    
 };
 
 commandHandlers.move = require("./commands/move");
@@ -1219,10 +1255,45 @@ app.post("/declare-war", (req, res) => {
   saveJSON("countries.json", countries);
 
   // 🔥 全体ログ
-  addGlobalLog(`⚔️ ${myCountry.name} が ${target.name} に宣戦布告しました！`);
+  addSystemLog(`⚔️ ${myCountry.name} が ${target.name} に宣戦布告しました！`);
 
   res.redirect(`/user/${general.id}`);
 });
+
+
+
+const path = require("path");
+
+app.post("/admin/reset", (req, res) => {
+
+  const files = [
+    "cities.json",
+    "countries.json",
+    "generals.json",
+    "chat.json",
+    "users.json",
+  ];
+
+  files.forEach(file => {
+
+    const src = path.join(__dirname, "init", file);
+    const dst = path.join(__dirname, "data", file);
+
+    fs.copyFileSync(src, dst);
+
+  });
+
+  console.log("ゲームデータを初期化しました");
+
+  res.redirect("/register");
+
+});
+
+
+
+
+
+
 
 
 

@@ -7,6 +7,11 @@ const {
   checkCountryDestroyed
 } = require("../utils/country");
 
+const {
+  addSystemLog
+} = require("../utils/chat");
+
+
 function setAutoDefender(city, general) {
   city.defenders = city.defenders || [];
 
@@ -121,7 +126,10 @@ setAutoDefender(
 );
 
 
-
+// ★システムログ
+addSystemLog(
+  `🏆 ${general.name} が ${targetCity.name} を制圧しました！`
+);
 
 
 
@@ -160,6 +168,10 @@ setAutoDefender(
   general
 );
 
+// ★システムログ
+addSystemLog(
+  `🏆 ${general.name} が ${targetCity.name} を制圧しました！`
+);
 
 
 // 滅亡判定

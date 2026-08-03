@@ -2,6 +2,7 @@
   {
     "id": "noumin",
     "name": "農民",
+    "mainStatus":null,
     "requiredRank": 1,
     "costMoney": 50,
     "costRice": 0,
@@ -14,6 +15,7 @@
 {
   "id": "warrior",
   "name": "無ラン武特",
+  "mainStatus":"str",
       "requiredRank": 1,
     "costMoney": 70,
     "costRice": 0,
@@ -28,6 +30,7 @@
 {
   "id": "tactician",
   "name": "無ラン知特",
+  "mainStatus":"int",
       "requiredRank": 1,
     "costMoney": 60,
     "costRice": 0,
@@ -38,6 +41,7 @@
 {
   "id": "support",
   "name": "無ラン魅力",
+    "mainStatus":"cha",
       "requiredRank": 1,
      "costMoney": 60,
     "costRice": 0,
@@ -52,6 +56,7 @@
   {
     "id": "infantryCbu",
     "name": "武特C級歩兵",
+      "mainStatus":"str",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -67,6 +72,7 @@
   {
     "id": "infantryBbu",
     "name": "武特B級歩兵",
+      "mainStatus":"str",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -82,6 +88,7 @@
   {
     "id": "infantryAbu",
     "name": "武特A級歩兵",
+      "mainStatus":"str",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -100,6 +107,7 @@
   {
     "id": "cavalryCbu",
     "name": "武特C級騎兵",
+      "mainStatus":"str",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -115,6 +123,7 @@
   {
     "id": "cavalryBbu",
     "name": "武特B級騎兵",
+      "mainStatus":"str",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -130,6 +139,7 @@
   {
     "id": "cavalryAbu",
     "name": "武特A級騎兵",
+       "mainStatus":"str",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -148,6 +158,7 @@
   {
     "id": "archerCbu",
     "name": "武特C級弓兵",
+       "mainStatus":"str",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -163,6 +174,7 @@
     {
     "id": "archerBbu",
     "name": "武特B級弓兵",
+       "mainStatus":"str",
     "requiredRank": 3,
     "costMoney": 80,
     "costRice": 0,
@@ -179,6 +191,7 @@
     {
     "id": "archerAbu",
     "name": "武特A級弓兵",
+       "mainStatus":"str",
     "requiredRank": 4,
     "costMoney": 80,
     "costRice": 0,
@@ -195,6 +208,7 @@
   {
     "id": "infantryCti",
     "name": "知特C級歩兵",
+       "mainStatus":"int",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -210,6 +224,7 @@
   {
     "id": "infantryBti",
     "name": "知特B級歩兵",
+           "mainStatus":"int",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -225,6 +240,7 @@
   {
     "id": "infantryAti",
     "name": "知特A級歩兵",
+           "mainStatus":"int",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -243,6 +259,7 @@
   {
     "id": "cavalryCti",
     "name": "知特C級騎兵",
+           "mainStatus":"int",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -258,6 +275,7 @@
   {
     "id": "cavalryBti",
     "name": "知特B級騎兵",
+           "mainStatus":"int",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -273,6 +291,7 @@
   {
     "id": "cavalryAti",
     "name": "知特A級騎兵",
+           "mainStatus":"int",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -291,6 +310,7 @@
   {
     "id": "archerCti",
     "name": "知特C級弓兵",
+           "mainStatus":"int",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -306,6 +326,7 @@
     {
     "id": "archerBti",
     "name": "知特B級弓兵",
+           "mainStatus":"int",
     "requiredRank": 3,
     "costMoney": 80,
     "costRice": 0,
@@ -322,6 +343,7 @@
     {
     "id": "archerAti",
     "name": "知特A級弓兵",
+           "mainStatus":"int",
     "requiredRank": 4,
     "costMoney": 80,
     "costRice": 0,
@@ -338,6 +360,7 @@
   {
     "id": "infantryClea",
     "name": "統特C級歩兵",
+           "mainStatus":"lea",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -353,6 +376,7 @@
   {
     "id": "infantryBlea",
     "name": "統特B級歩兵",
+            "mainStatus":"lea",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -368,6 +392,7 @@
   {
     "id": "infantryAlea",
     "name": "統特A級歩兵",
+            "mainStatus":"lea",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -386,6 +411,7 @@
   {
     "id": "cavalryClea",
     "name": "統特C級騎兵",
+            "mainStatus":"lea",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -401,6 +427,7 @@
   {
     "id": "cavalryBlea",
     "name": "統特B級騎兵",
+            "mainStatus":"lea",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -416,6 +443,7 @@
   {
     "id": "cavalryAlea",
     "name": "統特A級騎兵",
+            "mainStatus":"lea",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -434,6 +462,7 @@
   {
     "id": "archerClea",
     "name": "統特C級弓兵",
+            "mainStatus":"lea",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -449,6 +478,7 @@
     {
     "id": "archerBlea",
     "name": "統特B級弓兵",
+            "mainStatus":"lea",
     "requiredRank": 3,
     "costMoney": 80,
     "costRice": 0,
@@ -465,6 +495,7 @@
     {
     "id": "archerAlea",
     "name": "統特A級弓兵",
+            "mainStatus":"lea",
     "requiredRank": 4,
     "costMoney": 80,
     "costRice": 0,
@@ -481,6 +512,7 @@
   {
     "id": "infantryCcha",
     "name": "魅力C級歩兵",
+            "mainStatus":"cha",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -496,6 +528,7 @@
   {
     "id": "infantryBcha",
     "name": "魅力B級歩兵",
+         "mainStatus":"cha",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -511,6 +544,7 @@
   {
     "id": "infantryAcha",
     "name": "魅力A級歩兵",
+         "mainStatus":"cha",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -529,6 +563,7 @@
   {
     "id": "cavalryCcha",
     "name": "魅力C級騎兵",
+         "mainStatus":"cha",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -544,6 +579,7 @@
   {
     "id": "cavalryBcha",
     "name": "魅力B級騎兵",
+         "mainStatus":"cha",
     "requiredRank": 3,
     "costMoney": 150,
     "costRice": 0,
@@ -559,6 +595,7 @@
   {
     "id": "cavalryAcha",
     "name": "魅力A級騎兵",
+         "mainStatus":"cha",
     "requiredRank": 4,
     "costMoney": 200,
     "costRice": 0,
@@ -577,6 +614,7 @@
   {
     "id": "archerCcha",
     "name": "魅力C級弓兵",
+         "mainStatus":"cha",
     "requiredRank": 2,
     "costMoney": 80,
     "costRice": 0,
@@ -592,6 +630,7 @@
     {
     "id": "archerBcha",
     "name": "魅力B級弓兵",
+         "mainStatus":"cha",
     "requiredRank": 3,
     "costMoney": 80,
     "costRice": 0,
@@ -608,6 +647,7 @@
     {
     "id": "archerAcha",
     "name": "魅力A級弓兵",
+         "mainStatus":"cha",
     "requiredRank": 4,
     "costMoney": 80,
     "costRice": 0,

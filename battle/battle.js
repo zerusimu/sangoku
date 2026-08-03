@@ -1,6 +1,10 @@
 const { loadJSON } = require("../utils/json");
 const skills = require("../data/skills.json");
 const formations = require("../data/formations.json");
+const {
+ getEquipment
+}=require("../utils/equipment");
+
 
 function ensureSkills(g) {
   if (!g.skills) g.skills = [];
@@ -104,11 +108,15 @@ if (!defUnit) {
   );
 }
 
-
-
-
-
   const log = [];
+
+// =====================
+// 装備取得
+// =====================
+
+const atkEquip = getEquipment(attacker);
+const defEquip = getEquipment(defender);
+
 
 const atkFormation =
   getFormation(attacker.formation || "gyorin");
@@ -116,26 +124,129 @@ const atkFormation =
 const defFormation =
   getFormation(defender.formation || "gyorin");
 
-
   // =====================
   // 基本ステータス
   // =====================
-  let atkPower = atkUnit.params.atk 
+let atkPower = atkUnit.params.atk 
   + Math.floor(attacker.str * 1.0) 
-    + Math.floor(attacker.int * 0.6) 
-     + Math.floor(attacker.lea * 0.5)
-    +  Math.floor(attacker.cha * 0.6);  
+  + Math.floor(attacker.int * 0.6) 
+  + Math.floor(attacker.lea * 0.5)
+  + Math.floor(attacker.cha * 0.6);
+
+
+// 武器効果
+if(atkEquip.weapon){
+  atkPower += atkEquip.weapon.effect.atk || 0;
+}
+
+
+// 書物効果（知力兵種）
+if(
+  atkEquip.book &&
+  atkUnit.type === "int"
+){
+  atkPower += atkEquip.book.effect.atk || 0;
+}
+
+
+// 旗効果（魅力兵種）
+if(
+  atkEquip.flag &&
+  atkUnit.type === "cha"
+){
+  atkPower += atkEquip.flag.effect.atk || 0;
+}
+
 
   let atkDef = atkUnit.params.def 
-   + Math.floor(attacker.kunren / 10)  ;
+   + Math.floor(attacker.kunren / 10) 
+   // 防具
+if(atkEquip.armor){
+ atkDef += atkEquip.armor.effect.def || 0;
+}
+
+
+// 書物（知力兵）
+if(
+ atkEquip.book &&
+ atkUnit.type === "int"
+){
+ atkDef += atkEquip.book.effect.def || 0;
+}
+
+
+// 旗（魅力兵）
+if(
+ atkEquip.flag &&
+ atkUnit.type === "cha"
+){
+ atkDef += atkEquip.flag.effect.def || 0;
+}  
+   ;
+
+
+
+
 
   let defPower = defUnit.params.atk 
   + Math.floor(defender.str * 1.0)
    + Math.floor(defender.int * 0.6)
     + Math.floor(defender.lea * 0.5)
-   +  Math.floor(defender.cha * 0.6)  ;
+   +  Math.floor(defender.cha * 0.6) 
+   
+   // 武器効果
+if(atkEquip.weapon){
+  atkPower += atkEquip.weapon.effect.atk || 0;
+}
+
+
+// 書物効果（知力兵種）
+if(
+  atkEquip.book &&
+  atkUnit.type === "int"
+){
+  atkPower += atkEquip.book.effect.atk || 0;
+}
+
+
+// 旗効果（魅力兵種）
+if(
+  atkEquip.flag &&
+  atkUnit.type === "cha"
+){
+  atkPower += atkEquip.flag.effect.atk || 0;
+} ;
+
+
+
+
   let defDef = defUnit.params.def 
-    + Math.floor(defender.kunren / 10) ;
+    + Math.floor(defender.kunren / 10) 
+    
+       // 防具
+if(atkEquip.armor){
+ atkDef += atkEquip.armor.effect.def || 0;
+}
+
+
+// 書物（知力兵）
+if(
+ atkEquip.book &&
+ atkUnit.type === "int"
+){
+ atkDef += atkEquip.book.effect.def || 0;
+}
+
+
+// 旗（魅力兵）
+if(
+ atkEquip.flag &&
+ atkUnit.type === "cha"
+){
+ atkDef += atkEquip.flag.effect.def || 0;
+}
+    
+    ;
 
 
 //----------------------------------------
@@ -230,13 +341,6 @@ if (defFormation.id === "kakuyoku") {
   );
 }
 
-
-
-
-
-
-
-
 // =====================
 // 強襲（攻撃側のみ）
 // =====================
@@ -256,12 +360,6 @@ if (assaultRate > 0) {
 
   log.push(`💥 強襲発動！相手能力-${Math.floor(assaultRate * 100)}%`);
 }
-
-
-
-
-
-
 
 
   // 攻撃力差補正

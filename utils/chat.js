@@ -94,7 +94,7 @@ function getPrivateChat(userId, targetId) {
 // =====================
 // システムチャット
 // =====================
-function addSystemChat(message) {
+function addSystemLog(message) {
 
   const chats = loadJSON("chat.json") || {};
 
@@ -113,7 +113,7 @@ function addSystemChat(message) {
   saveJSON("chat.json", chats);
 }
 
-function getSystemChat() {
+function getSystemLog() {
 
   const chats = loadJSON("chat.json") || {};
 
@@ -137,6 +137,6 @@ module.exports = {
   addPrivateChat,
   getPrivateChat,
 
-  addSystemChat,
-  getSystemChat
+  addSystemLog,
+  getSystemLog
 };

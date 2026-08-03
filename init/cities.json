@@ -6,12 +6,13 @@
     "soldiers": 50,
     "x": 2,
     "y": 1,
-    "defenders": []
+    "defenders": [
+    ]
   },
   {
     "id": "city02",
     "name": "長安",
-    "owner": "country_1785733104812",
+    "owner": null,
     "soldiers": 40,
     "x": 1,
     "y": 2,
@@ -20,11 +21,12 @@
   {
     "id": "city03",
     "name": "許昌",
-    "owner": "country_1785732827576",
+    "owner": null,
     "soldiers": 30,
     "x": 3,
     "y": 2,
-    "defenders": []
+    "defenders": [
+    ]
   },
   {
     "id": "city04",
@@ -47,7 +49,7 @@
   {
     "id": "city06",
     "name": "江陵",
-    "owner": "country_1785732294749",
+    "owner": null,
     "soldiers": 25,
     "x": 3,
     "y": 4,
@@ -65,7 +67,7 @@
   {
     "id": "city08",
     "name": "漢中",
-    "owner": "country_1785733567790",
+    "owner": null,
     "soldiers": 10,
     "x": 2,
     "y": 4,

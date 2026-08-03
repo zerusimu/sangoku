@@ -1,4 +1,5 @@
 const { getRankExp, applyRankExp } = require("../utils/rankSystem");
+const { getTrainingBonus } = require("../utils/trainingBonus");
 
 module.exports = {
   execute: (general) => {

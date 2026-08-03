@@ -1,88 +1,48 @@
 [
   {
-    "id": "country_1773901789153",
-    "name": "",
-    "ruler": "xxx",
+    "id": "country_1785732294749",
+    "name": "ooo",
+    "ruler": "ooo",
     "alive": true,
-    "wars": [
-      "country_1775102772550",
-      "country_1775116143121",
-      "country_1782193193714"
-    ],
     "cities": [
       "city06"
+    ],
+    "wars": [
+      "country_1785733567790",
+      "country_1785733104812"
     ]
   },
   {
-    "id": "country_1773901810996",
+    "id": "country_1785732827576",
     "name": "",
-    "ruler": "iii",
+    "ruler": "vvv",
     "alive": true,
-    "wars": [
-      "country_1775102772550",
-      "country_1775116143121",
-      "country_1782193193714"
-    ],
     "cities": [
       "city03"
     ]
   },
   {
-    "id": "country_1775102772550",
-    "name": "xxx",
-    "ruler": "xxx",
-    "alive": true,
-    "cities": [
-      "city01"
-    ],
-    "wars": [
-      "country_1773901789153",
-      "country_1773901810996",
-      "country_1775116143121",
-      "country_1782193193714"
-    ]
-  },
-  {
-    "id": "country_1775116143121",
-    "name": "ccc",
-    "ruler": "ccc",
-    "alive": true,
-    "cities": [
-      "city05"
-    ],
-    "wars": [
-      "country_1775102772550",
-      "country_1773901789153",
-      "country_1773901810996",
-      "country_1782193193714"
-    ]
-  },
-  {
-    "id": "country_1782189336948",
-    "name": "bbb",
-    "ruler": "bbb",
-    "alive": true,
-    "cities": [
-      "city04"
-    ],
-    "wars": [
-      "country_1782193193714"
-    ]
-  },
-  {
-    "id": "country_1782193193714",
-    "name": "mmm",
-    "ruler": "mmm",
+    "id": "country_1785733104812",
+    "name": "ddd",
+    "ruler": "ddd",
     "alive": true,
     "cities": [
       "city02"
     ],
     "wars": [
-      "country_1775102772550",
-      "country_1775116143121",
-      "country_1782189336948",
-      "country_1773901789153",
-      "country_1773901810996"
+      "country_1785732294749"
+    ]
+  },
+  {
+    "id": "country_1785733567790",
+    "name": "lll",
+    "ruler": "lll",
+    "alive": true,
+    "cities": [
+      "city08"
+    ],
+    "wars": [
+      "country_1785732294749"
     ]
   }
 ]

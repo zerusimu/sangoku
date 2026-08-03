@@ -1,44 +1,32 @@
 [
   {
-    "id": "user_1774841265761",
+    "id": "user_1785732294749",
     "loginId": "ooo",
     "password": "ooo",
-    "generalId": "general_1774841265761"
+    "generalId": "general_1785732294749"
   },
   {
-    "id": "user_1775102772551",
-    "loginId": "xxx",
-    "password": "xxx",
-    "generalId": "general_1775102772551"
-  },
-  {
-    "id": "user_1775116143121",
-    "loginId": "ccc",
-    "password": "ccc",
-    "generalId": "general_1775116143121"
-  },
-  {
-    "id": "user_1776735054762",
+    "id": "user_1785732827577",
     "loginId": "vvv",
     "password": "vvv",
-    "generalId": "general_1776735054762"
+    "generalId": "general_1785732827576"
   },
   {
-    "id": "user_1782189336948",
-    "loginId": "bbb",
-    "password": "bbb",
-    "generalId": "general_1782189336948"
+    "id": "user_1785733104813",
+    "loginId": "ddd",
+    "password": "ddd",
+    "generalId": "general_1785733104813"
   },
   {
-    "id": "user_1782193120918",
-    "loginId": "nnn",
-    "password": "nnn",
-    "generalId": "general_1782193120918"
+    "id": "user_1785733567790",
+    "loginId": "lll",
+    "password": "lll",
+    "generalId": "general_1785733567790"
   },
   {
-    "id": "user_1782193193715",
-    "loginId": "mmm",
-    "password": "mmm",
-    "generalId": "general_1782193193714"
+    "id": "user_1785733657511",
+    "loginId": "ppp",
+    "password": "ppp",
+    "generalId": "general_1785733657511"
   }
 ]
