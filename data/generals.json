@@ -1,77 +1,295 @@
 [
   {
-    "id": "general_1785732294749",
+    "id": "general_1785824646434",
     "name": "ooo",
     "str": 5,
     "int": 100,
     "lea": 65,
     "cha": 5,
-    "countryId": "country_1785732294749",
-    "cityId": "city06",
-    "kunren": 0,
-    "trainingCount": 0,
-    "money": 1000,
-    "rice": 1000,
-    "lastSalaryAt": 1785732294749,
+    "countryId": "country_1785824646433",
+    "cityId": "city01",
+    "kunren": 35,
+    "trainingCount": 8,
+    "money": 975,
+    "rice": 5500,
+    "lastSalaryAt": 1785987596249,
     "formation": "gyorin",
-    "rankPoint": 0,
+    "rankPoint": 1005,
     "rank": "D",
     "skills": [],
     "skillPoints": 0,
+    "equipment": {
+      "weapon": null,
+      "armor": "armor002",
+      "book": "book001",
+      "flag": null
+    },
     "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
+      {
+        "type": "kunren",
+        "executeAt": 1785993517578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993577578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993637578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993697578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993757578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993817578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993877578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993937578,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785993997579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994057579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994117579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994177579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994237579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994297579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994357579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994417579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994477579,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994537580,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994597580,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994657580,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994717580,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994777580,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994837580,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994897581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785994957581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995017581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995077581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995137581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995197581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995257581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995317581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995377581,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995437582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995497582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995557582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995617582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995677582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995737582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995797582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995857582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995917582,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785995977583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996037583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996097583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996157583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996217583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996277583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996337583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996397583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996457583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996517583,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996577584,
+        "executed": false
+      },
+      {
+        "type": "kunren",
+        "executeAt": 1785996638439,
+        "executed": false
+      },
       null,
       null,
       null,
@@ -82,386 +300,269 @@
     ],
     "army": {
       "type": "noumin",
-      "count": 0
+      "count": 65
     },
     "recruitOffers": [],
+    "fixedSecond": 27,
     "commandLog": [
       {
-        "message": "⚔️ ooo が lll に宣戦布告しました！",
-        "time": 1785733850300
+        "type": "tyouhei",
+        "message": "農民 を 65 人徴兵（65/65） 訓練値-35 階級ポイント＋15",
+        "executeAt": 1785993458037
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785993398493
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785993337928
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785993278344
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785993217810
+      },
+      {
+        "type": "move_safe",
+        "message": "🚶 洛陽へ移動",
+        "executeAt": 1785993158235
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785993097673
+      },
+      {
+        "type": "move_safe",
+        "message": "🚶 長安へ移動",
+        "executeAt": 1785993038159
+      },
+      {
+        "type": "buyEquipment",
+        "message": "木の鎧を75Gで下取りしました。鉄の鎧を購入しました",
+        "executeAt": 1785992616543
+      },
+      {
+        "type": "buyEquipment",
+        "message": "孫子の兵法書を購入しました。",
+        "executeAt": 1785991492447
+      },
+      {
+        "type": "buyEquipment",
+        "message": "革鎧を購入しました。",
+        "executeAt": 1785991417944
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1785987579795
       }
-    ]
-  },
-  {
-    "id": "general_1785732827576",
-    "name": "vvv",
-    "str": 65,
-    "int": 5,
-    "lea": 100,
-    "cha": 5,
-    "countryId": "country_1785732827576",
-    "cityId": "city03",
-    "kunren": 0,
-    "trainingCount": 0,
-    "money": 1000,
-    "rice": 1000,
-    "lastSalaryAt": 1785732827577,
-    "formation": "gyorin",
-    "rankPoint": 0,
-    "rank": "D",
-    "skills": [],
-    "skillPoints": 0,
-    "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
     ],
-    "army": {
-      "type": "noumin",
-      "count": 0
+    "offlineReward": {
+      "count": 3,
+      "money": 4500,
+      "rice": 4500
     },
-    "recruitOffers": [],
-    "commandLog": [
-      {
-        "message": "⚔️ ooo が lll に宣戦布告しました！",
-        "time": 1785733850300
-      }
-    ]
-  },
-  {
-    "id": "general_1785733104813",
-    "name": "ddd",
-    "str": 65,
-    "int": 5,
-    "lea": 100,
-    "cha": 5,
-    "countryId": "country_1785733104812",
-    "cityId": "city02",
-    "kunren": 0,
-    "trainingCount": 0,
-    "money": 1000,
-    "rice": 1000,
-    "lastSalaryAt": 1785733104813,
-    "formation": "gyorin",
-    "rankPoint": 0,
-    "rank": "D",
-    "skills": [],
-    "skillPoints": 0,
-    "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "army": {
-      "type": "noumin",
-      "count": 0
-    },
-    "recruitOffers": [],
-    "commandLog": [
-      {
-        "message": "⚔️ ooo が lll に宣戦布告しました！",
-        "time": 1785733850300
-      }
-    ]
-  },
-  {
-    "id": "general_1785733567790",
-    "name": "lll",
-    "str": 100,
-    "int": 5,
-    "lea": 65,
-    "cha": 5,
-    "countryId": "country_1785733567790",
-    "cityId": "city08",
-    "kunren": 0,
-    "trainingCount": 0,
-    "money": 1000,
-    "rice": 1000,
-    "lastSalaryAt": 1785733567790,
-    "formation": "gyorin",
-    "rankPoint": 0,
-    "rank": "D",
-    "skills": [],
-    "skillPoints": 0,
-    "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "army": {
-      "type": "noumin",
-      "count": 0
-    },
-    "recruitOffers": [],
-    "commandLog": [
-      {
-        "message": "⚔️ ooo が lll に宣戦布告しました！",
-        "time": 1785733850300
-      }
-    ]
-  },
-  {
-    "id": "general_1785733657511",
-    "name": "ppp",
-    "str": 100,
-    "int": 65,
-    "lea": 5,
-    "cha": 5,
-    "countryId": "country_1785732294749",
-    "cityId": "city06",
-    "kunren": 0,
-    "trainingCount": 0,
-    "money": 1000,
-    "rice": 1000,
-    "lastSalaryAt": 1785733657511,
-    "formation": "gyorin",
-    "rankPoint": 0,
-    "rank": "D",
-    "skills": [],
-    "skillPoints": 0,
-    "commandQueue": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "army": {
-      "type": "noumin",
-      "count": 0
-    },
-    "recruitOffers": [],
-    "commandLog": [
-      {
-        "message": "⚔️ ooo が lll に宣戦布告しました！",
-        "time": 1785733850300
-      }
-    ]
+    "soldiers": {
+      "noumin": 65
+    }
   }
 ]

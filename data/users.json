@@ -1,32 +1,8 @@
 [
   {
-    "id": "user_1785732294749",
+    "id": "user_1785824646434",
     "loginId": "ooo",
     "password": "ooo",
-    "generalId": "general_1785732294749"
-  },
-  {
-    "id": "user_1785732827577",
-    "loginId": "vvv",
-    "password": "vvv",
-    "generalId": "general_1785732827576"
-  },
-  {
-    "id": "user_1785733104813",
-    "loginId": "ddd",
-    "password": "ddd",
-    "generalId": "general_1785733104813"
-  },
-  {
-    "id": "user_1785733567790",
-    "loginId": "lll",
-    "password": "lll",
-    "generalId": "general_1785733567790"
-  },
-  {
-    "id": "user_1785733657511",
-    "loginId": "ppp",
-    "password": "ppp",
-    "generalId": "general_1785733657511"
+    "generalId": "general_1785824646434"
   }
 ]

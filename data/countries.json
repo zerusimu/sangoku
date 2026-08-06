@@ -1,48 +1,11 @@
 [
   {
-    "id": "country_1785732294749",
-    "name": "ooo",
+    "id": "country_1785824646433",
+    "name": "oooooooooooooooo",
     "ruler": "ooo",
     "alive": true,
     "cities": [
-      "city06"
-    ],
-    "wars": [
-      "country_1785733567790",
-      "country_1785733104812"
-    ]
-  },
-  {
-    "id": "country_1785732827576",
-    "name": "",
-    "ruler": "vvv",
-    "alive": true,
-    "cities": [
-      "city03"
-    ]
-  },
-  {
-    "id": "country_1785733104812",
-    "name": "ddd",
-    "ruler": "ddd",
-    "alive": true,
-    "cities": [
-      "city02"
-    ],
-    "wars": [
-      "country_1785732294749"
-    ]
-  },
-  {
-    "id": "country_1785733567790",
-    "name": "lll",
-    "ruler": "lll",
-    "alive": true,
-    "cities": [
-      "city08"
-    ],
-    "wars": [
-      "country_1785732294749"
+      "city01"
     ]
   }
 ]

@@ -758,66 +758,70 @@ function showChat(type){
 
 
 
-
-
-
+<!-- =========================
+     徴兵用
+========================= -->
 <div id="bulkTyouheiBox" style="display:none; margin-top:10px;">
+
+<select id="bulkHeisyu">
+
+<%
+const playerRankIndex = Math.floor(general.rankPoint / 5000) + 1;
+%>
+
+<% heisyu.forEach(h => { %>
+
+<%
+const rankIndex = h.requiredRank;
+const req = h.requirements || {};
+
+const ok =
+rankIndex <= playerRankIndex + 1 &&
+(!req.str || general.str >= req.str) &&
+(!req.int || general.int >= req.int) &&
+(!req.lea || general.lea >= req.lea) &&
+(!req.cha || general.cha >= req.cha);
+%>
+
+<% if (ok) { %>
+
+<option value="<%= h.id %>">
+<%= h.name %>
+</option>
+
+<% } %>
+
+<% }) %>
+
+</select>
+
+<input
+type="number"
+id="bulkCount"
+min="1"
+value="65">
+
+</div>
+
+
+<!-- =========================
+     装備購入用
+========================= -->
+<div id="bulkEquipmentBox"
+style="display:none; margin-top:10px;">
 
 <select id="bulkEquipment">
 
-<option value="weapon">
-武器
-</option>
-
-<option value="armor">
-防具
-</option>
-
-<option value="book">
-書物
-</option>
-
-<option value="flag">
-旗
-</option>
+<option value="weapon">武器</option>
+<option value="armor">防具</option>
+<option value="book">書物</option>
+<option value="flag">旗</option>
 
 </select>
 
 </div>
 
-<select id="bulkHeisyu">
-  <%
 
-    
-  const playerRankIndex = Math.floor(general.rankPoint / 5000) + 1; 
-  %>
-
-  <% heisyu.forEach(h => { %>
-
-    <%
-      const rankIndex = h.requiredRank;
-      const req = h.requirements || {};
-
-      const ok =
-        rankIndex <= playerRankIndex + 1 && // 予約OK
-        (!req.str || general.str >= req.str) &&
-        (!req.int || general.int >= req.int) &&
-        (!req.lea || general.lea >= req.lea) &&
-        (!req.cha || general.cha >= req.cha);
-    %>
-
-    <% if (ok) { %>
-<option value="<%= h.id %>"
->
-  <%= h.name %>
-</option>
-    <% } %>
-
-  <% }) %>
-</select>
-
-  <input type="number" id="bulkCount" min="1" value="65">
-</div>
 
 
 
@@ -913,27 +917,37 @@ function showChat(type){
 style="<%= s.command === 'buyEquipment' ? '' : 'display:none;' %>">
 
 
-<select name="equipment_type[<%= s.index %>]">
+<select 
+class="equipment-category"
+name="equipment_type[<%= s.index %>]"
+>
 
-<option value="weapon">
+<option value="weapon"
+<%= s.equipmentType==="weapon"?"selected":"" %>>
 武器
 </option>
 
-<option value="armor">
+<option value="armor"
+<%= s.equipmentType==="armor"?"selected":"" %>>
 防具
 </option>
 
-<option value="book">
+<option value="book"
+<%= s.equipmentType==="book"?"selected":"" %>>
 書物
 </option>
 
-<option value="flag">
+<option value="flag"
+<%= s.equipmentType==="flag"?"selected":"" %>>
 旗
 </option>
 
 </select>
-
-
+<select
+class="equipment-item"
+name="equipment_item[<%= s.index %>]"
+data-selected="<%= s.equipmentItem %>">
+</select>
 </div>
 
 
@@ -1020,7 +1034,69 @@ style="<%= s.command === 'buyEquipment' ? '' : 'display:none;' %>">
 
 <script>
 
+const equipments = <%- JSON.stringify(equipments) %>;
+
+
 let isBulkApplying = false;
+
+function updateEquipmentList(box){
+
+console.log("updateEquipmentList が呼ばれました");
+  console.log("updateEquipmentList");
+    console.trace();
+
+
+
+
+    const category =
+        box.querySelector(".equipment-category").value;
+
+    const itemSelect =
+        box.querySelector(".equipment-item");
+
+
+    // 現在選択中の装備を保存
+    const currentValue = itemSelect.value;
+
+
+    itemSelect.innerHTML = "";
+
+
+    equipments
+      .filter(e=>e.type===category)
+      .forEach(e=>{
+
+        const option=document.createElement("option");
+
+        option.value=e.id;
+
+        option.textContent =
+            `${e.name} (${e.price}G)`;
+
+
+        itemSelect.appendChild(option);
+
+      });
+
+
+    // 前回選択した装備が存在すれば復元
+    if(
+      [...itemSelect.options]
+      .some(o=>o.value===currentValue)
+    ){
+   const savedValue = itemSelect.dataset.selected;
+
+if (savedValue) {
+    itemSelect.value = savedValue;
+}
+    }
+
+}
+
+
+
+
+
 
 
 function onCommandChange(select, index) {
@@ -1052,10 +1128,24 @@ function applyBulk() {
       if (countInput) countInput.value = bulkCount;
     }
 
-    if (value === "buyEquipment") {
+if (value === "buyEquipment") {
 
- const equipmentSelect =
- document.getElementById("bulkEquipment");
+ const equipment =
+ document.getElementById("bulkEquipment").value;
+
+
+const equipmentSelect =
+ row.querySelector(
+ ".equipment-category"
+);
+
+
+ if(equipmentSelect){
+   equipmentSelect.value = equipment;
+   equipmentSelect.dispatchEvent(
+ new Event("change")
+);
+ }
 
 }
 
@@ -1073,23 +1163,54 @@ function applyBulk() {
 }
 
 document.getElementById("bulkCommand").addEventListener("change", function () {
-  const tyouheiBox = document.getElementById("bulkTyouheiBox");
-  const moveBox = document.getElementById("bulkMoveBox");
 
-  tyouheiBox.style.display = this.value === "tyouhei" ? "block" : "none";
+  const tyouheiBox =
+  document.getElementById("bulkTyouheiBox");
+
+  const moveBox =
+  document.getElementById("bulkMoveBox");
+
+  const equipmentBox =
+  document.getElementById("bulkEquipmentBox");
+
+
+  tyouheiBox.style.display =
+  this.value === "tyouhei"
+  ? "block"
+  : "none";
+
+
+  equipmentBox.style.display =
+  this.value === "buyEquipment"
+  ? "block"
+  : "none";
+
 
   moveBox.style.display =
-    (this.value === "move" || this.value === "move_safe")
-      ? "block"
-      : "none";
-});
+  (this.value === "move" || this.value === "move_safe")
+  ? "block"
+  : "none";
 
+});
 
 document.querySelectorAll("tr").forEach(row => {
   const select = row.querySelector(".command-select");
   const tyouheiBox = row.querySelector(".tyouhei-input");
   const moveBox = row.querySelector(".move-input");
   const equipmentBox = row.querySelector(".equipment-input");
+const equipmentCategory =
+row.querySelector(".equipment-category");
+
+if(equipmentCategory){
+
+    equipmentCategory.addEventListener(
+        "change",
+        ()=>updateEquipmentList(equipmentBox)
+    );
+
+    updateEquipmentList(equipmentBox);
+
+}
 
   if (!select) return;
 

@@ -2,7 +2,7 @@
   {
     "id": "city01",
     "name": "洛陽",
-    "owner": null,
+    "owner": "country_1785824646433",
     "soldiers": 50,
     "x": 2,
     "y": 1,
@@ -11,7 +11,7 @@
   {
     "id": "city02",
     "name": "長安",
-    "owner": "country_1785733104812",
+    "owner": null,
     "soldiers": 40,
     "x": 1,
     "y": 2,
@@ -20,7 +20,7 @@
   {
     "id": "city03",
     "name": "許昌",
-    "owner": "country_1785732827576",
+    "owner": null,
     "soldiers": 30,
     "x": 3,
     "y": 2,
@@ -47,7 +47,7 @@
   {
     "id": "city06",
     "name": "江陵",
-    "owner": "country_1785732294749",
+    "owner": null,
     "soldiers": 25,
     "x": 3,
     "y": 4,
@@ -65,7 +65,7 @@
   {
     "id": "city08",
     "name": "漢中",
-    "owner": "country_1785733567790",
+    "owner": null,
     "soldiers": 10,
     "x": 2,
     "y": 4,

@@ -7,6 +7,7 @@ const { battle } = require("./logic/battle");
 const { recruit } = require("./logic/army");
 const { getRecruitTimeByIndex } = require("./logic/recruit");
 const { loadJSON, saveJSON } = require("./utils/json");
+
 const {
   cleanupCountries
 } = require("./utils/country");
@@ -416,7 +417,7 @@ app.get("/user/:id", (req, res) => {
   const cities = loadJSON("cities.json");
   const heisyu = loadJSON("heisyu.json");
 const formations = loadJSON("formations.json");
-
+const equipments = loadJSON("equipments.json");
 
   // 武将取得
   const general = generals.find(
@@ -459,21 +460,32 @@ saveJSON("generals.json", generals);
 
     if (cmd) {
       schedule.push({
-        index: i,
-        command: cmd.type || "",
-        heisyuId: cmd?.data?.heisyuId ?? "",
-        count: cmd?.data?.count ?? 0,
-         targetCity: cmd?.data?.targetCity ?? "", // ★追加
-        executeAt: cmd.executeAt || null
+       index: i,
+    command: cmd.type || "",
+
+    // 徴兵
+    heisyuId: cmd?.data?.heisyuId ?? "",
+    count: cmd?.data?.count ?? 0,
+
+    // 移動
+    targetCity: cmd?.data?.targetCity ?? "",
+
+    // 装備購入
+    equipmentType: cmd?.data?.equipmentType ?? "",
+  equipmentItem: cmd?.data?.itemId ?? "",
+
+    executeAt: cmd.executeAt || null
       });
     } else {
       schedule.push({
         index: i,
-        command: "",
-        heisyuId: "",
-        count: 0,
-         targetCity:  "", // ★追加
-        executeAt: null
+    command: "",
+    heisyuId: "",
+    count: 0,
+    targetCity: "",
+    equipmentType: "",
+    itemId: "",
+    executeAt: null
       });
     }
   }
@@ -498,6 +510,7 @@ res.render("user", {
   formations,
   currentFormation,
   trainingBonus,
+      equipments,
     // チャット
   globalChat: getGlobalChat(),
   countryChat: getCountryChat(general.countryId),
@@ -851,6 +864,11 @@ function normalizeQueue(queue) {
 
 
 app.post("/command/update", (req, res) => {
+
+console.log("equipmentItems =", req.body.equipment_item);
+console.log("equipmentTypes =", req.body.equipment_type);
+
+
 console.log("moveTargets:", req.body.move_targetCity);
 console.log("moveTargets:", req.body.move_targetCity); // ←ここ追加
 
@@ -863,6 +881,11 @@ console.log("moveTargets:", req.body.move_targetCity); // ←ここ追加
   const heisyuIds = req.body.tyouhei_heisyu || {};
   const counts = req.body.tyouhei_count || {};
 const moveTargets = req.body.move_targetCity || {};
+const equipmentItems = req.body.equipment_item || {};
+const equipmentTypes = req.body.equipment_type || {};
+
+
+
   const INTERVAL = 60 * 1000;
 
   // 秒固定
@@ -913,6 +936,18 @@ if (oldCmd) {
     executed: false,
     executeAt
   };
+
+if (cmd === "buyEquipment") {
+
+  entry.data = {
+    equipmentType: equipmentTypes[i],
+    itemId: equipmentItems[i]
+};
+
+    console.log("保存する装備", entry.data);
+}
+
+
 
 
 if (cmd === "move" || cmd === "move_safe") {

@@ -17,6 +17,15 @@
       "def": 5
     }
   },
+   {
+    "id": "armor002",
+    "name": "鉄の鎧",
+    "type": "armor",
+    "price": 2000,
+    "effect": {
+      "def": 10
+    }
+  },
   {
     "id": "book001",
     "name": "孫子の兵法書",
