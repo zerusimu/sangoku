@@ -139,6 +139,81 @@ font-size:18px;
 <p>訓練補正: <%=  general.trainingBonus %></p>
  <p>お金: <%= general.money %></p>
   <p>お米: <%= general.rice %></p>
+
+<!-- =========================
+     現在の装備
+========================= -->
+
+<div class="current-equipment">
+
+  <h3>現在の装備</h3>
+
+  <%
+    const equipmentTypes = [
+      { key: "weapon", name: "武器" },
+      { key: "armor",  name: "防具" },
+      { key: "book",   name: "書物" },
+      { key: "flag",   name: "旗" }
+    ];
+  %>
+
+  <% equipmentTypes.forEach(type => { %>
+
+    <%
+      const equipmentId =
+        general.equipment?.[type.key];
+
+      const equipment =
+        equipments.find(
+          e => e.id === equipmentId
+        );
+    %>
+
+    <div class="equipment-status">
+
+      <strong><%= type.name %>：</strong>
+
+      <% if (equipment) { %>
+
+        <%= equipment.name %>
+
+        <% if (equipment.effect?.atk) { %>
+          （攻撃力 +<%= equipment.effect.atk %>）
+        <% } %>
+
+        <% if (equipment.effect?.def) { %>
+          （防御力 +<%= equipment.effect.def %>）
+        <% } %>
+
+        <% if (equipment.effect?.int) { %>
+          （知力 +<%= equipment.effect.int %>）
+        <% } %>
+
+        <% if (equipment.effect?.cha) { %>
+          （魅力 +<%= equipment.effect.cha %>）
+        <% } %>
+
+      <% } else { %>
+
+        装備なし
+
+      <% } %>
+
+    </div>
+
+  <% }) %>
+
+</div>
+
+
+
+
+
+
+
+
+
+
  <% if (general.offlineReward) { %>
 <div style="border:1px solid gold;padding:10px;">
   留守中の収益<br>
@@ -810,14 +885,21 @@ value="65">
 <div id="bulkEquipmentBox"
 style="display:none; margin-top:10px;">
 
-<select id="bulkEquipment">
+    <!-- 装備種類 -->
+    <select id="bulkEquipmentCategory">
 
-<option value="weapon">武器</option>
-<option value="armor">防具</option>
-<option value="book">書物</option>
-<option value="flag">旗</option>
+        <option value="weapon">武器</option>
+        <option value="armor">防具</option>
+        <option value="book">書物</option>
+        <option value="flag">旗</option>
 
-</select>
+    </select>
+
+
+    <!-- 装備詳細 -->
+    <select id="bulkEquipmentItem">
+
+    </select>
 
 </div>
 
@@ -1036,17 +1118,58 @@ data-selected="<%= s.equipmentItem %>">
 
 const equipments = <%- JSON.stringify(equipments) %>;
 
-
 let isBulkApplying = false;
+
+function updateBulkEquipmentList(){
+
+    const category =
+        document.getElementById(
+            "bulkEquipmentCategory"
+        ).value;
+
+    const itemSelect =
+        document.getElementById(
+            "bulkEquipmentItem"
+        );
+
+
+    itemSelect.innerHTML = "";
+
+
+    equipments
+        .filter(e => e.type === category)
+        .forEach(e => {
+
+            const option =
+                document.createElement("option");
+
+            option.value = e.id;
+
+            option.textContent =
+                `${e.name} (${e.price}G)`;
+
+            itemSelect.appendChild(option);
+
+        });
+
+}
+
+document
+    .getElementById("bulkEquipmentCategory")
+    .addEventListener(
+        "change",
+        updateBulkEquipmentList
+    );
+
+
+updateBulkEquipmentList();
+
+
+
 
 function updateEquipmentList(box){
 
-console.log("updateEquipmentList が呼ばれました");
-  console.log("updateEquipmentList");
-    console.trace();
-
-
-
+    console.log("updateEquipmentList が呼ばれました");
 
     const category =
         box.querySelector(".equipment-category").value;
@@ -1055,44 +1178,54 @@ console.log("updateEquipmentList が呼ばれました");
         box.querySelector(".equipment-item");
 
 
-    // 現在選択中の装備を保存
-    const currentValue = itemSelect.value;
+    // ★ EJSから渡された予約済み装備ID
+    const savedValue =
+        itemSelect.dataset.selected || "";
 
 
+    console.log("カテゴリー:", category);
+    console.log("保存されている装備ID:", savedValue);
+
+
+    // 装備一覧をいったん空にする
     itemSelect.innerHTML = "";
 
 
+    // カテゴリーに合った装備を追加
     equipments
-      .filter(e=>e.type===category)
-      .forEach(e=>{
+        .filter(e => e.type === category)
+        .forEach(e => {
 
-        const option=document.createElement("option");
+            const option =
+                document.createElement("option");
 
-        option.value=e.id;
+            option.value = e.id;
 
-        option.textContent =
-            `${e.name} (${e.price}G)`;
+            option.textContent =
+                `${e.name} (${e.price}G)`;
+
+            itemSelect.appendChild(option);
+
+        });
 
 
-        itemSelect.appendChild(option);
+    // ★ 保存されている装備が存在するなら、それを選択
+    if (
+        savedValue &&
+        [...itemSelect.options]
+            .some(option => option.value === savedValue)
+    ) {
 
-      });
+        itemSelect.value = savedValue;
 
+        console.log(
+            "保存された装備を復元しました:",
+            itemSelect.value
+        );
 
-    // 前回選択した装備が存在すれば復元
-    if(
-      [...itemSelect.options]
-      .some(o=>o.value===currentValue)
-    ){
-   const savedValue = itemSelect.dataset.selected;
-
-if (savedValue) {
-    itemSelect.value = savedValue;
-}
     }
 
 }
-
 
 
 
@@ -1130,22 +1263,62 @@ function applyBulk() {
 
 if (value === "buyEquipment") {
 
- const equipment =
- document.getElementById("bulkEquipment").value;
+    // 一括設定で選んだ装備種類
+    const equipmentCategory =
+        document.getElementById(
+            "bulkEquipmentCategory"
+        ).value;
 
 
-const equipmentSelect =
- row.querySelector(
- ".equipment-category"
-);
+    // 一括設定で選んだ具体的な装備
+    const equipmentItem =
+        document.getElementById(
+            "bulkEquipmentItem"
+        ).value;
 
 
- if(equipmentSelect){
-   equipmentSelect.value = equipment;
-   equipmentSelect.dispatchEvent(
- new Event("change")
-);
- }
+    // 各コマンドの装備種類select
+    const categorySelect =
+        row.querySelector(
+            ".equipment-category"
+        );
+
+
+    // 各コマンドの装備詳細select
+    const itemSelect =
+        row.querySelector(
+            ".equipment-item"
+        );
+
+
+    if (categorySelect) {
+
+        // 種類を設定
+        categorySelect.value =
+            equipmentCategory;
+
+
+        // changeイベントを発生させて
+        // 装備一覧を作り直す
+        categorySelect.dispatchEvent(
+            new Event("change")
+        );
+
+    }
+
+
+    // ★ 装備一覧が作り直された後に
+    // 選択した装備を設定
+    if (itemSelect) {
+
+        itemSelect.value =
+            equipmentItem;
+
+        // 念のため保存値も更新
+        itemSelect.dataset.selected =
+            equipmentItem;
+
+    }
 
 }
 

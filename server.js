@@ -474,6 +474,8 @@ saveJSON("generals.json", generals);
     equipmentType: cmd?.data?.equipmentType ?? "",
   equipmentItem: cmd?.data?.itemId ?? "",
 
+     itemId: cmd?.data?.itemId ?? "",
+     
     executeAt: cmd.executeAt || null
       });
     } else {

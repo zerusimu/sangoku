@@ -32,8 +32,7 @@
     "type": "book",
     "price": 3000,
     "effect": {
-      "atk": 10,
-      "def": 10
+      "int": 10
     }
   },
   {
@@ -42,8 +41,7 @@
     "type": "flag",
     "price": 3000,
     "effect": {
-      "atk": 10,
-      "def": 10
+      "cha": 10
     }
   }
 ]

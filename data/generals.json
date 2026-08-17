@@ -8,18 +8,18 @@
     "cha": 5,
     "countryId": "country_1785824646433",
     "cityId": "city01",
-    "kunren": 35,
-    "trainingCount": 8,
-    "money": 975,
-    "rice": 5500,
-    "lastSalaryAt": 1785987596249,
+    "kunren": 100,
+    "trainingCount": 13,
+    "money": 41475,
+    "rice": 52000,
+    "lastSalaryAt": 1786944169673,
     "formation": "gyorin",
-    "rankPoint": 1005,
+    "rankPoint": 2955,
     "rank": "D",
     "skills": [],
     "skillPoints": 0,
     "equipment": {
-      "weapon": null,
+      "weapon": "sword001",
       "armor": "armor002",
       "book": "book001",
       "flag": null
@@ -27,269 +27,229 @@
     "commandQueue": [
       {
         "type": "kunren",
-        "executeAt": 1785993517578,
+        "executeAt": 1786947859254,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993577578,
+        "executeAt": 1786947919254,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993637578,
+        "executeAt": 1786947979254,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993697578,
+        "executeAt": 1786948039254,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993757578,
+        "executeAt": 1786948099255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993817578,
+        "executeAt": 1786948159255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993877578,
+        "executeAt": 1786948219255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993937578,
+        "executeAt": 1786948279255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785993997579,
+        "executeAt": 1786948339255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994057579,
+        "executeAt": 1786948399255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994117579,
+        "executeAt": 1786948459255,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994177579,
+        "executeAt": 1786948519256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994237579,
+        "executeAt": 1786948579256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994297579,
+        "executeAt": 1786948639256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994357579,
+        "executeAt": 1786948699256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994417579,
+        "executeAt": 1786948759256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994477579,
+        "executeAt": 1786948819256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994537580,
+        "executeAt": 1786948879256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994597580,
+        "executeAt": 1786948939256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994657580,
+        "executeAt": 1786948999256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994717580,
+        "executeAt": 1786949059256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994777580,
+        "executeAt": 1786949119256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994837580,
+        "executeAt": 1786949179256,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994897581,
+        "executeAt": 1786949239257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785994957581,
+        "executeAt": 1786949299257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995017581,
+        "executeAt": 1786949359257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995077581,
+        "executeAt": 1786949419257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995137581,
+        "executeAt": 1786949479257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995197581,
+        "executeAt": 1786949539257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995257581,
+        "executeAt": 1786949599257,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995317581,
+        "executeAt": 1786949659258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995377581,
+        "executeAt": 1786949719258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995437582,
+        "executeAt": 1786949779258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995497582,
+        "executeAt": 1786949839258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995557582,
+        "executeAt": 1786949899258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995617582,
+        "executeAt": 1786949959258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995677582,
+        "executeAt": 1786950019258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995737582,
+        "executeAt": 1786950079258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995797582,
+        "executeAt": 1786950139258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995857582,
+        "executeAt": 1786950199258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995917582,
+        "executeAt": 1786950259258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785995977583,
+        "executeAt": 1786950319258,
         "executed": false
       },
       {
         "type": "kunren",
-        "executeAt": 1785996037583,
+        "executeAt": 1786950385466,
         "executed": false
       },
-      {
-        "type": "kunren",
-        "executeAt": 1785996097583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996157583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996217583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996277583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996337583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996397583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996457583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996517583,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996577584,
-        "executed": false
-      },
-      {
-        "type": "kunren",
-        "executeAt": 1785996638439,
-        "executed": false
-      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null,
       null,
@@ -306,260 +266,260 @@
     "fixedSecond": 27,
     "commandLog": [
       {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947799726
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947739364
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947679978
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947619592
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947560249
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947499829
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947439388
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947379926
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947319529
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947260104
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947199690
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947140248
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947079828
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786947019424
+      },
+      {
         "type": "tyouhei",
-        "message": "農民 を 65 人徴兵（65/65） 訓練値-35 階級ポイント＋15",
-        "executeAt": 1785993458037
+        "message": "これ以上徴兵できない（最大 65）階級ポイント＋15",
+        "executeAt": 1786946959991
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785993398493
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785993337928
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785993278344
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785993217810
-      },
-      {
-        "type": "move_safe",
-        "message": "🚶 洛陽へ移動",
-        "executeAt": 1785993158235
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785993097673
-      },
-      {
-        "type": "move_safe",
-        "message": "🚶 長安へ移動",
-        "executeAt": 1785993038159
+        "executeAt": 1786946899512
       },
       {
         "type": "buyEquipment",
-        "message": "木の鎧を75Gで下取りしました。鉄の鎧を購入しました",
-        "executeAt": 1785992616543
+        "message": "鉄の剣を購入しました",
+        "executeAt": 1786946840107
+      },
+      {
+        "type": "kunren",
+        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
+        "executeAt": 1786946779635
       },
       {
         "type": "buyEquipment",
-        "message": "孫子の兵法書を購入しました。",
-        "executeAt": 1785991492447
+        "message": "革鎧を500Gで下取りしました。鉄の鎧を購入しました",
+        "executeAt": 1786945988402
       },
       {
         "type": "buyEquipment",
-        "message": "革鎧を購入しました。",
-        "executeAt": 1785991417944
+        "message": "鉄の鎧を1000Gで下取りしました。革鎧を購入しました",
+        "executeAt": 1786945913329
+      },
+      {
+        "type": "buyEquipment",
+        "message": "鉄の鎧を1000Gで下取りしました。鉄の鎧を購入しました",
+        "executeAt": 1786945835739
+      },
+      {
+        "type": "buyEquipment",
+        "message": "鉄の鎧を1000Gで下取りしました。鉄の鎧を購入しました",
+        "executeAt": 1786944537747
+      },
+      {
+        "type": "buyEquipment",
+        "message": "革鎧を500Gで下取りしました。鉄の鎧を購入しました",
+        "executeAt": 1786944436092
+      },
+      {
+        "type": "buyEquipment",
+        "message": "鉄の鎧を1000Gで下取りしました。革鎧を購入しました",
+        "executeAt": 1786944273347
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       },
       {
         "type": "kunren",
         "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
-      },
-      {
-        "type": "kunren",
-        "message": "訓練値が上限のため、これ以上訓練できない（階級値+15）",
-        "executeAt": 1785987579795
+        "executeAt": 1786944151002
       }
     ],
     "offlineReward": {
-      "count": 3,
-      "money": 4500,
-      "rice": 4500
+      "count": 13,
+      "money": 32500,
+      "rice": 32500
     },
     "soldiers": {
       "noumin": 65
