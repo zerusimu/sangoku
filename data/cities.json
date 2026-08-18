@@ -2,29 +2,37 @@
   {
     "id": "city01",
     "name": "洛陽",
-    "owner": "country_1785824646433",
+    "owner": "country_1787029585474",
     "soldiers": 50,
     "x": 2,
     "y": 1,
-    "defenders": []
+    "defenders": [
+      "general_1787029585474"
+    ]
   },
   {
     "id": "city02",
     "name": "長安",
-    "owner": null,
+    "owner": "country_1787031589451",
     "soldiers": 40,
     "x": 1,
     "y": 2,
-    "defenders": []
+    "defenders": [
+      "general_1787031589451"
+    ]
   },
   {
     "id": "city03",
     "name": "許昌",
-    "owner": null,
+    "owner": "country_1787029585474",
     "soldiers": 30,
     "x": 3,
     "y": 2,
-    "defenders": []
+    "defenders": [
+      "general_1785824646434",
+      "general_1787027223759",
+      "general_1787027331285"
+    ]
   },
   {
     "id": "city04",
@@ -74,10 +82,12 @@
   {
     "id": "city09",
     "name": "上庸",
-    "owner": null,
+    "owner": "country_1787031589451",
     "soldiers": 10,
     "x": 2,
     "y": 3,
-    "defenders": []
+    "defenders": [
+      "general_1787031589451"
+    ]
   }
 ]

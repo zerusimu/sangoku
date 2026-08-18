@@ -910,6 +910,70 @@ style="display:none; margin-top:10px;">
 <button type="button" onclick="applyBulk()">一括反映</button>
 <hr>
 
+<!-- =========================
+     コマンドループ
+========================= -->
+<div class="command-loop-box" style="margin-top:15px;">
+
+  <h3>コマンドループ</h3>
+
+  <div>
+    <label>
+      保存開始：
+      <select id="loopSaveStart">
+        <% for (let i = 0; i < 60; i++) { %>
+          <option value="<%= i %>"><%= i + 1 %>コマ</option>
+        <% } %>
+      </select>
+    </label>
+
+    <label>
+      保存終了：
+      <select id="loopSaveEnd">
+        <% for (let i = 0; i < 60; i++) { %>
+          <option value="<%= i %>"><%= i + 1 %>コマ</option>
+        <% } %>
+      </select>
+    </label>
+
+    <button type="button" onclick="saveCommandLoop()">
+      ループ保存
+    </button>
+  </div>
+
+  <div style="margin-top:10px;">
+
+    <label>
+      展開開始：
+      <select id="loopInsertStart">
+        <% for (let i = 0; i < 60; i++) { %>
+          <option value="<%= i %>"><%= i + 1 %>コマ</option>
+        <% } %>
+      </select>
+    </label>
+
+    <button type="button" onclick="insertCommandLoop()">
+      ループ展開
+    </button>
+
+  </div>
+
+  <div id="loopStatus"
+       style="margin-top:10px; padding:8px; border:1px solid #ccc;">
+    ループ未保存
+  </div>
+
+</div>
+
+<hr>
+
+
+
+
+
+
+
+
 <form action="/command/update" method="post">
 
 
@@ -1226,6 +1290,431 @@ function updateEquipmentList(box){
     }
 
 }
+
+
+// ==================================================
+// コマンドループ保存用
+// ==================================================
+
+let savedCommandLoop = [];
+
+
+// ==================================================
+// 1コマ分のデータを取得
+// ==================================================
+
+function getCommandData(index) {
+
+  const commandSelect =
+    document.querySelector(
+      `select.command-select[name="commands[${index}]"]`
+    );
+
+  if (!commandSelect) {
+    return null;
+  }
+
+  const command = commandSelect.value;
+
+  // 空コマ
+  if (!command) {
+    return {
+      command: ""
+    };
+  }
+
+  const data = {
+    command: command
+  };
+
+
+  // ------------------------------------------
+  // 移動・出兵
+  // ------------------------------------------
+
+  const moveTarget =
+    document.querySelector(
+      `[name="move_targetCity[${index}]"]`
+    );
+
+  if (moveTarget) {
+    data.targetCity = moveTarget.value;
+  }
+
+
+  // ------------------------------------------
+  // 徴兵
+  // ------------------------------------------
+
+  const heisyu =
+    document.querySelector(
+      `[name="heisyu_id[${index}]"]`
+    );
+
+  const count =
+    document.querySelector(
+      `[name="tyouhei_count[${index}]"]`
+    );
+
+  if (heisyu) {
+    data.heisyuId = heisyu.value;
+  }
+
+  if (count) {
+    data.count = count.value;
+  }
+
+
+  // ------------------------------------------
+  // 装備
+  // ------------------------------------------
+
+  const equipmentType =
+    document.querySelector(
+      `[name="equipment_type[${index}]"]`
+    );
+
+  const equipmentItem =
+    document.querySelector(
+      `[name="equipment_item[${index}]"]`
+    );
+
+  if (equipmentType) {
+    data.equipmentType = equipmentType.value;
+  }
+
+  if (equipmentItem) {
+    data.equipmentItem = equipmentItem.value;
+  }
+
+
+  return data;
+}
+
+
+// ==================================================
+// コマンド1つを指定位置へ設定
+// ==================================================
+
+function setCommandData(index, data) {
+
+  const commandSelect =
+    document.querySelector(
+      `select.command-select[name="commands[${index}]"]`
+    );
+
+  if (!commandSelect) {
+    return;
+  }
+
+
+  // ------------------------------------------
+  // 命令種類
+  // ------------------------------------------
+
+  commandSelect.value = data.command || "";
+
+
+  // onchangeを実行
+  onCommandChange(
+    commandSelect,
+    index
+  );
+
+
+  // ------------------------------------------
+  // 出兵・移動先
+  // ------------------------------------------
+
+  if (data.targetCity !== undefined) {
+
+    const target =
+      document.querySelector(
+        `[name="move_targetCity[${index}]"]`
+      );
+
+    if (target) {
+      target.value = data.targetCity;
+    }
+  }
+
+
+  // ------------------------------------------
+  // 徴兵兵種
+  // ------------------------------------------
+
+  if (data.heisyuId !== undefined) {
+
+    const heisyu =
+      document.querySelector(
+        `[name="heisyu_id[${index}]"]`
+      );
+
+    if (heisyu) {
+      heisyu.value = data.heisyuId;
+    }
+  }
+
+
+  // ------------------------------------------
+  // 徴兵人数
+  // ------------------------------------------
+
+  if (data.count !== undefined) {
+
+    const count =
+      document.querySelector(
+        `[name="tyouhei_count[${index}]"]`
+      );
+
+    if (count) {
+      count.value = data.count;
+    }
+  }
+
+
+  // ------------------------------------------
+  // 装備種類
+  // ------------------------------------------
+
+  if (data.equipmentType !== undefined) {
+
+    const type =
+      document.querySelector(
+        `[name="equipment_type[${index}]"]`
+      );
+
+    if (type) {
+
+      type.value =
+        data.equipmentType;
+
+      // 装備詳細を再生成
+      type.dispatchEvent(
+        new Event("change")
+      );
+    }
+  }
+
+
+  // ------------------------------------------
+  // 装備詳細
+  // ------------------------------------------
+
+  if (data.equipmentItem !== undefined) {
+
+    const item =
+      document.querySelector(
+        `[name="equipment_item[${index}]"]`
+      );
+
+    if (item) {
+      item.value = data.equipmentItem;
+    }
+  }
+
+}
+
+
+// ==================================================
+// ループ保存
+// ==================================================
+
+function saveCommandLoop() {
+
+  let start =
+    Number(
+      document.getElementById("loopSaveStart").value
+    );
+
+  let end =
+    Number(
+      document.getElementById("loopSaveEnd").value
+    );
+
+
+  // 順番が逆なら入れ替える
+  if (start > end) {
+
+    const temp = start;
+
+    start = end;
+    end = temp;
+  }
+
+
+  savedCommandLoop = [];
+
+
+  for (let i = start; i <= end; i++) {
+
+    const data =
+      getCommandData(i);
+
+    if (!data) {
+      continue;
+    }
+
+    // 空コマは保存しない
+    if (!data.command) {
+      continue;
+    }
+
+    // 完全コピー
+    savedCommandLoop.push(
+      JSON.parse(
+        JSON.stringify(data)
+      )
+    );
+  }
+
+
+  // 保存結果表示
+
+  const status =
+    document.getElementById("loopStatus");
+
+
+  if (savedCommandLoop.length === 0) {
+
+    status.innerHTML =
+      "⚠️ ループ保存できるコマンドがありません。";
+
+    return;
+  }
+
+
+  status.innerHTML =
+    "✅ ループ保存： " +
+    savedCommandLoop.length +
+    "個のコマンド<br><br>" +
+
+    savedCommandLoop
+      .map((cmd, i) =>
+        `${i + 1}：${getCommandName(cmd.command)}`
+      )
+      .join("<br>");
+}
+
+
+// ==================================================
+// ループ展開
+// ==================================================
+
+function insertCommandLoop() {
+
+  if (
+    !savedCommandLoop ||
+    savedCommandLoop.length === 0
+  ) {
+
+    alert(
+      "先にループを保存してください。"
+    );
+
+    return;
+  }
+
+
+  const start =
+    Number(
+      document.getElementById("loopInsertStart").value
+    );
+
+
+  let index = start;
+
+  let loopIndex = 0;
+
+
+  // ------------------------------------------
+  // 60コマまで展開
+  // ------------------------------------------
+
+  while (
+    index < 60
+  ) {
+
+    const command =
+      savedCommandLoop[loopIndex];
+
+
+    // 完全コピー
+    const copy =
+      JSON.parse(
+        JSON.stringify(command)
+      );
+
+
+    setCommandData(
+      index,
+      copy
+    );
+
+
+    index++;
+
+    loopIndex++;
+
+    // ループ先頭へ戻る
+    if (
+      loopIndex >= savedCommandLoop.length
+    ) {
+      loopIndex = 0;
+    }
+  }
+
+
+  // ------------------------------------------
+  // 表示更新
+  // ------------------------------------------
+
+  const status =
+    document.getElementById("loopStatus");
+
+
+  status.innerHTML =
+    "🔄 ループ展開完了<br>" +
+    `開始：${start + 1}コマ目<br>` +
+    `使用コマンド数：${savedCommandLoop.length}`;
+}
+
+
+// ==================================================
+// 命令名
+// ==================================================
+
+function getCommandName(command) {
+
+  const names = {
+
+    kunren: "訓練",
+
+    moukunren: "猛訓練",
+
+    tokkun: "特訓",
+
+    tyouhei: "徴兵",
+
+    defend: "守備",
+
+    move: "出兵",
+
+    move_safe: "移動",
+
+    buyEquipment: "装備購入"
+
+  };
+
+  return names[command] || command;
+}
+
+
+
+
+
+
+
 
 
 

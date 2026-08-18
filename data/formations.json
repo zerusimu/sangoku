@@ -77,5 +77,21 @@
     ],
 
     "special": "selfAdvantage"
+  },
+    {
+    "id": "housi",
+    "name": "鋒矢の陣",
+    "requiredRank": 0,
+
+    "attackBonus": 0,
+    "defenseBonus": 0,
+
+    "strong": [
+    ],
+
+    "weak": [
+    ],
+
+    "special": null
   }
 ]

@@ -11,7 +11,17 @@ function ensureSkills(g) {
 }
 
 function getFormation(id) {
-  return formations.find(f => f.id === id);
+  const formation = formations.find(f => f.id === id);
+
+  if (!formation) {
+    console.warn(
+      `⚠️ 陣形が見つかりません: ${id} → 魚鱗の陣を使用します`
+    );
+
+    return formations.find(f => f.id === "gyorin");
+  }
+
+  return formation;
 }
 
 // 兵種タイプ判定
@@ -116,6 +126,16 @@ if (!defUnit) {
 
 const atkEquip = getEquipment(attacker);
 const defEquip = getEquipment(defender);
+
+console.log(
+  "攻撃側陣形:",
+  attacker.formation
+);
+
+console.log(
+  "防御側陣形:",
+  defender.formation
+);
 
 
 const atkFormation =
@@ -581,10 +601,14 @@ if (defender.skills?.includes("ninzyutu2")) {
 
 return {
   winner,
+
   attackerRemaining: Math.max(0, atkCount),
   defenderRemaining: Math.max(0, defCount),
-  defenderDead: Math.max(0, defCount) <= 0,
-  attackerDead: Math.max(0, atkCount) <= 0,
+
+  // 戦闘中に0になったか
+  attackerDead,
+  defenderDead,
+
   log: log.join("\n")
 };
 }
